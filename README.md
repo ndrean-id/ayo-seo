@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.36.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.37.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -235,7 +235,48 @@ Prinsip trafik bertarget ini diterjemahkan ke dalam hierarki produksi konten Ayo
 
 ---
 
-### 3. Tujuh Siklus Belajar SEO yang Efisien (The 7-Step Mastery Loop)
+### 3. Glosarium Fundamental: 5 Istilah Inti SEO & Mekanika Mesin Pencari
+
+Pada materi silabus praktikum bertajuk **"Istilah SEO"**, dikodifikasikan 5 istilah paling mendasar yang menjadi fondasi kosakata teknis dan mekanika cara kerja mesin pencari:
+
+```text
+  [1. User memasukkan KATA KUNCI] ──> [2. Muncul di halaman SERP / AI Overview]
+                                                   ▲
+                                                   │ (Didorong oleh)
+  [3. Crawler merayapi (CRAWLING)] ──> [4. Dibantu SITEMAP XML] ──> [5. Divalidasi BACKLINKS]
+```
+
+#### A. Bedah 5 Istilah Inti Berdasarkan Silabus Praktikum
+
+1. **Kata Kunci (Keywords):**
+   - *Definisi Praktikum:* Istilah atau frasa yang digunakan pengguna internet saat mencari informasi di mesin pencari. Pemilihan kata kunci yang tepat sangat penting untuk mengarahkan lalu lintas yang relevan ke situs web.
+   - *Perspektif SEO Modern:* Kata kunci bukan sekadar pencocokan string teks kaku (*exact match*), melainkan representasi dari niat pencarian manusia (*Search Intent*). Di era AI Search, penargetan kata kunci berevolusi menjadi pemetaan **entitas semantik (*Entity-Based SEO*)** yang menjawab konteks masalah secara menyeluruh.
+2. **SERP (Search Engine Results Page):**
+   - *Definisi Praktikum:* Halaman hasil pencarian yang ditampilkan oleh mesin pencari setelah pengguna memasukkan kueri pencarian. Posisi dan visibilitas di SERP sangat penting untuk mendapatkan lalu lintas organik.
+   - *Perspektif SEO Modern:* Halaman 1 SERP adalah lokasi di mana 90%+ klik pengguna terjadi, dengan 3 posisi teratas mendominasi lebih dari 55% rasio klik-tayang (*Click-Through Rate / CTR*). Saat ini, SERP telah bertransformasi dari sekadar 10 tautan biru konvensional (*10 Blue Links*) menjadi lanskap dinamis yang memuat *Google AI Overviews*, *Featured Snippets*, *People Also Ask*, dan *Knowledge Panels*.
+3. **Backlinks ("Vote of Confidence" & Otoritas Eksternal):**
+   - *Definisi Praktikum:* Tautan dari situs web lain yang mengarah ke situs web Anda. Tautan ini dianggap sebagai "vote of confidence" (suara kepercayaan) dan dapat meningkatkan otoritas serta peringkat situs Anda di mesin pencari.
+   - *Perspektif SEO Modern:* Backlink adalah pilar utama algoritma PageRank Google. Namun, Google modern mengutamakan **kualitas editorial dan relevansi topik** dibanding kuantitas mentah. Satu tautan dofollow bernilai dari situs bereputasi tinggi di industri sejenis jauh lebih berharga daripada ratusan tautan spam PBN (*Private Blog Network*).
+4. **Sitemap XML (Peta Navigasi Mesin Pencari):**
+   - *Definisi Praktikum:* File yang mencantumkan semua halaman di situs web Anda yang ingin diindeks oleh mesin pencari. Ini membantu mesin pencari menemukan dan merayapi halaman situs Anda lebih efisien.
+   - *Perspektif SEO Modern:* Sitemap XML adalah direktori panduan resmi bagi bot perayap. Sitemap yang bersih, terstruktur rapi, diperbarui secara otomatis setiap kali ada artikel baru (*lastmod tag*), dan bebas dari URL error (404/301/noindex) sangat krusial untuk mengoptimalkan anggaran perayapan (*Crawl Budget*).
+5. **Crawling (Perayapan Bot Mesin Pencari):**
+   - *Definisi Praktikum:* Proses di mana mesin pencari menggunakan bot untuk menemukan dan membaca halaman web di seluruh internet. Mesin pencari kemudian mengindeks halaman yang ditemukan selama proses crawling.
+   - *Perspektif SEO Modern:* Crawling adalah langkah pertama dari trilogi mesin pencari: **Crawling -> Indexing -> Ranking**. Jika sebuah halaman tidak dapat dijangkau oleh bot (misal akibat salah konfigurasi `robots.txt`, tautan putus, atau server lambat *time out*), maka halaman tersebut mustahil untuk diindeks dan tidak akan pernah muncul di SERP.
+
+#### B. Matriks Mekanika 5 Istilah SEO
+
+| Istilah Kunci | Peran Teknis dalam Siklus SEO | Komponen SEO Terkait | Tolok Ukur Keberhasilan |
+| :--- | :--- | :--- | :--- |
+| **Kata Kunci (Keywords)** | Jembatan antara kebutuhan pencari dan konten web. | On-Page SEO & Content Strategy | Relevansi *Search Intent*, peringkat kata kunci, dan impresi di GSC. |
+| **SERP** | Etalase digital penentu perolehan trafik organik. | All Components (Tech, On-Page, Off-Page) | Peringkat #1-3 organik dan kemunculan di kotak sitasi AI Overview. |
+| **Backlinks** | Sinyal suara kepercayaan (*vote of confidence*) dan transfer otoritas. | Off-Page SEO & Digital PR | Domain Rating (DR), Citation Flow, dan tautan masuk editorial dofollow. |
+| **Sitemap XML** | Peta direktori resmi untuk efisiensi perayapan bot. | Technical SEO | Status submit *"Success"* di Google Search Console tanpa error URL. |
+| **Crawling** | Penemuan dan pembacaan kode halaman web oleh bot mesin pencari. | Technical SEO & Web Performance | *Crawl stats* sehat, respon server cepat (<300ms), dan zero crawl error. |
+
+---
+
+### 4. Tujuh Siklus Belajar SEO yang Efisien (The 7-Step Mastery Loop)
 
 ```text
   [01. Efisiensi 80/20] ──> [02. Literasi Global] ──> [03. Tool Stack Data]
@@ -269,7 +310,7 @@ Prinsip trafik bertarget ini diterjemahkan ke dalam hierarki produksi konten Ayo
 
 ---
 
-### 4. Matriks Tiga Komponen Utama SEO (The Holy Trinity of SEO)
+### 5. Matriks Tiga Komponen Utama SEO (The Holy Trinity of SEO)
 
 Tiga komponen utama SEO saling melengkapi dan tidak dapat dipisahkan:
 
@@ -281,7 +322,7 @@ Tiga komponen utama SEO saling melengkapi dan tidak dapat dipisahkan:
 
 ---
 
-### 5. Mengapa Tiga Komponen Ini Wajib Bersinergi? (Prinsip Kursi Berkaki Tiga)
+### 6. Mengapa Tiga Komponen Ini Wajib Bersinergi? (Prinsip Kursi Berkaki Tiga)
 
 Di materi praktikum **CH01-04**, ditekankan bahwa optimasi website mustahil tercapai secara komprehensif tanpa mendalami ketiga komponen utama ini secara seimbang. Banyak praktisi pemula gagal mendominasi halaman 1 Google karena terjebak pada ilusi "satu peluru ajaib" (*silver bullet*) - misalnya hanya rajin memproduksi ratusan konten tetapi abai pada kesehatan teknis situs, atau sebaliknya, sibuk mengutak-atik kecepatan website hingga skor 100 tapi melupakan kualitas konten dan sinyal otoritas eksternal.
 
@@ -311,7 +352,7 @@ SEO pada hakikatnya adalah sebuah sistem simbiotik yang diibaratkan seperti **Ku
 
 ---
 
-### 6. Langkah-Langkah Operasional Tiga Komponen Utama (Actionable SOP Checklist)
+### 7. Langkah-Langkah Operasional Tiga Komponen Utama (Actionable SOP Checklist)
 
 Berdasarkan modul **Langkah-Langkah Praktis Komponen Utama SEO**, berikut adalah panduan tindakan konkret (*actionable SOP*) yang wajib dijalankan agar ketiga pilar bekerja secara harmonis:
 
@@ -366,7 +407,7 @@ Fokus pada pembangunan sinyal kredibilitas eksternal agar domain memperoleh reko
 
 ---
 
-### 7. Selalu Up To Date dengan Perubahan SEO: Radar Algoritma & Mindset Dinamis (CH01-06)
+### 8. Selalu Up To Date dengan Perubahan SEO: Radar Algoritma & Mindset Dinamis (CH01-06)
 
 Di materi **CH01-06 ("Selalu Up To Date Dengan Perubahan SEO")**, ditekankan prinsip fundamental:
 > *"Dunia SEO adalah dunia yang sangat dinamis, oleh karena itu, jangan pernah berhenti belajar untuk mendapatkan informasi baru."*
@@ -413,7 +454,7 @@ Saat Google mengumumkan peluncuran pembaruan inti (*Core Update rollout*), janga
 
 ---
 
-### 8. Tools dan Peralatan: Ekosistem Data-Driven SEO Stack (CH01-03 Praktikum)
+### 9. Tools dan Peralatan: Ekosistem Data-Driven SEO Stack (CH01-03 Praktikum)
 
 Di materi **"Tools dan Peralatan"** pada silabus praktikum **"Efektif Tingkatkan Leads & Conversion Organik dengan Data SEO"**, ditekankan bahwa seorang praktisi modern tidak boleh bekerja dengan tebak-tebakan. Keputusan strategis SEO wajib berlandaskan pada *data-driven stack* yang terintegrasi dari riset, audit teknis, analisis analitik, hingga visualisasi laporan:
 
@@ -795,6 +836,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.37.0 (2026-11-24):** Penambahan bab kurikulum **Glosarium Fundamental: 5 Istilah Inti SEO & Mekanika Mesin Pencari** mencakup Kata Kunci, SERP, Backlinks sebagai vote of confidence, Sitemap XML, dan mekanisme Crawling bot mesin pencari.
 - **v1.36.0 (2026-11-24):** Penambahan bab kurikulum **Trafik yang Lebih Bertarget: Kesenjangan Relevansi SEO vs SEM (Search Intent vs Bidding Power)** mencakup fenomena kebocoran anggaran iklan (*wasted ad spend*), efek pengunjung terkualifikasi (*pre-qualified traffic*), serta pemetaan 3 tahap intent pada hierarki konten Ayo SEO.
 - **v1.35.0 (2026-11-24):** Penambahan analisis mendalam **Biaya Jangka Panjang yang Lebih Efektif: Anatomi Finansial SEO vs SEM (Zero Marginal Cost vs The Paid Ad Treadmill)** mencakup simulasi finansial 12 bulan penurunan CPA hingga Rp 0 serta strategi transisi hybrid.
 - **v1.34.0 (2026-11-24):** Penambahan bab kurikulum **Mengapa SEO Penting? Kredibilitas, Rantai Konversi Bisnis, dan Efisiensi Jangka Panjang vs SEM** mencakup rantai kausalitas konversi keuntungan, efek halo kredibilitas halaman pertama, serta tabel perbandingan komprehensif aset SEO organik vs iklan berbayar SEM.
