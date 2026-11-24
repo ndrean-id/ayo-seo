@@ -1,7 +1,7 @@
-# Ayo SEO — AI Agent Senior SEO & Content Strategist
+# Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.23.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.24.0-blue.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Antigravity-orange.svg)]()
 [![SEO Standard](https://img.shields.io/badge/Google-E--E--A--T%20%26%20Helpful%20Content-brightgreen.svg)]()
 [![Optimization](https://img.shields.io/badge/Search-GEO%20%7C%20AEO%20Ready-purple.svg)]()
@@ -17,9 +17,9 @@
 | Parameter | Spesifikasi & Arsitektur |
 | :--- | :--- |
 | **Kategori** | AI Agent Plugin / SEO Strategy, Content Generation & Visual Repurposing Engine |
-| **Sumber Rujukan Utama** | **[Google Search Central](https://developers.google.com/search)** & **[Moz Learn SEO](https://moz.com/learn/seo)** |
+| **Sumber Rujukan Utama** | **[Google Search Central](https://developers.google.com/search)**, **[Moz Learn SEO](https://moz.com/learn/seo)**, **[Search Engine Journal](https://www.searchenginejournal.com/)**, & **[Backlinko](https://backlinko.com/)** |
 | **Platform Host** | Google Antigravity IDE & Antigravity CLI |
-| **Model LLM Optimal** | Gemini 3.1 Pro (Pilar) & Gemini 3.8 Flash (Cluster, Glossary, Repurpose) |
+| **Model LLM Optimal** | Gemini 3.8 Flash High (Pilar, Cluster, Glossary, Repurpose) |
 | **Standar Kualitas** | Google Helpful Content System, Quality Rater Guidelines (QRG), E-E-A-T |
 | **Target Engine** | SERP Tradisional (Google, Bing) + AI Search Engines (Perplexity, Google AI Overviews, ChatGPT Search) |
 | **Format Output** | Universal Markdown siap posting (termasuk Slug, Meta Title Title Case, Key Takeaways, FAQ Schema, Prompt DALL-E 3) |
@@ -49,9 +49,9 @@ Di era *Google Helpful Content System* dan menjamurnya *AI Search Engines*, memp
 
 ---
 
-## 🏛️ Sumber Rujukan Utama: Google Search Central & Moz Academy
+## Sumber Rujukan Utama: Google Search Central, Moz, SEJ, dan Backlinko
 
-Seluruh metodologi, sistem riset, dan SOP penulisan konten di **Ayo SEO** berpatokan langsung pada dua pilar otoritas SEO tertinggi di dunia: dokumentasi resmi dari mesin pencari Google (**[Google Search Central](https://developers.google.com/search)**) dan pusat kurikulum edukasi SEO global terkemuka (**[Moz Learn SEO](https://moz.com/learn/seo)**).
+Seluruh metodologi, sistem riset, dan SOP penulisan konten di **Ayo SEO** berpatokan langsung pada empat pilar otoritas SEO tertinggi di dunia: dokumentasi resmi dari mesin pencari Google (**[Google Search Central](https://developers.google.com/search)**), kurikulum edukasi SEO global (**[Moz Learn SEO](https://moz.com/learn/seo)**), media intelijen algoritma industri (**[Search Engine Journal](https://www.searchenginejournal.com/)**), serta masterclass eksekusi praktis dan link building (**[Backlinko](https://backlinko.com/)**).
 
 ### 1. Fondasi Resmi Mesin Pencari (Google Search Central)
 Ayo SEO mengadopsi 4 pilar dokumentasi resmi Google Search Central sebagai fondasi tanpa kompromi:
@@ -67,6 +67,19 @@ Sebagai pionir edukasi SEO dunia lewat mahakarya *The Beginner's Guide to SEO* d
 - **Keyword Research & Search Intent Mapping:** Membedah intensi kata kunci informasional, transaksional, dan navigasional demi konversi yang terukur.
 - **On-Page & Readability Standards:** Penataan hierarki heading logis (H1-H3), optimasi rasio klik tayang (CTR), dan format paragraf pendek ramah pembaca (*mobile readability*).
 
+### 3. Intelijen Algoritma & Wawasan Industri Terkini (Search Engine Journal)
+Sebagai media publikasi berita dan investigasi SEO harian terkemuka di dunia, **[Search Engine Journal (SEJ)](https://www.searchenginejournal.com/)** menjadi acuan Ayo SEO untuk:
+- **Pemantauan Google Algorithm Updates:** Melacak peluncuran Google Core Updates, Spam Updates, Helpful Content system, dan fluktuasi volatilitas SERP secara real-time.
+- **Dinamika AI Overviews & Generative Search:** Analisis mendalam pergeseran traffic akibat integrasi AI Search Engine dan strategi adaptasi SEO praktis.
+- **Studi Kasus & Panduan Taktis Lapangan:** Wawasan berbasis data dari praktisi search marketing global untuk mengatasi content decay dan technical bugs.
+
+### 4. Masterclass Praktis, Link Building, & Skyscraper Technique (Backlinko)
+Didirikan oleh Brian Dean dan diakui secara global sebagai standar emas eksekusi SEO praktis berbasis data dan eksperimen nyata, **[Backlinko](https://backlinko.com/)** menjadi rujukan Ayo SEO untuk:
+- **The Skyscraper Technique (Konten 10x):** Metodologi riset konten yang sudah terbukti menduduki peringkat teratas, lalu menciptakan konten yang jauh lebih mendalam, terstruktur, visual, dan kaya nilai tambah (*Information Gain*).
+- **Link Building Berbasis Nilai (Value-First Outreach):** Strategi mendapatkan backlink editorial berkualitas tinggi secara organik melalui *Resource Page Link Building*, riset data industri orisinal, dan kemitraan konten tanpa teknik spam.
+- **Audit On-Page Presisi Tinggi & UX Signals:** Optimasi rasio klik tayang (*Click-Through Rate Booster*), teknik penulisan pengantar anti-pogo-sticking (formula APP: *Agree, Promise, Preview*), dan penataan layout yang memaksimalkan waktu tinggal (*Dwell Time*).
+- **Riset Empiris SERP Skala Besar:** Memanfaatkan studi analisis jutaan halaman pencarian Google dari tim riset Backlinko untuk memahami korelasi nyata antara panjang konten, kecepatan situs, dan performa ranking.
+
 ---
 
 ## 🚀 6 Kemampuan Utama (Core Features & Skills)
@@ -78,7 +91,7 @@ Ayo SEO menyediakan rangkaian *skills* lengkap untuk kebutuhan produksi hingga d
 - **Struktur Ahli:** Dilengkapi Daftar Isi (*Table of Contents*) ber-anchor links, konsep *10x Pillar Page* / *Resource Hub*, validasi persona audiens & topik *evergreen*.
 - **Visual Otomatis:** Otomatis menghasilkan **Prompt Cover Artikel 16:9** dan prompt DALL-E gambar sisipan di sela-sela teks.
 - **Standar E-E-A-T:** Wajib mengutip riset otoritatif internasional (Dofollow) dan menyertakan rekomendasi topik cluster pendukung.
-- **Rekomendasi Model:** `Gemini 3.1 Pro (High)`.
+- **Rekomendasi Model:** `Gemini 3.8 Flash (High)`.
 
 ### 2. 🎯 Mode Cluster (`/ayo-seo-cluster [Topik]`)
 - **Fungsi:** Pembahasan tajam dan spesifik (1.200 – 2.000 kata) yang menjawab satu masalah detail (*long-tail keywords* 4+ kata).
@@ -114,7 +127,7 @@ Ayo SEO menyediakan rangkaian *skills* lengkap untuk kebutuhan produksi hingga d
 | Command | Fungsi Utama | Rasio Visual Default | Rekomendasi Model |
 | :--- | :--- | :---: | :--- |
 | `/ayo-seo` | **General Router** (Konsultasi ide, pemilihan pilar/cluster/glossary) | - | Fleksibel |
-| `/ayo-seo-pilar [Topik]` | Membuat **Artikel Pilar** komprehensif + Cover 16:9 | 16:9 | **Gemini 3.1 Pro (High)** |
+| `/ayo-seo-pilar [Topik]` | Membuat **Artikel Pilar** komprehensif + Cover 16:9 | 16:9 | **Gemini 3.8 Flash (High)** |
 | `/ayo-seo-cluster [Topik]` | Membuat **Artikel Cluster** pendukung + Cover 16:9 | 16:9 | **Gemini 3.8 Flash (High)** |
 | `/ayo-seo-glossary [Istilah]`| Membuat **Artikel Glossary** ringkas | - | **Gemini 3.8 Flash (High)** |
 | `/ayo-seo-repurpose-content` | Repurpose artikel ke **Carousel (6 Slide)** atau **Single Image AEO** | 3:4 (Portrait) | **Gemini 3.8 Flash (High)** |
@@ -348,6 +361,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.24.0 (2026-11-24):** Integrasi **Search Engine Journal (SEJ)** (https://www.searchenginejournal.com/) dan **Backlinko** (https://backlinko.com/) sebagai pilar rujukan intelijen algoritma real-time, metodologi Skyscraper Technique (Konten 10x), strategi link building berbasis nilai, serta pembaruan rekomendasi model LLM ke **Gemini 3.8 Flash (High)**.
 - **v1.23.0 (2026-11-24):** Integrasi **Moz Academy / Learn SEO** (`https://moz.com/learn/seo`) sebagai standar rujukan edukasi dan strategi industri global (Topical Authority, Link Equity, Search Intent Mapping, dan On-Page Readability) mendampingi fondasi resmi Google Search Central.
 - **v1.22.0 (2026-11-24):** Penambahan penegasan **Google Search Central** (`https://developers.google.com/search`) sebagai sumber rujukan dan fondasi standar utama (Google Search Essentials, Helpful Content System, Quality Rater Guidelines E-E-A-T, dan Structured Data), serta pembaruan repositori git resmi ke `ndrean-id/ayo-seo`.
 - **v1.21.0 (2026-10-12):** Penambahan panduan *Lanskap CMS Global & Alokasi Fokus Platform (Data-Driven Strategy)*. Merangkum data riset resmi W3Techs mengenai dominasi WordPress (62.5% CMS share) dan Shopify, serta formula alokasi energi 80/20 bagi praktisi Technical SEO untuk membidik pasar global.
