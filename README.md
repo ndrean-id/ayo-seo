@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.25.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.26.0-blue.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Antigravity-orange.svg)]()
 [![SEO Standard](https://img.shields.io/badge/Google-E--E--A--T%20%26%20Helpful%20Content-brightgreen.svg)]()
 [![Optimization](https://img.shields.io/badge/Search-GEO%20%7C%20AEO%20Ready-purple.svg)]()
@@ -17,7 +17,7 @@
 | Parameter | Spesifikasi & Arsitektur |
 | :--- | :--- |
 | **Kategori** | AI Agent Plugin / SEO Strategy, Content Generation & Visual Repurposing Engine |
-| **Sumber Rujukan Utama** | **[Google Search Central](https://developers.google.com/search)**, **[Moz Learn SEO](https://moz.com/learn/seo)**, **[Search Engine Journal](https://www.searchenginejournal.com/)**, **[Backlinko](https://backlinko.com/)**, & **[Semrush Blog](https://www.semrush.com/blog/)** |
+| **Sumber Rujukan Utama** | **[Google Search Central](https://developers.google.com/search)**, **[Moz Learn SEO](https://moz.com/learn/seo)**, **[Search Engine Journal](https://www.searchenginejournal.com/)**, **[Backlinko](https://backlinko.com/)**, **[Semrush Blog](https://www.semrush.com/blog/)**, & **[AIOSEO Blog](https://aioseo.com/blog/)** |
 | **Platform Host** | Google Antigravity IDE & Antigravity CLI |
 | **Model LLM Optimal** | Gemini 3.8 Flash High (Pilar, Cluster, Glossary, Repurpose) |
 | **Standar Kualitas** | Google Helpful Content System, Quality Rater Guidelines (QRG), E-E-A-T |
@@ -49,9 +49,9 @@ Di era *Google Helpful Content System* dan menjamurnya *AI Search Engines*, memp
 
 ---
 
-## Sumber Rujukan Utama: 5 Pilar Otoritas SEO Dunia
+## Sumber Rujukan Utama: 6 Pilar Otoritas SEO Dunia
 
-Seluruh metodologi, sistem riset, dan SOP penulisan konten di **Ayo SEO** berpatokan langsung pada lima pilar otoritas SEO tertinggi di dunia: dokumentasi resmi dari mesin pencari Google (**[Google Search Central](https://developers.google.com/search)**), kurikulum edukasi SEO global (**[Moz Learn SEO](https://moz.com/learn/seo)**), media intelijen algoritma industri (**[Search Engine Journal](https://www.searchenginejournal.com/)**), masterclass eksekusi praktis dan link building (**[Backlinko](https://backlinko.com/)**), serta analitik big data marketing dan intelijen kompetitor (**[Semrush Blog](https://www.semrush.com/blog/)**).
+Seluruh metodologi, sistem riset, dan SOP penulisan konten di **Ayo SEO** berpatokan langsung pada enam pilar otoritas SEO tertinggi di dunia: dokumentasi resmi dari mesin pencari Google (**[Google Search Central](https://developers.google.com/search)**), kurikulum edukasi SEO global (**[Moz Learn SEO](https://moz.com/learn/seo)**), media intelijen algoritma industri (**[Search Engine Journal](https://www.searchenginejournal.com/)**), masterclass eksekusi praktis dan link building (**[Backlinko](https://backlinko.com/)**), analitik big data marketing dan intelijen kompetitor (**[Semrush Blog](https://www.semrush.com/blog/)**), serta standar implementasi on-page teknis WordPress (**[AIOSEO Blog](https://aioseo.com/blog/)**).
 
 ### 1. Fondasi Resmi Mesin Pencari (Google Search Central)
 Ayo SEO mengadopsi 4 pilar dokumentasi resmi Google Search Central sebagai fondasi tanpa kompromi:
@@ -86,6 +86,13 @@ Sebagai salah satu platform analitik search marketing dan visibilitas online ent
 - **Competitive Gap Analysis (Audit Celah Kompetitor):** Metodologi melacak celah kata kunci (*missing & weak keywords*) yang dikuasai kompetitor untuk merebut pangsa trafik organik.
 - **Standar Technical SEO & Site Health:** Parameter audit arsitektur situs tingkat lanjut (*Core Web Vitals*, *crawl budget optimization*, indeksabilitas, dan penataan kanonikal).
 - **Studi Tren SERP Berbasis Miliaran Data:** Wawasan berbasis basis data masif global untuk memahami pergeseran algoritma Google, dampak fitur AI Search, dan tren perilaku pencari.
+
+### 6. Implementasi On-Page CMS & Ekosistem WordPress (AIOSEO Blog)
+Sebagai salah satu pelopor plugin SEO WordPress terpopuler di dunia dengan lebih dari 3 juta pengguna aktif, **[AIOSEO Blog](https://aioseo.com/blog/)** menjadi rujukan Ayo SEO untuk:
+- **WordPress On-Page Checklist & Content Auditing:** Standar optimasi judul, meta description, keterbacaan (*readability*), dan densitas kata kunci praktis di lingkungan CMS WordPress.
+- **Schema Markup & Rich Snippets WordPress:** Panduan implementasi data terstruktur bebas galat (`FAQPage`, `Article`, `HowTo`, `Product`, `LocalBusiness`) untuk memenangkan tampilan kaya di SERP.
+- **Internal Link Automation & Orphan Content Rescue:** Metodologi penemuan konten terisolasi (*orphan pages*) dan distribusi *link equity* otomatis di dalam ekosistem blogging.
+- **SEO E-Commerce WooCommerce & Local SEO:** Strategi optimasi katalog produk digital/fisik dan visibilitas pencarian berbasis peta/lokal (*Google Business Profile*).
 
 ---
 
@@ -368,6 +375,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.26.0 (2026-11-24):** Integrasi **AIOSEO Blog** (https://aioseo.com/blog/) sebagai pilar ke-6 rujukan implementasi On-Page CMS, Schema Markup WordPress, penyelamatan orphan content, dan integrasi e-commerce WooCommerce.
 - **v1.25.0 (2026-11-24):** Integrasi **Semrush Blog** (https://www.semrush.com/blog/) sebagai pilar ke-5 rujukan Big Data kata kunci, Content Gap Analysis kompetitor, dan audit teknis kesehatan arsitektur website.
 - **v1.24.0 (2026-11-24):** Integrasi **Search Engine Journal (SEJ)** (https://www.searchenginejournal.com/) dan **Backlinko** (https://backlinko.com/) sebagai pilar rujukan intelijen algoritma real-time, metodologi Skyscraper Technique (Konten 10x), strategi link building berbasis nilai, serta pembaruan rekomendasi model LLM ke **Gemini 3.8 Flash (High)**.
 - **v1.23.0 (2026-11-24):** Integrasi **Moz Academy / Learn SEO** (`https://moz.com/learn/seo`) sebagai standar rujukan edukasi dan strategi industri global (Topical Authority, Link Equity, Search Intent Mapping, dan On-Page Readability) mendampingi fondasi resmi Google Search Central.
