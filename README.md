@@ -1,7 +1,7 @@
 # Ayo SEO — AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.21.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.22.0-blue.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Antigravity-orange.svg)]()
 [![SEO Standard](https://img.shields.io/badge/Google-E--E--A--T%20%26%20Helpful%20Content-brightgreen.svg)]()
 [![Optimization](https://img.shields.io/badge/Search-GEO%20%7C%20AEO%20Ready-purple.svg)]()
@@ -17,6 +17,7 @@
 | Parameter | Spesifikasi & Arsitektur |
 | :--- | :--- |
 | **Kategori** | AI Agent Plugin / SEO Strategy, Content Generation & Visual Repurposing Engine |
+| **Sumber Rujukan Utama** | **[Google Search Central](https://developers.google.com/search)** (Search Essentials, Helpful Content, E-E-A-T) |
 | **Platform Host** | Google Antigravity IDE & Antigravity CLI |
 | **Model LLM Optimal** | Gemini 3.1 Pro (Pilar) & Gemini 3.8 Flash (Cluster, Glossary, Repurpose) |
 | **Standar Kualitas** | Google Helpful Content System, Quality Rater Guidelines (QRG), E-E-A-T |
@@ -45,6 +46,23 @@ Di era *Google Helpful Content System* dan menjamurnya *AI Search Engines*, memp
 | **GEO / AEO Ready** | Format polos tanpa struktur kutipan AI | Dilengkapi **Key Takeaways (TL;DR)** & **Skema FAQ** siap kutip oleh AI Search |
 | **Visual & Gambar** | Tidak ada arahan visual atau menyarankan foto stock pasaran | Menyertakan **Prompt DALL-E 3 siap salin** (Inline + Cover 16:9) berstandar syar'i |
 | **Distribusi Konten** | Berhenti setelah artikel teks selesai | Fitur **Content Repurposing** ke Carousel IG (3:4), Single Image AEO (3:4), & Infografis (9:16) |
+
+---
+
+## 🏛️ Sumber Rujukan Utama: Google Search Central
+
+Seluruh metodologi, sistem riset, dan SOP penulisan konten di **Ayo SEO** berpatokan langsung pada dokumentasi resmi mesin pencari nomor satu di dunia: **[Google Search Central](https://developers.google.com/search)** (dahulu dikenal sebagai *Google Webmasters*).
+
+Ayo SEO mengadopsi 4 pilar dokumentasi resmi Google Search Central sebagai fondasi tanpa kompromi:
+
+1. **[Google Search Essentials (Webmaster Guidelines)](https://developers.google.com/search/docs/essentials):**
+   - Kepatuhan teknis agar konten di-*crawl* dan diindeks secara bersih tanpa teknik manipulasi (*black-hat SEO*, *doorway pages*, atau *scaled content abuse*).
+2. **[Creating Helpful, Reliable, People-First Content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content):**
+   - Menghasilkan artikel yang memecahkan masalah nyata pembaca, kaya *Information Gain*, dan bukan sekadar merangkum artikel lain di internet.
+3. **[Pedoman E-E-A-T & Google Search Quality Rater Guidelines (QRG)](https://developers.google.com/search/updates):**
+   - Menyelaraskan konten dengan 4 metrik evaluasi rater manusia Google: *Experience* (pengalaman langsung), *Expertise* (keahlian mendalam), *Authoritativeness* (otoritas topik), dan *Trustworthiness* (kepercayaan & akurasi fakta).
+4. **[Dokumentasi Teknis Penataan Halaman & Structured Data](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data):**
+   - Standar URL slug ringkas, meta tags Title Case, teks jangkar (*anchor text*) deskriptif, hingga implementasi data terstruktur (`FAQPage`, `Article`, `VideoObject`).
 
 ---
 
@@ -302,7 +320,7 @@ Pasang plugin Ayo SEO ke Antigravity lokalmu:
 
 ```bash
 # 1. Clone repositori Ayo SEO
-git clone https://github.com/andrean-lp/ayo-seo.git
+git clone https://github.com/ndrean-id/ayo-seo.git
 
 # 2. Salin ke folder plugin Antigravity
 cp -r ayo-seo ~/.gemini/config/plugins/ayo-seo
@@ -327,6 +345,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.22.0 (2026-11-24):** Penambahan penegasan **Google Search Central** (`https://developers.google.com/search`) sebagai sumber rujukan dan fondasi standar utama (Google Search Essentials, Helpful Content System, Quality Rater Guidelines E-E-A-T, dan Structured Data), serta pembaruan repositori git resmi ke `ndrean-id/ayo-seo`.
 - **v1.21.0 (2026-10-12):** Penambahan panduan *Lanskap CMS Global & Alokasi Fokus Platform (Data-Driven Strategy)*. Merangkum data riset resmi W3Techs mengenai dominasi WordPress (62.5% CMS share) dan Shopify, serta formula alokasi energi 80/20 bagi praktisi Technical SEO untuk membidik pasar global.
 - **v1.20.0 (2026-10-11):** Penambahan *Playbook Menjaga Peringkat Agar Tidak Turun (Rank Retention Strategy)*. Panduan pertahanan posisi #1 Google mencakup strategi Content Refresh 80/20, eliminasi sinyal pogo-sticking, disiplin anti-kanibalisasi kata kunci, perawatan jaringan internal link, serta tabel diagnosa dini performa Google Search Console.
 - **v1.19.0 (2026-10-11):** Penambahan panduan *Aktivitas Penunjang Kualitas Konten (Downtime Value-Adds)*. Panduan mendalam tentang dampak masif embed video YouTube (dwell time & multi-modal E-E-A-T), injeksi tangkapan layar asli, perajutan internal link, audit GSC, dan strategi penyegaran konten (*content refresh*).
