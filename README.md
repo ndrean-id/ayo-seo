@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.39.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.40.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -381,6 +381,30 @@ Empat pilar utama Technical SEO yang wajib dikuasai mencakup:
 4. **Robots.txt (Direktori Kendali Perayapan & Alokasi Crawl Budget):**
    - *Fungsi:* File teks di direktori root yang memberi tahu mesin pencari halaman atau bagian mana dari situs web yang boleh dan tidak boleh dirayapi (*di-crawling*).
    - *Standar Industri:* Mengarahkan bot crawler untuk fokus merayapi konten pilar dan cluster bernilai tinggi, sekaligus memblokir bot dari area sensitif seperti dasbor administratif (`/wp-admin/`), script privat, atau URL pencarian internal (`/?s=`), sehingga anggaran perayapan (*Crawl Budget*) teralokasi secara maksimal.
+
+#### B. Komponen 2: On-Page SEO (Relevansi Semantik, Kualitas Konten, & Pengalaman Pengguna)
+
+Pada modul silabus praktikum **CH01-04**, **On-Page SEO** didefinisikan sebagai seluruh tindakan pengoptimalan di dalam situs web untuk memaksimalkan relevansi konten:
+
+> *"On-Page SEO melibatkan semua tindakan yang dilakukan di dalam situs web untuk meningkatkan peringkat di mesin pencari."*
+
+Lima pilar utama On-Page SEO yang wajib dikuasai mencakup:
+
+1. **Konten Berkualitas (Quality Content & E-E-A-T):**
+   - *Fungsi:* Konten harus informatif, relevan, mendalam, dan ditulis dengan baik dengan penempatan kata kunci secara natural (*natural keyword integration* tanpa *keyword stuffing*).
+   - *Standar Industri:* Sesuai panduan *Google Helpful Content System*, konten wajib menyajikan *Experience* (bukti nyata), *Expertise* (analisis mendalam), dan *Information Gain* (data atau sudut pandang orisinal yang tidak ada di artikel kompetitor) untuk memuaskan *Search Intent* pencari secara tuntas.
+2. **Tag Judul (Title Tags / H1 & Meta Title):**
+   - *Fungsi:* Tag judul harus singkat, memikat, dan menempatkan kata kunci utama di depan (*front-loading target keyword*).
+   - *Standar Industri:* Panjang ideal 50-60 karakter, berformat *Title Case* (huruf kapital di awal kata), dan dirancang memantik rasa penasaran (*Curiosity Gap*) yang etis guna mendongkrak rasio klik (*CTR*) di SERP tanpa jebakan *clickbait* palsu.
+3. **Meta Deskripsi (Meta Descriptions):**
+   - *Fungsi:* Deskripsi singkat yang muncul di bawah judul pada halaman hasil pencarian (SERP) dan memberikan gambaran akurat tentang isi halaman.
+   - *Standar Industri:* Panjang ideal 130-155 karakter. Berfungsi sebagai naskah penawaran mini (*pitch*) yang persuasif, menjawab langsung keresahan pencari, dan diakhiri kalimat ajakan bertindak (*Call to Action*).
+4. **URL yang SEO-Friendly (Clean & Descriptive URL Structure):**
+   - *Fungsi:* URL harus sederhana, ringkas, mudah dibaca manusia (*human-readable*), dan secara transparan mencerminkan konten halaman.
+   - *Standar Industri:* Menggunakan huruf kecil semua (*lowercase*), memisahkan antarkata dengan tanda hubung strip biasa (`-`), menghindari *stop words* berlebihan, dan bebas dari parameter acak (`/?p=123`).
+5. **Internal Linking (Jaringan Tautan Internal Siloing):**
+   - *Fungsi:* Tautan ke halaman lain di dalam situs web untuk membantu mesin pencari memahami struktur arsitektur situs dan meningkatkan navigasi pengguna.
+   - *Standar Industri:* Menggunakan *anchor text* deskriptif dan kontekstual untuk menghubungkan hierarki Artikel Pilar, Cluster Pendukung, dan Glosarium menjadi "sarang laba-laba" yang kokoh. Internal linking menyalurkan *Link Equity* (PageRank internal), mencegah *orphan content*, serta memperpanjang waktu tinggal pengguna (*dwell time*).
 
 ---
 
@@ -901,6 +925,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.40.0 (2026-11-24):** Penambahan pendalaman kurikulum **On-Page SEO (Relevansi Semantik, Kualitas Konten, & Pengalaman Pengguna)** mencakup 5 pilar inti: Konten Berkualitas E-E-A-T & Information Gain, Tag Judul Title Case pemikat CTR, Meta Deskripsi persuasif, URL SEO-Friendly bersih, serta rajutan Internal Linking sarang laba-laba.
 - **v1.39.0 (2026-11-24):** Penambahan pendalaman kurikulum **Technical SEO (Fondasi Mesin, Perayapan, & Keterindeksan)** mencakup 4 pilar inti: Kecepatan Situs & Core Web Vitals, Mobile-Friendliness & Mobile-First Indexing, Peta Struktur Sitemap XML, serta direktori kendali perayapan Robots.txt.
 - **v1.38.0 (2026-11-24):** Integrasi **Glosarium Fundamental: 11 Istilah Inti SEO & Siklus Lengkap Mesin Pencari** (Part 2) mencakup Pengindeksan (Indexing), CTR, Anchor Text semantik, protokol Robots.txt, Canonical URL preferensial, enkripsi HTTPS, serta diagram ASCII lengkap alur pencarian dari bot permission hingga konversi bisnis.
 - **v1.37.0 (2026-11-24):** Penambahan bab kurikulum **Glosarium Fundamental: 5 Istilah Inti SEO & Mekanika Mesin Pencari** mencakup Kata Kunci, SERP, Backlinks sebagai vote of confidence, Sitemap XML, dan mekanisme Crawling bot mesin pencari.
