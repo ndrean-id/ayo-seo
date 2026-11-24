@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.24.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.25.0-blue.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Antigravity-orange.svg)]()
 [![SEO Standard](https://img.shields.io/badge/Google-E--E--A--T%20%26%20Helpful%20Content-brightgreen.svg)]()
 [![Optimization](https://img.shields.io/badge/Search-GEO%20%7C%20AEO%20Ready-purple.svg)]()
@@ -17,7 +17,7 @@
 | Parameter | Spesifikasi & Arsitektur |
 | :--- | :--- |
 | **Kategori** | AI Agent Plugin / SEO Strategy, Content Generation & Visual Repurposing Engine |
-| **Sumber Rujukan Utama** | **[Google Search Central](https://developers.google.com/search)**, **[Moz Learn SEO](https://moz.com/learn/seo)**, **[Search Engine Journal](https://www.searchenginejournal.com/)**, & **[Backlinko](https://backlinko.com/)** |
+| **Sumber Rujukan Utama** | **[Google Search Central](https://developers.google.com/search)**, **[Moz Learn SEO](https://moz.com/learn/seo)**, **[Search Engine Journal](https://www.searchenginejournal.com/)**, **[Backlinko](https://backlinko.com/)**, & **[Semrush Blog](https://www.semrush.com/blog/)** |
 | **Platform Host** | Google Antigravity IDE & Antigravity CLI |
 | **Model LLM Optimal** | Gemini 3.8 Flash High (Pilar, Cluster, Glossary, Repurpose) |
 | **Standar Kualitas** | Google Helpful Content System, Quality Rater Guidelines (QRG), E-E-A-T |
@@ -49,9 +49,9 @@ Di era *Google Helpful Content System* dan menjamurnya *AI Search Engines*, memp
 
 ---
 
-## Sumber Rujukan Utama: Google Search Central, Moz, SEJ, dan Backlinko
+## Sumber Rujukan Utama: 5 Pilar Otoritas SEO Dunia
 
-Seluruh metodologi, sistem riset, dan SOP penulisan konten di **Ayo SEO** berpatokan langsung pada empat pilar otoritas SEO tertinggi di dunia: dokumentasi resmi dari mesin pencari Google (**[Google Search Central](https://developers.google.com/search)**), kurikulum edukasi SEO global (**[Moz Learn SEO](https://moz.com/learn/seo)**), media intelijen algoritma industri (**[Search Engine Journal](https://www.searchenginejournal.com/)**), serta masterclass eksekusi praktis dan link building (**[Backlinko](https://backlinko.com/)**).
+Seluruh metodologi, sistem riset, dan SOP penulisan konten di **Ayo SEO** berpatokan langsung pada lima pilar otoritas SEO tertinggi di dunia: dokumentasi resmi dari mesin pencari Google (**[Google Search Central](https://developers.google.com/search)**), kurikulum edukasi SEO global (**[Moz Learn SEO](https://moz.com/learn/seo)**), media intelijen algoritma industri (**[Search Engine Journal](https://www.searchenginejournal.com/)**), masterclass eksekusi praktis dan link building (**[Backlinko](https://backlinko.com/)**), serta analitik big data marketing dan intelijen kompetitor (**[Semrush Blog](https://www.semrush.com/blog/)**).
 
 ### 1. Fondasi Resmi Mesin Pencari (Google Search Central)
 Ayo SEO mengadopsi 4 pilar dokumentasi resmi Google Search Central sebagai fondasi tanpa kompromi:
@@ -79,6 +79,13 @@ Didirikan oleh Brian Dean dan diakui secara global sebagai standar emas eksekusi
 - **Link Building Berbasis Nilai (Value-First Outreach):** Strategi mendapatkan backlink editorial berkualitas tinggi secara organik melalui *Resource Page Link Building*, riset data industri orisinal, dan kemitraan konten tanpa teknik spam.
 - **Audit On-Page Presisi Tinggi & UX Signals:** Optimasi rasio klik tayang (*Click-Through Rate Booster*), teknik penulisan pengantar anti-pogo-sticking (formula APP: *Agree, Promise, Preview*), dan penataan layout yang memaksimalkan waktu tinggal (*Dwell Time*).
 - **Riset Empiris SERP Skala Besar:** Memanfaatkan studi analisis jutaan halaman pencarian Google dari tim riset Backlinko untuk memahami korelasi nyata antara panjang konten, kecepatan situs, dan performa ranking.
+
+### 5. Big Data Marketing, Audit Kompetitor, & Technical Intelligence (Semrush Blog)
+Sebagai salah satu platform analitik search marketing dan visibilitas online enterprise terbesar di dunia, **[Semrush Blog](https://www.semrush.com/blog/)** menjadi rujukan Ayo SEO untuk:
+- **Keyword Intent & Difficulty Mapping:** Klasifikasi intensi pencarian presisi (*Informational, Commercial, Transactional, Navigational*) dan kalibrasi metrik *Keyword Difficulty* (KD%).
+- **Competitive Gap Analysis (Audit Celah Kompetitor):** Metodologi melacak celah kata kunci (*missing & weak keywords*) yang dikuasai kompetitor untuk merebut pangsa trafik organik.
+- **Standar Technical SEO & Site Health:** Parameter audit arsitektur situs tingkat lanjut (*Core Web Vitals*, *crawl budget optimization*, indeksabilitas, dan penataan kanonikal).
+- **Studi Tren SERP Berbasis Miliaran Data:** Wawasan berbasis basis data masif global untuk memahami pergeseran algoritma Google, dampak fitur AI Search, dan tren perilaku pencari.
 
 ---
 
@@ -361,6 +368,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.25.0 (2026-11-24):** Integrasi **Semrush Blog** (https://www.semrush.com/blog/) sebagai pilar ke-5 rujukan Big Data kata kunci, Content Gap Analysis kompetitor, dan audit teknis kesehatan arsitektur website.
 - **v1.24.0 (2026-11-24):** Integrasi **Search Engine Journal (SEJ)** (https://www.searchenginejournal.com/) dan **Backlinko** (https://backlinko.com/) sebagai pilar rujukan intelijen algoritma real-time, metodologi Skyscraper Technique (Konten 10x), strategi link building berbasis nilai, serta pembaruan rekomendasi model LLM ke **Gemini 3.8 Flash (High)**.
 - **v1.23.0 (2026-11-24):** Integrasi **Moz Academy / Learn SEO** (`https://moz.com/learn/seo`) sebagai standar rujukan edukasi dan strategi industri global (Topical Authority, Link Equity, Search Intent Mapping, dan On-Page Readability) mendampingi fondasi resmi Google Search Central.
 - **v1.22.0 (2026-11-24):** Penambahan penegasan **Google Search Central** (`https://developers.google.com/search`) sebagai sumber rujukan dan fondasi standar utama (Google Search Essentials, Helpful Content System, Quality Rater Guidelines E-E-A-T, dan Structured Data), serta pembaruan repositori git resmi ke `ndrean-id/ayo-seo`.
