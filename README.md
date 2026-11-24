@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.45.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.46.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -363,6 +363,28 @@ Pada materi lanjutan modul **"Perayapan (Crawling)"**, dibedah secara spesifik m
    - *Standar Praktisi:* Google memiliki keterbatasan sumber daya komputasi server, sehingga mereka menerapkan sistem kuota yang disebut **Crawl Budget**. Dua faktor penentu frekuensi kunjungan Googlebot ke websitemu adalah:
      - **Frekuensi Pembaruan (Freshness & Update Frequency):** Website berita atau blog aktif yang konsisten menerbitkan dan menyegarkan konten (*Content Refresh 80/20*) akan dikunjungi Googlebot setiap beberapa menit atau jam sekali.
      - **Otoritas Domain (Domain Authority & Backlink Popularity):** Semakin banyak backlink otoritatif yang menunjuk ke situsmu, semakin tinggi nilai kepercayaan (*Crawl Demand*) yang diberikan Googlebot, sehingga artikel baru yang kamu terbitkan bisa di-crawl dan diindeks dalam hitungan detik.
+
+#### F. Pendalaman Tahap 2: Pengindeksan (Indexing, Struktur Data Indeks, & Eliminasi Duplikasi)
+
+Pada materi lanjutan modul **"Pengindeksan (Indexing)"**, dibedah secara komprehensif apa yang terjadi setelah bot berhasil mengunduh konten dari web:
+
+1. **Proses Pengindeksan (The Indexing Pipeline):**
+   - *Definisi Resmi Modul:*
+     > *"Data yang dikumpulkan oleh crawler disimpan dan diatur dalam database besar yang disebut indeks. Indeks ini mencakup informasi tentang konten halaman, tag HTML, metadata, kata kunci, dan lainnya."*
+   - *Standar Praktisi:* Pengindeksan adalah proses di mana Googlebot menganalisis teks, media, dan struktur kode dari halaman yang telah dirayapi. Google membedah elemen-elemen penting: tag Title, Heading hierarkis (H1-H3), atribut kata kunci semantik, teks alternatif gambar (`alt text`), data terstruktur (*Schema JSON-LD*), dan sinyal kepatuhan kanonikal. Hanya halaman yang lolos dari penilaian kelayakan kualitas dan aksesibilitas yang akan disimpan ke dalam database raksasa Google (*Google Index*).
+
+2. **Struktur Data Indeks (The Inverted Index Architecture):**
+   - *Definisi Resmi Modul:*
+     > *"Mesin pencari mengorganisasi data sedemikian rupa sehingga dapat diakses dan dicari dengan cepat. Struktur ini memungkinkan mesin pencari untuk mengidentifikasi konten yang relevan dengan cepat."*
+   - *Standar Praktisi:* Google tidak menelusuri miliaran website dari nol setiap kali pengguna mengetikkan kata kunci di kolom pencarian. Sebagai gantinya, Google menggunakan struktur data khusus yang dikenal sebagai **Inverted Index (Indeks Terbalik)**, mirip indeks di halaman belakang buku tebal. Mesin pencari memetakan setiap kata dan entitas semantik ke daftar seluruh halaman web yang memuat kata tersebut beserta bobot relevansinya. Berkat arsitektur indeks terbalik ini, Google mampu memindai miliaran dokumen dan mengembalikan hasil pencarian paling relevan dalam waktu **sub-detik (0.2 hingga 0.4 detik)**.
+
+3. **Penghapusan Duplikasi (Deduplication & The Canonicalization Filter):**
+   - *Definisi Resmi Modul:*
+     > *"Mesin pencari juga mengidentifikasi dan menghapus konten duplikat untuk memastikan bahwa hasil pencari[an tidak] berisi halaman yang identik atau sangat mirip."*
+   - *Standar Praktisi:* Google sangat membenci pemborosan ruang database dan penurunan pengalaman pengguna akibat hasil pencarian yang menampilkan halaman kembar. Pada tahap pengindeksan, Google menjalankan filter deduplikasi (*Deduplication Engine*):
+     - Jika ditemukan beberapa URL dengan konten yang sama persis (*exact duplicate*) atau sangat mirip (*near-duplicate*), Google akan mengelompokkannya ke dalam satu klaster duplikat.
+     - Google kemudian memilih **satu URL utama sebagai Halaman Kanonikal (Canonical Page)** berdasarkan sinyal tag `rel="canonical"`, sitemap XML, konsistensi internal link, dan protokol HTTPS.
+     - URL duplikat lainnya akan disaring keluar (*filtered out*) dan tidak ditampilkan di SERP. Inilah alasan mengapa disiplin tag kanonikal, struktur siloing yang rapi, dan keunikan konten (*Information Gain*) di Ayo SEO menjadi kunci mutlak agar artikel tidak tereliminasi di tahap pengindeksan.
 
 ---
 
@@ -1123,6 +1145,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.46.0 (2026-11-24):** Penambahan pendalaman kurikulum **Tahap 2: Pengindeksan (Indexing Pipeline, Inverted Index Architecture, & Deduplikasi)** mencakup dekonstruksi analisis HTML/metadata/Schema oleh Google, cara kerja struktur Inverted Index untuk pencarian sub-detik, serta mekanisme eliminasi konten duplikat via filter kanonikalisasi.
 - **v1.45.0 (2026-11-24):** Integrasi kurikulum **3 Tahapan Utama Mesin Pencari & Pendalaman Perayapan (Crawling)** mencakup dekonstruksi siklus Google (Crawling, Indexing, Serving Search Results), pembedahan status GSC *"Crawled - currently not indexed"*, mekanisme kerja Crawler Bot link-following, 3 sumber data perayapan (Web Links, XML Sitemap, Konten Dinamis/IndexNow), serta alokasi Crawl Budget berbasis frekuensi pembaruan dan otoritas domain.
 - **v1.44.0 (2026-11-24):** Penambahan bab kurikulum **Metrik Utama Perlu Dipantau dalam SEO (Evaluasi Kinerja & ROI Bisnis)** mencakup 5 metrik vital: Peringkat Kata Kunci (Keywords Ranking SERP), Lalu Lintas Organik (Organic Traffic), Profil Backlinks eksternal, Kecepatan Halaman & Core Web Vitals, serta Konversi Bisnis nyata (Leads & Sales), dilengkapi diagram hierarki nilai (The SEO Value Funnel) dan tabel panduan tindakan koreksi.
 - **v1.43.0 (2026-11-24):** Integrasi kurikulum komprehensif **List Delapan SEO Tools Utama (CH01-05 Bagian 2)** mencakup GTmetrix (analisis kecepatan & waterfall), Google PageSpeed Insights (audit Core Web Vitals & CrUX), AnswerThePublic (riset pertanyaan 5W1H & intent GEO/AEO), serta Bing Webmaster Tools (multi-engine dominance & Copilot readiness), lengkap dengan pembaruan matriks perbandingan 8 tools utama.
