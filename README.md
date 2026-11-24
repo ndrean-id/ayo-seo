@@ -1,17 +1,17 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.33.0-blue.svg)]()
-[![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://andrean.web.id/)
+[![Version](https://img.shields.io/badge/Version-1.33.1-blue.svg)]()
+[![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
-[![LinkedIn: andrean-lp](https://img.shields.io/badge/LinkedIn-andrean--lp-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/andrean-lp)
+[![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
 [![Platform](https://img.shields.io/badge/Platform-Antigravity-orange.svg)]()
 [![SEO Standard](https://img.shields.io/badge/Google-E--E--A--T%20%26%20Helpful%20Content-brightgreen.svg)]()
 [![Optimization](https://img.shields.io/badge/Search-GEO%20%7C%20AEO%20Ready-purple.svg)]()
 [![Visual Standard](https://img.shields.io/badge/Visual-Syar'i%20Compliant%20(Faceless)-emerald.svg)]()
 
 > 💡 **TL;DR / Ringkasan Cepat:**  
-> **Ayo SEO** adalah open-source AI Agent plugin untuk **Google Antigravity** yang bertindak sebagai *Second Brain* (Otak SEO) sekaligus *Living SEO Library* (Perpustakaan Pengetahuan Hidup) milik **[Andre Wahyu Hermawan](https://andrean.web.id/)**. Didesain khusus untuk memproduksi artikel berstandar **Google E-E-A-T**, membangun hierarki **Topical Authority** (Pilar, Cluster, Glossary), serta mendistribusikan konten (*Repurposing*) ke media sosial dan infografis visual. Teroptimasi penuh untuk konversi bisnis nyata (Leads & Conversion Organik) pada SERP tradisional maupun mesin pencari generatif (**GEO & AEO** seperti Google AI Overviews, Perplexity, dan ChatGPT Search).
+> **Ayo SEO** adalah open-source AI Agent plugin untuk **Google Antigravity** yang bertindak sebagai *Second Brain* (Otak SEO) sekaligus *Living SEO Library* (Perpustakaan Pengetahuan Hidup) milik **Andre Wahyu Hermawan**. Didesain khusus untuk memproduksi artikel berstandar **Google E-E-A-T**, membangun hierarki **Topical Authority** (Pilar, Cluster, Glossary), serta mendistribusikan konten (*Repurposing*) ke media sosial dan infografis visual. Teroptimasi penuh untuk konversi bisnis nyata (Leads & Conversion Organik) pada SERP tradisional maupun mesin pencari generatif (**GEO & AEO** seperti Google AI Overviews, Perplexity, dan ChatGPT Search).
 
 > 🧠 **Filosofi Proyek: The Living Library & Open Second Brain**  
 > Di era pencarian modern, ilmu SEO bermutasi sangat cepat. Menyimpan wawasan di catatan pribadi yang terisolasi sering berujung pada kelusuhan strategi. Repositori ini dibangun secara terbuka (*public open-source*) sebagai **Living Library & Second Brain**: wadah hidup di mana setiap prinsip algoritma resmi, teknik data praktikum, dan eksperimen lapangan dikodifikasikan, diuji, dan diperbarui secara berkelanjutan. Siapa pun yang menemukan repositori ini dapat menggunakannya sebagai cetak biru optimasi berstandar industri kelas dunia.
@@ -26,8 +26,8 @@ Repositori dan AI Agent ini dirancang serta dikurasi oleh:
 | :--- | :--- |
 | **Author / Inisiator** | **Andre Wahyu Hermawan** |
 | **Spesialisasi Utama** | **WordPress Technical SEO Specialist & AI Search Strategist (GEO/AEO)** |
-| **Website Resmi** | **[andrean.web.id](https://andrean.web.id/)** *(Astro + Tailwind CSS + Cloudflare Pages, Skor Web 100/100)* |
-| **LinkedIn** | **[linkedin.com/in/andrean-lp](https://www.linkedin.com/in/andrean-lp)** |
+| **Website Resmi** | *(Dalam proses pembaruan / Coming Soon)* |
+| **LinkedIn** | **[linkedin.com/in/ndrean-id](https://www.linkedin.com/in/ndrean-id/)** |
 | **GitHub Portfolio** | **[@ndrean-id](https://github.com/ndrean-id)** |
 | **YouTube Channel** | **[@andrean_lp](https://www.youtube.com/@andrean_lp)** |
 | **Instagram** | **[@andrean.lp](https://www.instagram.com/andrean.lp/)** |
@@ -678,6 +678,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.33.1 (2026-11-24):** Pembaruan profil dan tautan profesional: pembaruan URL LinkedIn resmi ke https://www.linkedin.com/in/ndrean-id/ serta penyesuaian status tautan website resmi (dalam persiapan domain baru).
 - **v1.33.0 (2026-11-24):** Penambahan rekonseptualisasi **Pengertian SEO Modern: Dari Mesin Pencari Konvensional Menuju AI Search Engines (Perplexity.ai)** mencakup cakupan multi-engine, esensi organik trafik untuk leads & konversi, spektrum ganda konten vs teknis, serta tabel komparasi SEO Klasik 10 Blue Links vs Era GEO/AEO.
 - **v1.32.0 (2026-11-24):** Penegasan filosofi **The Living SEO Library & Open Second Brain**, showcase profil arsitek proyek **Andre Wahyu Hermawan (WordPress Technical SEO Specialist & AI Search Strategist)**, integrasi badge reputasi digital, manifesto transparansi E-E-A-T, serta kanal kolaborasi & konsultasi resmi.
 - **v1.31.0 (2026-11-24):** Penambahan arsitektur **Tools dan Peralatan: Ekosistem Data-Driven SEO Stack (CH01-03 Praktikum)** meliputi GA4 event tracking, GSC technical checklist, Screaming Frog & Semrush, Advanced Google Sheets (IMPORTXML, Regex, API connector), Keyword Clustering Google Keyword Planner, dan dasbor visualisasi Looker Studio.
@@ -714,8 +715,8 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 Tertarik berdiskusi seputar arsitektur SEO modern, konsultasi optimasi web berkecepatan tinggi, atau penjajakan proyek kolaborasi?
 
-- 🌐 **Website Resmi & Portofolio:** [andrean.web.id](https://andrean.web.id/)
-- 💼 **LinkedIn:** [Andre Wahyu Hermawan](https://www.linkedin.com/in/andrean-lp)
+- 🌐 **Website Resmi & Portofolio:** *(Segera hadir / Dalam proses pembaruan)*
+- 💼 **LinkedIn:** [Andre Wahyu Hermawan](https://www.linkedin.com/in/ndrean-id/)
 - 🐙 **GitHub:** [@ndrean-id](https://github.com/ndrean-id)
 - 📺 **YouTube:** [@andrean_lp](https://www.youtube.com/@andrean_lp)
 - 📸 **Instagram:** [@andrean.lp](https://www.instagram.com/andrean.lp/)

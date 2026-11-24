@@ -14,8 +14,8 @@
 - **Belajar dari**: Didik Arwinsyah (https://didikarwinsyah.com/), Indri Ariadna (https://indriariadna.com/), Ilman Akbar (https://www.ilmanakbar.com/), Habibah Auni (https://habibahauni.com/), dan Ryan Kristo Muljono (https://www.ryankristo.id/)
 
 ## Aset Digital & Media Sosial Resmi (Standar URL Bersih)
-- **Website**: https://andrean.web.id/ (Root kanonikal dengan slash, Astro 7 + Tailwind CSS 4 + Cloudflare Pages, bilingual ID/EN)
-- **LinkedIn**: https://www.linkedin.com/in/andrean-lp (Standar resmi: tanpa garis miring)
+- **Website**: *(Dalam proses pembaruan domain/website baru)*
+- **LinkedIn**: https://www.linkedin.com/in/ndrean-id/ (Standar resmi)
   - *Headline Aktif*: `WordPress Technical SEO Specialist — Helping Businesses Rank on Google & Get Recommended by AI Search Engines`
 - **Instagram**: https://www.instagram.com/andrean.lp/ (Standar resmi: dengan garis miring)
   - *Nama Akun*: `Andre Wahyu Hermawan | AI Search Strategist`
@@ -58,7 +58,7 @@
 - **Baris 1 (Who):** Bantu bisnis & kreator bangun aset digital jangka panjang
 - **Baris 2 (What):** Bikin website cepat, ramah Google & direkomendasikan AI (ChatGPT/Perplexity)
 - **Baris 3 (Why):** Astro JS & WordPress Specialist | Skor Web 100/100
-- **Baris 4 (CTA):** 👇 Cek Audit Website Gratis & Portofolio: andrean.web.id
+- **Baris 4 (CTA):** 👇 Cek Audit Website Gratis & Portofolio: link di bio
 
 ### 6. Alur Produksi Konten (Content System)
 Setiap memproduksi konten/ide, urutan berpikir WAJIB:
@@ -73,7 +73,7 @@ Positioning → Core Message → Content Pillar → Format Konten → Hook
 ## Cetak Biru Menuju Time Freedom (Naval Leverage Blueprint)
 
 ### 1. Jalur Transisi 5 Tahap (Dari Labor Menuju Code & Media)
-1. **Tahap 1 (Personal Branding & Authority):** Bangun reputasi di YouTube (@andrean_lp), Blog (andrean.web.id), dan LinkedIn sebagai pembuktian E-E-A-T.
+1. **Tahap 1 (Personal Branding & Authority):** Bangun reputasi di YouTube (@andrean_lp), Blog Pribadi, dan LinkedIn sebagai pembuktian E-E-A-T.
 2. **Tahap 2 (High-Ticket Technical Services):** Ambil jasa audit & perbaikan teknis klien global (Upwork) untuk mengumpulkan cashflow awal dan memetakan masalah teknis paling umum yang dialami pemilik web.
 3. **Tahap 3 (Digital Assets / Productized Solutions):** Kemas solusi berulang menjadi produk siap pakai (template Astro SEO, panduan/checklist audit, schema boilerplates).
 4. **Tahap 4 (Code / Micro-SaaS):** Bangun aplikasi web / tools otomatis berbasis langganan (recurring income) yang memecahkan masalah pencarian modern tanpa keterlibatan waktu harian.
