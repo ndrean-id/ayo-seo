@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.40.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.41.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -405,6 +405,24 @@ Lima pilar utama On-Page SEO yang wajib dikuasai mencakup:
 5. **Internal Linking (Jaringan Tautan Internal Siloing):**
    - *Fungsi:* Tautan ke halaman lain di dalam situs web untuk membantu mesin pencari memahami struktur arsitektur situs dan meningkatkan navigasi pengguna.
    - *Standar Industri:* Menggunakan *anchor text* deskriptif dan kontekstual untuk menghubungkan hierarki Artikel Pilar, Cluster Pendukung, dan Glosarium menjadi "sarang laba-laba" yang kokoh. Internal linking menyalurkan *Link Equity* (PageRank internal), mencegah *orphan content*, serta memperpanjang waktu tinggal pengguna (*dwell time*).
+
+#### C. Komponen 3: Off-Page SEO (Otoritas Eksternal, Reputasi, & Pemasaran Konten)
+
+Pada modul silabus praktikum **CH01-04**, **Off-Page SEO** didefinisikan sebagai seluruh rangkaian upaya eksternal untuk membangun reputasi dan pengakuan digital di luar situs web:
+
+> *"Off-Page SEO melibatkan tindakan di luar situs web untuk meningkatkan visibilitas dan otoritas situs web."*
+
+Tiga pilar utama Off-Page SEO yang wajib dikuasai mencakup:
+
+1. **Backlinks (Tautan Masuk & Suara Kepercayaan / "Vote of Confidence"):**
+   - *Fungsi:* Tautan dari situs web lain yang mengarah ke situs web Anda.
+   - *Standar Industri:* Backlinks berkualitas tinggi sangat penting karena berfungsi sebagai suara kepercayaan (*vote of confidence*) paling berpengaruh yang meningkatkan otoritas domain (*Domain Authority / DR*) dan mendongkrak peringkat di SERP. Google memprioritaskan **relevansi topik dan sifat editorial alami**; satu tautan dofollow dari situs industri terkemuka bernilai jauh lebih tinggi dibanding ratusan tautan spam berulang.
+2. **Sosial Media (Sinyal Sosial & Distribusi Multikanal):**
+   - *Fungsi:* Berbagi konten di platform media sosial dapat membantu meningkatkan visibilitas, jangkauan audiens, dan mendatangkan lalu lintas (*traffic*).
+   - *Standar Industri:* Google Search Console kini secara resmi melacak performa profil dan konten media sosial (LinkedIn, YouTube, Instagram, X, Pinterest). Distribusi konten secara konsisten menciptakan sebutan merek (*Brand Mentions*), memperkuat *Personal Branding*, serta memperbesar peluang artikel disitasi atau ditautkan oleh blogger dan jurnalis secara organik (*Social SEO Loop*).
+3. **Guest Blogging (Artikel Tamu Otoritatif & Digital PR):**
+   - *Fungsi:* Menulis artikel berkualitas tinggi untuk situs web atau media lain dengan menyertakan tautan kontekstual kembali ke situs web Anda.
+   - *Standar Industri:* Strategi kemitraan yang sangat ampuh untuk membangun otoritas keahlian (*Authoritativeness*), memperluas jangkauan ke audiens yang sudah mapan (*established audience*), dan mendatangkan aliran trafik rujukan bertarget tinggi (*referral traffic*) yang siap konversi.
 
 ---
 
@@ -925,6 +943,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.41.0 (2026-11-24):** Penambahan pendalaman kurikulum **Off-Page SEO (Otoritas Eksternal, Reputasi, & Pemasaran Konten)** mencakup 3 pilar inti: Backlinks berkualitas tinggi sebagai vote of confidence, sinyal distribusi Sosial Media multikanal, serta kemitraan otoritatif Guest Blogging & Digital PR.
 - **v1.40.0 (2026-11-24):** Penambahan pendalaman kurikulum **On-Page SEO (Relevansi Semantik, Kualitas Konten, & Pengalaman Pengguna)** mencakup 5 pilar inti: Konten Berkualitas E-E-A-T & Information Gain, Tag Judul Title Case pemikat CTR, Meta Deskripsi persuasif, URL SEO-Friendly bersih, serta rajutan Internal Linking sarang laba-laba.
 - **v1.39.0 (2026-11-24):** Penambahan pendalaman kurikulum **Technical SEO (Fondasi Mesin, Perayapan, & Keterindeksan)** mencakup 4 pilar inti: Kecepatan Situs & Core Web Vitals, Mobile-Friendliness & Mobile-First Indexing, Peta Struktur Sitemap XML, serta direktori kendali perayapan Robots.txt.
 - **v1.38.0 (2026-11-24):** Integrasi **Glosarium Fundamental: 11 Istilah Inti SEO & Siklus Lengkap Mesin Pencari** (Part 2) mencakup Pengindeksan (Indexing), CTR, Anchor Text semantik, protokol Robots.txt, Canonical URL preferensial, enkripsi HTTPS, serta diagram ASCII lengkap alur pencarian dari bot permission hingga konversi bisnis.
