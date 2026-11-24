@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.38.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.39.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -357,6 +357,31 @@ Tiga komponen utama SEO saling melengkapi dan tidak dapat dipisahkan:
 | **2. On-Page SEO** | **Relevansi & Nilai Konten:** Mengoptimasi konten di dalam halaman agar menjawab intensi pencari dan mudah dipahami mesin pencari AI. | Struktur H1-H3 logis, Meta Title Title Case, Key Takeaways (TL;DR), Skema FAQPage, serta internal linking sarang laba-laba. |
 | **3. Off-Page SEO** | **Otoritas & Reputasi:** Membangun kepercayaan eksternal bahwa halaman websitemu layak direkomendasikan. | Backlink editorial dofollow, Skyscraper Technique (Konten 10x), digital PR, brand mentions, dan Social SEO loop. |
 
+#### A. Komponen 1: Technical SEO (Fondasi Mesin, Perayapan, & Keterindeksan)
+
+Pada modul silabus praktikum **CH01-04**, **Technical SEO** didefinisikan secara presisi sebagai prasyarat mutlak keterbacaan situs oleh mesin:
+
+> *"Technical SEO mencakup semua aspek teknis dari situs web yang mempengaruhi kemampuan mesin pencari untuk merayapi dan mengindeks situs Anda."*
+
+Empat pilar utama Technical SEO yang wajib dikuasai mencakup:
+
+1. **Kecepatan Situs (Site Speed & Core Web Vitals):**
+   - *Fungsi:* Situs web yang memuat dengan cepat memberikan pengalaman pengguna yang jauh lebih baik dan mendapatkan prioritas peringkat lebih tinggi di algoritma Google.
+   - *Standar Industri:* Diukur melalui **Google Core Web Vitals (CWV)**:
+     - **LCP (Largest Contentful Paint):** Waktu muat elemen visual terbesar wajib < 2.5 detik.
+     - **INP (Interaction to Next Paint):** Responsivitas interaksi pengguna wajib < 200 milidetik.
+     - **CLS (Cumulative Layout Shift):** Stabilitas visual antarmuka saat memuat wajib < 0.1.
+   - *Praktik Terbaik:* Kompresi WebP via CDN, *code-splitting*, minifikasi CSS/JS, dan penggunaan arsitektur modern (*Astro JS / headless WordPress*) berkinerja tinggi.
+2. **Mobile-Friendliness (Mobile-First Indexing & Responsivitas Seluler):**
+   - *Fungsi:* Situs web harus sepenuhnya responsif dan dioptimalkan secara presisi untuk perangkat seluler (*mobile / smartphone*).
+   - *Standar Industri:* Google menerapkan kebijakan **Mobile-First Indexing secara penuh**. Googlebot menggunakan versi seluler sebuah website sebagai dasar utama perayapan, pemeringkatan, dan pemahaman konten. Desain wajib memiliki tata letak responsif, ukuran elemen sentuh (*tap target*) yang ramah jempol, serta nihil pergeseran horizontal (*zero horizontal scrolling*).
+3. **Sitemap XML (Peta Struktur & Direktori Penemuan Halaman):**
+   - *Fungsi:* Peta situs terstruktur yang membantu mesin pencari memahami hierarki arsitektur situs web Anda dan menemukan semua halaman penting secara efisien.
+   - *Standar Industri:* Memastikan bot tidak melewatkan artikel baru atau halaman yang minim tautan internal (*orphan pages*). Sitemap XML wajib didaftarkan di Google Search Console dan selalu terbarui secara otomatis setiap kali ada publikasi konten baru.
+4. **Robots.txt (Direktori Kendali Perayapan & Alokasi Crawl Budget):**
+   - *Fungsi:* File teks di direktori root yang memberi tahu mesin pencari halaman atau bagian mana dari situs web yang boleh dan tidak boleh dirayapi (*di-crawling*).
+   - *Standar Industri:* Mengarahkan bot crawler untuk fokus merayapi konten pilar dan cluster bernilai tinggi, sekaligus memblokir bot dari area sensitif seperti dasbor administratif (`/wp-admin/`), script privat, atau URL pencarian internal (`/?s=`), sehingga anggaran perayapan (*Crawl Budget*) teralokasi secara maksimal.
+
 ---
 
 ### 6. Mengapa Tiga Komponen Ini Wajib Bersinergi? (Prinsip Kursi Berkaki Tiga)
@@ -398,6 +423,9 @@ Fokus pada aspek teknis situs web untuk memastikan Googlebot dan bot mesin penca
 - **Kecepatan Halaman (Page Speed & Core Web Vitals):**
   - Pastikan metrik *Largest Contentful Paint (LCP)* berada di bawah 2.5 detik dengan mengompres aset gambar ke format WebP CDN dan meminifikasi skrip CSS/JS.
   - Jaga *Interaction to Next Paint (INP)* di bawah 200 milidetik dan *Cumulative Layout Shift (CLS)* di bawah 0.1 agar tata letak halaman stabil saat dimuat.
+- **Mobile-Friendliness & Mobile-First Indexing:**
+  - Pastikan tata letak 100% responsif di smartphone dengan konfigurasi meta viewport yang tepat (`width=device-width, initial-scale=1.0`).
+  - Uji halaman menggunakan Google Rich Results Test / Lighthouse Mobile untuk memastikan nol pergeseran tata letak (*zero layout overflow*) dan ukuran elemen sentuh (*tap target*) minimal 48x48 piksel.
 - **Struktur URL Bersih & Semantik (Clean URL Hierarchy):**
   - Gunakan URL slug yang ringkas, deskriptif, dan memuat kata kunci utama (contoh: `/panduan-seo-dasar/` alih-alih `/?p=1023&cat=9`).
   - Terapkan huruf kecil semua (*lowercase*), pisahkan kata dengan tanda strip biasa (`-`), dan hindari *stop words* yang berlebihan.
@@ -873,6 +901,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.39.0 (2026-11-24):** Penambahan pendalaman kurikulum **Technical SEO (Fondasi Mesin, Perayapan, & Keterindeksan)** mencakup 4 pilar inti: Kecepatan Situs & Core Web Vitals, Mobile-Friendliness & Mobile-First Indexing, Peta Struktur Sitemap XML, serta direktori kendali perayapan Robots.txt.
 - **v1.38.0 (2026-11-24):** Integrasi **Glosarium Fundamental: 11 Istilah Inti SEO & Siklus Lengkap Mesin Pencari** (Part 2) mencakup Pengindeksan (Indexing), CTR, Anchor Text semantik, protokol Robots.txt, Canonical URL preferensial, enkripsi HTTPS, serta diagram ASCII lengkap alur pencarian dari bot permission hingga konversi bisnis.
 - **v1.37.0 (2026-11-24):** Penambahan bab kurikulum **Glosarium Fundamental: 5 Istilah Inti SEO & Mekanika Mesin Pencari** mencakup Kata Kunci, SERP, Backlinks sebagai vote of confidence, Sitemap XML, dan mekanisme Crawling bot mesin pencari.
 - **v1.36.0 (2026-11-24):** Penambahan bab kurikulum **Trafik yang Lebih Bertarget: Kesenjangan Relevansi SEO vs SEM (Search Intent vs Bidding Power)** mencakup fenomena kebocoran anggaran iklan (*wasted ad spend*), efek pengunjung terkualifikasi (*pre-qualified traffic*), serta pemetaan 3 tahap intent pada hierarki konten Ayo SEO.
