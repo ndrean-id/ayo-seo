@@ -21,7 +21,7 @@
   - *Nama Akun*: `Andre Wahyu Hermawan | AI Search Strategist`
   - *Bio Aktif*: `Bantu websitemu direkomendasikan ChatGPT, Gemini & Claude`
 - **Pinterest**: https://www.pinterest.com/andrean_lp/ (Standar resmi: www dan dengan garis miring)
-- **YouTube**: https://www.youtube.com/@andrean_lp (Standar resmi: tanpa garis miring)
+- **YouTube**: https://www.youtube.com/@ndrean_id (Standar resmi: tanpa garis miring)
 - **GitHub**: https://github.com/ndrean-id (Standar resmi: tanpa garis miring)
 - **Tools/Fitur di Website**: SiloCraft (Topical Authority Generator), Audit Website Gratis, Glosarium, Blog
   - *Author Bio Aktif*: `Membantu pebisnis dan kreator punya website yang cepat dibuka, disukai Google, dan gampang dibaca oleh AI search engine seperti ChatGPT, Gemini dan Claude`
@@ -73,7 +73,7 @@ Positioning → Core Message → Content Pillar → Format Konten → Hook
 ## Cetak Biru Menuju Time Freedom (Naval Leverage Blueprint)
 
 ### 1. Jalur Transisi 5 Tahap (Dari Labor Menuju Code & Media)
-1. **Tahap 1 (Personal Branding & Authority):** Bangun reputasi di YouTube (@andrean_lp), Blog Pribadi, dan LinkedIn sebagai pembuktian E-E-A-T.
+1. **Tahap 1 (Personal Branding & Authority):** Bangun reputasi di YouTube (@ndrean_id), Blog Pribadi, dan LinkedIn sebagai pembuktian E-E-A-T.
 2. **Tahap 2 (High-Ticket Technical Services):** Ambil jasa audit & perbaikan teknis klien global (Upwork) untuk mengumpulkan cashflow awal dan memetakan masalah teknis paling umum yang dialami pemilik web.
 3. **Tahap 3 (Digital Assets / Productized Solutions):** Kemas solusi berulang menjadi produk siap pakai (template Astro SEO, panduan/checklist audit, schema boilerplates).
 4. **Tahap 4 (Code / Micro-SaaS):** Bangun aplikasi web / tools otomatis berbasis langganan (recurring income) yang memecahkan masalah pencarian modern tanpa keterlibatan waktu harian.

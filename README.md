@@ -1,10 +1,11 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.33.1-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.33.2-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
+[![YouTube: @ndrean_id](https://img.shields.io/badge/YouTube-ndrean__id-FF0000.svg?logo=youtube)](https://www.youtube.com/@ndrean_id)
 [![Platform](https://img.shields.io/badge/Platform-Antigravity-orange.svg)]()
 [![SEO Standard](https://img.shields.io/badge/Google-E--E--A--T%20%26%20Helpful%20Content-brightgreen.svg)]()
 [![Optimization](https://img.shields.io/badge/Search-GEO%20%7C%20AEO%20Ready-purple.svg)]()
@@ -29,7 +30,7 @@ Repositori dan AI Agent ini dirancang serta dikurasi oleh:
 | **Website Resmi** | *(Dalam proses pembaruan / Coming Soon)* |
 | **LinkedIn** | **[linkedin.com/in/ndrean-id](https://www.linkedin.com/in/ndrean-id/)** |
 | **GitHub Portfolio** | **[@ndrean-id](https://github.com/ndrean-id)** |
-| **YouTube Channel** | **[@andrean_lp](https://www.youtube.com/@andrean_lp)** |
+| **YouTube Channel** | **[@ndrean_id](https://www.youtube.com/@ndrean_id)** |
 | **Instagram** | **[@andrean.lp](https://www.instagram.com/andrean.lp/)** |
 | **Positioning Statement** | Membantu pemilik bisnis dan kreator membangun aset web berkinerja tinggi yang siap mendominasi pencarian Google dan dikutip oleh AI Search Engine (*ChatGPT, Gemini, Perplexity, Claude*). |
 | **Nilai Unik (UVP)** | Sinergi langka antara pemahaman strategi bisnis/konversi (*ex-digital marketing*) dan kemampuan eksekusi teknis langsung (*coding Astro JS, arsitektur headless WordPress, Cloudflare edge, dan Schema JSON-LD*). |
@@ -678,6 +679,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.33.2 (2026-11-24):** Pembaruan tautan resmi channel YouTube arsitek proyek ke https://www.youtube.com/@ndrean_id di Author Showcase, header badge, dan kanal kontak.
 - **v1.33.1 (2026-11-24):** Pembaruan profil dan tautan profesional: pembaruan URL LinkedIn resmi ke https://www.linkedin.com/in/ndrean-id/ serta penyesuaian status tautan website resmi (dalam persiapan domain baru).
 - **v1.33.0 (2026-11-24):** Penambahan rekonseptualisasi **Pengertian SEO Modern: Dari Mesin Pencari Konvensional Menuju AI Search Engines (Perplexity.ai)** mencakup cakupan multi-engine, esensi organik trafik untuk leads & konversi, spektrum ganda konten vs teknis, serta tabel komparasi SEO Klasik 10 Blue Links vs Era GEO/AEO.
 - **v1.32.0 (2026-11-24):** Penegasan filosofi **The Living SEO Library & Open Second Brain**, showcase profil arsitek proyek **Andre Wahyu Hermawan (WordPress Technical SEO Specialist & AI Search Strategist)**, integrasi badge reputasi digital, manifesto transparansi E-E-A-T, serta kanal kolaborasi & konsultasi resmi.
@@ -718,7 +720,7 @@ Tertarik berdiskusi seputar arsitektur SEO modern, konsultasi optimasi web berke
 - 🌐 **Website Resmi & Portofolio:** *(Segera hadir / Dalam proses pembaruan)*
 - 💼 **LinkedIn:** [Andre Wahyu Hermawan](https://www.linkedin.com/in/ndrean-id/)
 - 🐙 **GitHub:** [@ndrean-id](https://github.com/ndrean-id)
-- 📺 **YouTube:** [@andrean_lp](https://www.youtube.com/@andrean_lp)
+- 📺 **YouTube:** [@ndrean_id](https://www.youtube.com/@ndrean_id)
 - 📸 **Instagram:** [@andrean.lp](https://www.instagram.com/andrean.lp/)
 - 💡 **Diskusi Teknis:** Jangan ragu membuka [GitHub Issues](https://github.com/ndrean-id/ayo-seo/issues) untuk saran, diskusi, atau kontribusi fitur!
 
