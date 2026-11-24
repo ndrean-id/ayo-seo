@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.42.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.43.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -578,9 +578,11 @@ Di materi **"List SEO Tools Utama"** pada silabus praktikum **"Efektif Tingkatka
              (User Journey & Leads)                        (Visualisasi Bisnis)
 ```
 
-#### A. List Empat SEO Tools Utama (Modul Silabus CH01-05)
+#### A. List Delapan SEO Tools Utama (Modul Silabus CH01-05 Bagian 1 & 2)
 
-Pada modul silabus praktikum **CH01-05 ("List SEO Tools Utama")**, dipetakan empat perangkat lunak fundamental yang menjadi "senjata utama" setiap praktisi SEO untuk mengeksekusi strategi Technical, On-Page, dan riset pasar:
+Pada modul silabus praktikum **CH01-05 ("List SEO Tools Utama")**, dipetakan delapan perangkat lunak fundamental yang terbagi dalam dua bagian utama sebagai "senjata tempur" setiap praktisi SEO untuk mengeksekusi strategi Technical, On-Page, kinerja kecepatan, dan riset pasar:
+
+##### Bagian 1: Alat Crawling Teknis, Optimasi On-Page CMS, & Riset Kata Kunci
 
 1. **Screaming Frog SEO Spider (Audit Teknis & Crawler Desktop):**
    - *Definisi Resmi Modul:*
@@ -602,7 +604,29 @@ Pada modul silabus praktikum **CH01-05 ("List SEO Tools Utama")**, dipetakan emp
      > *"Ubersuggest adalah alat riset kata kunci yang dikembangkan oleh Neil Patel. Ini menyediakan data tentang volume pencarian, ide kata kunci, analisis kompetitor, dan banyak lagi. Ubersuggest juga memiliki fitur untuk audit situs dan pelacakan peringkat."*
    - *Fungsi & Standar Praktisi:* Platform freemium yang sangat ramah pengguna (*user-friendly*) untuk membongkar strategi kompetitor. Memungkinkan praktisi mengintip halaman berkinerja tertinggi (*Top Pages by Traffic*) milik rival, mengekstrak ide kata kunci turunan (*Content Ideas*), memantau profil backlink, serta menjalankan audit kesehatan SEO situs kilat lengkap dengan estimasi kesulitan kata kunci (*SEO Difficulty score*).
 
-#### Matriks Perbandingan Empat Tools Utama SEO
+##### Bagian 2: Pengukur Kinerja & Kecepatan Situs, Riset Intensi Pertanyaan, & Mesin Pencari Alternatif
+
+5. **GTmetrix (Alat Pengukur Kecepatan Halaman & Kinerja Situs Web):**
+   - *Definisi Resmi Modul:*
+     > *"GTmetrix adalah alat untuk mengukur kecepatan halaman dan kinerja situs web. Ini memberikan analisis mendalam tentang kecepatan muat halaman dan rekomendasi untuk perbaikan. Kecepatan halaman adalah faktor penting dalam SEO dan pengalaman pengguna."*
+   - *Fungsi & Standar Praktisi:* Platform pengujian kinerja web yang menyajikan visualisasi *Waterfall Chart* secara mendalam. Membantu developer dan praktisi SEO mengidentifikasi ukuran muatan aset (*payload size*), waktu tanggap server awal (*Time to First Byte / TTFB*), skrip pihak ketiga yang memblokir rendering (*render-blocking resources*), serta efisiensi kompresi WebP untuk memangkas waktu muat hingga di bawah 2 detik.
+
+6. **Google PageSpeed Insights (Alat Resmi Skor Kecepatan & Core Web Vitals Google):**
+   - *Definisi Resmi Modul:*
+     > *"Google PageSpeed Insights adalah alat gratis dari Google yang memberikan skor kecepatan halaman untuk desktop dan mobile. Alat ini juga memberikan rekomendasi untuk meningkatkan kecepatan dan kinerja halaman."*
+   - *Fungsi & Standar Praktisi:* Alat tolok ukur resmi dari Google yang menggabungkan dua dimensi data: *Lab Data* (simulasi sintetis berbasis Lighthouse) dan *Field Data* (data riil dari pengalaman pengguna Chrome di dunia nyata melalui *Chrome User Experience Report / CrUX*). Menjadi instrumen primer untuk menguji kepatuhan metrik Core Web Vitals: LCP (< 2.5 detik), INP (< 200 milidetik), dan CLS (< 0.1) yang menjadi sinyal peringkat resmi Google.
+
+7. **AnswerThePublic (Alat Riset Pertanyaan Konsumen & Ide Konten GEO/AEO):**
+   - *Definisi Resmi Modul:*
+     > *"AnswerThePublic adalah alat riset kata kunci yang menghasilkan pertanyaan, frasa, dan ide kata kunci berdasarkan input Anda. Ini sangat berguna untuk menemukan ide konten yang relevan dan populer di kalangan pengguna."*
+   - *Fungsi & Standar Praktisi:* Alat pemetaan visual *Search Intent* yang mengelompokkan kueri pencarian manusia berdasarkan formula pertanyaan 5W1H (Apa, Siapa, Di mana, Kapan, Mengapa, Bagaimana), preposisi (untuk, dengan, tanpa), dan perbandingan (vs, atau). Sangat esensial untuk menyusun sub-heading H2/H3 yang tajam, bagian FAQ yang sering ditanyakan manusia, serta format Key Takeaways yang siap dikutip oleh AI Search (*Perplexity, Google AI Overviews, ChatGPT Search*).
+
+8. **Bing Webmaster Tools (Alat Pemantau Kinerja & Pengindeksan Resmi Microsoft Bing):**
+   - *Definisi Resmi Modul:*
+     > *"Bing Webmaster Tools adalah alat gratis dari Bing yang membantu Anda memantau dan mengoptimalkan kinerja situs web di hasil pencarian Bing. Ini menyediakan data tentang kata kunci, crawling, backlink, dan banyak lagi."*
+   - *Fungsi & Standar Praktisi:* Dasbor resmi untuk ekosistem pencarian Microsoft yang kini semakin strategis karena teknologi pencarian Bing menjadi penyokong data Microsoft Copilot, Windows Search, dan integrasi penelusuran web OpenAI ChatGPT. Menyediakan fitur inspeksi URL instan melalui protokol IndexNow, audit SEO otomatis gratis tanpa batas kuota, riset profil backlink kompetitor, dan pelacakan kinerja kata kunci organik di jaringan Microsoft.
+
+#### Matriks Perbandingan Delapan Tools Utama SEO
 
 | Nama Tools | Kategori / Basis Operasional | Peran Kunci dalam Alur Kerja SEO | Output & Masalah yang Dituntaskan | Nilai Efisiensi untuk Praktisi |
 | :--- | :--- | :--- | :--- | :--- |
@@ -610,6 +634,10 @@ Pada modul silabus praktikum **CH01-05 ("List SEO Tools Utama")**, dipetakan emp
 | **Yoast SEO** | Plugin CMS Native (WordPress Platform) | On-Page SEO Optimization & Konten Editor | Generate Sitemap XML otomatis, edit metadata per halaman, analisis keterbacaan, skema markup dasar | Standardisasi on-page bagi tim penulis tanpa perlu sentuh kode HTML/PHP |
 | **Google Keyword Planner** | Web App / Google Ads Ecosystem (Gratis) | Keyword Discovery & Intent Validation | Data volume pencarian riil, tingkat kompetisi pengiklan, estimasi CPC komersial | Validasi kata kunci berbasis data primer Google untuk memprioritaskan artikel bernilai konversi |
 | **Ubersuggest** | All-in-One Freemium Web App (Neil Patel) | Riset Pasar, Analisis Kompetitor, & Rank Tracking | Ide konten baru, bedah halaman teratas kompetitor, cek backlink, tracking peringkat kata kunci harian | Intelijen kompetitor yang cepat, intuitif, dan hemat biaya untuk mengeksplorasi celah pasar |
+| **GTmetrix** | Web Performance Testing Suite (Cloud) | Analisis Kecepatan & Diagnostik Beban Server | Waterfall chart aset, analisis TTFB, deteksi skrip pemblokir render, optimasi payload gambar | Menemukan bottleneck spesifik yang memperlambat rendering halaman web |
+| **Google PageSpeed Insights** | Web App / Google Official Developer Tool (Gratis) | Audit Core Web Vitals & Evaluasi Mobile/Desktop | Skor performa Lighthouse, metrik LCP, INP, CLS (data riil CrUX), rekomendasi teknis Google | Validasi resmi apakah halaman web memenuhi syarat algoritma Page Experience Google |
+| **AnswerThePublic** | Consumer Intent & Question Miner (Cloud) | Riset Pertanyaan Audiens, Ide Konten, & GEO/AEO | Pemetaan pertanyaan 5W1H, preposisi kueri, perbandingan kata kunci, ide FAQ terstruktur | Menemukan sudut pandang keresahan nyata pencari yang belum dijawab kompetitor |
+| **Bing Webmaster Tools** | Official Search Engine Console (Microsoft Bing) | Pengindeksan Multi-Engine & Riset Backlink | Protokol IndexNow instan, audit SEO in-house, profil backlink rival, visibilitas Copilot/Bing | Mengamankan dominasi trafik di luar Google (ekosistem Microsoft & ChatGPT Search) |
 
 #### B. Google Analytics (GA4): Melacak Perilaku Pengguna & Konversi Nyata
 Bukan sekadar menghitung jumlah kunjungan (*pageviews*), GA4 difokuskan untuk mengukur efektivitas bisnis dari trafik organik:
@@ -975,6 +1003,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.43.0 (2026-11-24):** Integrasi kurikulum komprehensif **List Delapan SEO Tools Utama (CH01-05 Bagian 2)** mencakup GTmetrix (analisis kecepatan & waterfall), Google PageSpeed Insights (audit Core Web Vitals & CrUX), AnswerThePublic (riset pertanyaan 5W1H & intent GEO/AEO), serta Bing Webmaster Tools (multi-engine dominance & Copilot readiness), lengkap dengan pembaruan matriks perbandingan 8 tools utama.
 - **v1.42.0 (2026-11-24):** Penambahan bab kurikulum **List SEO Tools Utama (CH01-05)** mencakup 4 pilar software praktikum: Screaming Frog SEO Spider (audit teknis & crawler desktop), Yoast SEO (optimasi on-page CMS & sitemap XML), Google Keyword Planner (riset volume & CPC resmi Google Ads), serta Ubersuggest (analisis kompetitor & ide konten Neil Patel), lengkap dengan matriks perbandingan fungsi dan alur kerja integrasi data-driven.
 - **v1.41.0 (2026-11-24):** Penambahan pendalaman kurikulum **Off-Page SEO (Otoritas Eksternal, Reputasi, & Pemasaran Konten)** mencakup 3 pilar inti: Backlinks berkualitas tinggi sebagai vote of confidence, sinyal distribusi Sosial Media multikanal, serta kemitraan otoritatif Guest Blogging & Digital PR.
 - **v1.40.0 (2026-11-24):** Penambahan pendalaman kurikulum **On-Page SEO (Relevansi Semantik, Kualitas Konten, & Pengalaman Pengguna)** mencakup 5 pilar inti: Konten Berkualitas E-E-A-T & Information Gain, Tag Judul Title Case pemikat CTR, Meta Deskripsi persuasif, URL SEO-Friendly bersih, serta rajutan Internal Linking sarang laba-laba.
