@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.28.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.29.0-blue.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Antigravity-orange.svg)]()
 [![SEO Standard](https://img.shields.io/badge/Google-E--E--A--T%20%26%20Helpful%20Content-brightgreen.svg)]()
 [![Optimization](https://img.shields.io/badge/Search-GEO%20%7C%20AEO%20Ready-purple.svg)]()
@@ -128,6 +128,61 @@ SEO pada hakikatnya adalah sebuah sistem simbiotik yang diibaratkan seperti **Ku
 | **Technical SEO** | **Sasis, Mesin, & Aerodinamika:** Memastikan kendaraan siap melaju kencang di lintasan tanpa gangguan mesin. | Mobil mogok di pit stop (Googlebot gagal merayap & mengindeks situs). |
 | **On-Page SEO** | **Bahan Bakar Kualitas Tinggi & Pengemudi:** Mengemudikan arah yang tepat sesuai navigasi sirkuit dan kebutuhan penonton. | Mobil kencang tapi tersesat atau kehabisan bensin (Konten tidak menjawab intensi pembaca). |
 | **Off-Page SEO** | **Lisensi Balap, Reputasi Tim, & Pengakuan Asosiasi:** Tiket resmi agar diizinkan start di barisan terdepan. | Mobil tercepat dengan bahan bakar terbaik, namun tidak pernah diizinkan masuk sirkuit utama. |
+
+---
+
+### 4. Langkah-Langkah Operasional Tiga Komponen Utama (Actionable SOP Checklist)
+
+Berdasarkan modul **Langkah-Langkah Praktis Komponen Utama SEO**, berikut adalah panduan tindakan konkret (*actionable SOP*) yang wajib dijalankan agar ketiga pilar bekerja secara harmonis:
+
+#### A. Langkah-Langkah Technical SEO (Fondasi Mesin & Keterindeksan)
+Fokus pada aspek teknis situs web untuk memastikan Googlebot dan bot mesin pencari AI dapat mengakses, merender, dan mengindeks halaman tanpa rintangan:
+- **Kecepatan Halaman (Page Speed & Core Web Vitals):**
+  - Pastikan metrik *Largest Contentful Paint (LCP)* berada di bawah 2.5 detik dengan mengompres aset gambar ke format WebP CDN dan meminifikasi skrip CSS/JS.
+  - Jaga *Interaction to Next Paint (INP)* di bawah 200 milidetik dan *Cumulative Layout Shift (CLS)* di bawah 0.1 agar tata letak halaman stabil saat dimuat.
+- **Struktur URL Bersih & Semantik (Clean URL Hierarchy):**
+  - Gunakan URL slug yang ringkas, deskriptif, dan memuat kata kunci utama (contoh: `/panduan-seo-dasar/` alih-alih `/?p=1023&cat=9`).
+  - Terapkan huruf kecil semua (*lowercase*), pisahkan kata dengan tanda strip biasa (`-`), dan hindari *stop words* yang berlebihan.
+  - Bangun arsitektur direktori logis sesuai klaster topik (*siloing*).
+- **Penggunaan HTTPS & Protokol Keamanan:**
+  - Pasang sertifikat SSL/TLS valid di seluruh domain (Google mengunci HTTPS sebagai sinyal peringkat resmi sejak 2014).
+  - Pastikan bebas dari galat *mixed content* (aset HTTP yang terpanggil di halaman HTTPS) dan lakukan redirect 301 otomatis dari `http://` ke `https://`.
+- **Infrastruktur Keterindeksan (Crawlability):**
+  - Daftarkan Peta Situs XML (*XML Sitemap*) yang dinamis ke Google Search Console.
+  - Verifikasi file `robots.txt` agar tidak memblokir akses bot ke file CSS dan JavaScript penting.
+
+#### B. Langkah-Langkah On-Page SEO (Relevansi & Nilai Konten)
+Fokus pada penguasaan optimasi di dalam halaman agar konten memuaskan *Search Intent* manusia sekaligus mudah dipahami oleh mesin pencari semantik:
+- **Optimasi Konten & Search Intent:**
+  - Sajikan jawaban langsung atas keresahan pencari di bagian atas halaman menggunakan prinsip *Bottom Line Up Front (BLUF)* atau *Key Takeaways (TL;DR)*.
+  - Buat konten yang mendalam, kaya bukti nyata (*Experience*), dan memberikan kebaruan informasi (*Information Gain*) di atas rata-rata kompetitor SERP.
+- **Penggunaan Kata Kunci Semantik (Entity-Based Keywords):**
+  - Tempatkan kata kunci utama secara alami pada 100 kata pertama, heading utama, dan body teks tanpa praktik *keyword stuffing*.
+  - Perkaya konten dengan variasi entitas semantik, sinonim, dan istilah *Latent Semantic Indexing (LSI)* yang relevan dengan topik industri.
+- **Optimasi Meta Tags Pemikat CTR:**
+  - **Meta Title:** Panjang ideal 50-60 karakter, ditulis dalam format *Title Case*, mengandung target kata kunci di depan, serta memantik rasa penasaran (*Curiosity Gap*) yang etis.
+  - **Meta Description:** Panjang ideal 130-155 karakter, merangkum solusi secara padat dan diakhiri kalimat ajakan bertindak (*Call to Action*).
+- **Struktur Heading yang Disiplin & Hierarkis (H1-H3):**
+  - Gunakan tepat 1 tag H1 sebagai judul utama artikel.
+  - Pecah sub-topik pembahasan menggunakan tag H2, dan jabarkan rincian teknis menggunakan tag H3 secara tertib (ramah untuk *Table of Contents* dan pembaca layar).
+  - Patuhi standar anti-mojibake: dilarang meletakkan emoji di dalam tag heading agar tidak merusak tautan anchor dan CMS database.
+- **Aset Visual & Media:**
+  - Sertakan gambar orisinal (misal render DALL-E atau tangkapan layar asli) dengan atribut `alt text` deskriptif yang ramah aksesibilitas.
+  - Sematkan video YouTube edukatif yang relevan untuk melipatgandakan waktu tinggal (*dwell time*) pembaca.
+
+#### C. Langkah-Langkah Off-Page SEO (Otoritas, Pemasaran, & Reputasi)
+Fokus pada pembangunan sinyal kredibilitas eksternal agar domain memperoleh rekomendasi dan pengakuan dari dunia luar:
+- **Pembangunan Backlink Berkualitas (Value-First Link Building):**
+  - Prioritaskan perolehan *backlink editorial dofollow* dari website yang memiliki relevansi topik tinggi dan reputasi bersih (*relevance beats raw volume*).
+  - Terapkan teknik *Skyscraper* (Konten 10x): bangun konten referensi paling otoritatif di niche-mu sehingga kreator lain secara sukarela menjadikannya rujukan rujukan ilmiah atau tutorial.
+  - Tinggalkan taktik usang seperti spam blog komentar, tautan berbayar massal, atau private blog network (PBN) yang rentan sanksi algoritma Google Spam Update.
+- **Pemasaran Konten (Content Marketing & Repurposing):**
+  - Terapkan strategi *Content Atomization*: pecah satu artikel pilar panjang menjadi berbagai mikro-konten bernilai tinggi.
+  - Ubah intisari artikel menjadi **Infografis Vertikal (9:16)** menggunakan skill `/ayo-seo-infografis` untuk dipasang di Pinterest dan dibagikan ke komunitas.
+  - Ubah studi kasus artikel menjadi **Carousel Media Sosial (3:4)** menggunakan skill `/ayo-seo-repurpose-content` untuk memicu diskusi di LinkedIn dan Instagram.
+- **Strategi Media Sosial & Brand Signals (Social SEO Loop):**
+  - Manfaatkan media sosial sebagai pengungkit sinyal kepopuleran merek (*Brand Mentions*).
+  - Susun naskah caption di media sosial dengan menaruh kata kunci di kalimat pertama agar profil dan postingan sosial media ikut terindeks dan muncul di Google Search Console.
 
 ---
 
@@ -457,6 +512,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.29.0 (2026-11-24):** Penambahan panduan eksekusi **Langkah-Langkah Operasional Tiga Komponen Utama SEO (Actionable SOP Checklist)** untuk Technical SEO (Core Web Vitals, URL semantik, HTTPS), On-Page SEO (Search Intent, entitas semantik, CTR meta tags, hierarki heading), dan Off-Page SEO (backlink berkualitas, repurposing infografis/carousel, dan Social SEO loop).
 - **v1.28.0 (2026-11-24):** Penambahan analisis mendalam **Sinergi 3 Komponen Utama SEO (Prinsip Kursi Berkaki Tiga, 3 Skenario Kegagalan Fatal, & Analogi Mobil Balap)** dari kurikulum praktikum CH01-04 pada Blueprint Belajar SEO Efisien.
 - **v1.27.0 (2026-11-24):** Penambahan **Blueprint Belajar SEO Efisien: Dari Fondasi Menuju Leads & Konversi Organik** (7 siklus pembelajaran efisien, penguasaan bahasa Inggris untuk literasi global, tool stack data SEO, laboratorium blog mandiri, serta matriks The Holy Trinity: Technical, On-Page, Off-Page SEO) dan penegasan konsep Ayo SEO sebagai *Second Brain & Living SEO Library*.
 - **v1.26.0 (2026-11-24):** Integrasi **AIOSEO Blog** (https://aioseo.com/blog/) sebagai pilar ke-6 rujukan implementasi On-Page CMS, Schema Markup WordPress, penyelamatan orphan content, dan integrasi e-commerce WooCommerce.
