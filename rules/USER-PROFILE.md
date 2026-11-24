@@ -22,7 +22,7 @@
   - *Bio Aktif*: `Bantu websitemu direkomendasikan ChatGPT, Gemini & Claude`
 - **Pinterest**: https://www.pinterest.com/andrean_lp/ (Standar resmi: www dan dengan garis miring)
 - **YouTube**: https://www.youtube.com/@andrean_lp (Standar resmi: tanpa garis miring)
-- **GitHub**: https://github.com/andrean-lp (Standar resmi: tanpa garis miring)
+- **GitHub**: https://github.com/ndrean-id (Standar resmi: tanpa garis miring)
 - **Tools/Fitur di Website**: SiloCraft (Topical Authority Generator), Audit Website Gratis, Glosarium, Blog
   - *Author Bio Aktif*: `Membantu pebisnis dan kreator punya website yang cepat dibuka, disukai Google, dan gampang dibaca oleh AI search engine seperti ChatGPT, Gemini dan Claude`
 
