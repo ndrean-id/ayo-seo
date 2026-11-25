@@ -1105,7 +1105,7 @@ Berdasarkan silabus kurikulum resmi Technical SEO:
 
 Penggunaan JavaScript dalam pengembangan web modern menghadirkan manfaat fungsionalitas yang luar biasa: mulai dari interaktivitas real-time, transisi halaman instan, hingga komponen UI yang kaya. Namun, tanpa perhatian khusus pada aspek Technical SEO, kemudahan koding tersebut dapat berubah menjadi bumerang yang menghancurkan visibilitas organik di mesin pencari.
 
-Berikut adalah tujuh praktik terbaik penggunaan JavaScript berdasarkan silabus materi resmi:
+Berikut adalah sembilan praktik terbaik penggunaan JavaScript berdasarkan silabus materi resmi:
 
 1. **Praktik Terbaik 1: Server-Side Rendering (SSR):**
    - **Deskripsi:** SSR memungkinkan konten JavaScript dirender di server web sebelum dikirimkan ke klien atau peramban. Ini memastikan bahwa konten dapat dilihat dan diindeks oleh mesin pencari dengan mudah pada Gelombang 1 (*Wave 1*) tanpa jeda antrean perayapan.
@@ -1132,19 +1132,31 @@ Berikut adalah tujuh praktik terbaik penggunaan JavaScript berdasarkan silabus m
      - *Gunakan elemen `<a>` dengan atribut `href` untuk membuat tautan yang dapat dirayapi:* Selalu gunakan markup semantik `<a href="/target-url/">` dengan URL absolut atau relatif yang valid.
      - *Hindari membuat tautan yang hanya dapat diakses melalui event JavaScript seperti `onclick`:* Dilarang keras merekayasa tombol navigasi menggunakan `<div onclick="...">`, `<button onclick="...">`, atau pseudourl `javascript:void(0)`. Bot tidak pernah memicu event klik sehingga tautan tersebut menjadi gaib dan memicu terbentuknya *Orphan Pages*.
 
-5. **Praktik Terbaik 5: Anggaran Waktu Eksekusi Skrip (Execution Timeout Budget):**
+5. **Praktik Terbaik 5: Progressive Enhancement:**
+   - **Deskripsi:** Teknik ini memastikan bahwa situs web tetap berfungsi dengan baik meskipun JavaScript tidak berjalan dengan benar (karena dinonaktifkan oleh pengguna, diblokir oleh ekstensi browser, gagal dimuat akibat latensi jaringan seluler, atau tertahan di antrean perayapan WRS Googlebot).
+   - **Praktik Terbaik Implementasi:**
+     - *Buat konten dasar dan fungsionalitas yang tersedia tanpa JavaScript:* Seluruh konten teks esensial, heading semantik (H1-H6), gambar utama, dan navigasi dasar `<a href>` harus termuat lengkap di dalam markup HTML mentah awal tanpa bergantung pada eksekusi script.
+     - *Tingkatkan dengan fitur tambahan menggunakan JavaScript:* Lapisan JavaScript ditambahkan semata-mata untuk memperkaya fungsi interaktivitas (seperti animasi transisi, validasi formulir instan, atau interaksi UI lanjutan), bukan sebagai syarat mutlak agar halaman dapat dibaca oleh pengguna atau mesin pencari.
+
+6. **Praktik Terbaik 6: Canonical Tags dan Metadata:**
+   - **Deskripsi:** Pastikan canonical tags (`<link rel="canonical">`) dan metadata penelusuran seperti title tags (`<title>`) dan meta descriptions (`<meta name="description">`) diimplementasikan dengan benar pada aplikasi berbasis JavaScript.
+   - **Praktik Terbaik Implementasi:**
+     - *Implementasikan canonical tags di server-side atau dalam HTML statis:* Tag kanonisasi wajib disuntikkan langsung ke dalam dokumen HTML awal sebelum JavaScript berjalan di peramban klien guna mencegah kesalahan kanonisasi selama dokumen menunggu di antrean render.
+     - *Pastikan metadata tersedia dan terlihat oleh mesin pencari setelah rendering:* Tag judul dan deskripsi meta harus memuat nilai unik spesifik halaman (bukan placeholder kosong atau judul generik default aplikasi seperti "React App"), serta terverifikasi secara transparan oleh bot Google baik sebelum maupun sesudah rendering script.
+
+7. **Praktik Terbaik 7: Anggaran Waktu Eksekusi Skrip (Execution Timeout Budget):**
    - **Deskripsi:** Web Rendering Service (WRS) Google memiliki batas waktu tunggu (*execution timeout*) yang sangat ketat (sekitar 5 detik).
    - **Praktik Terbaik Implementasi:** Optimalkan ukuran bundle JavaScript (terapkan code splitting dan tree-shaking), batasi ketergantungan API pihak ketiga yang lambat, dan pastikan tidak ada unhandled JavaScript exception yang menghentikan proses render di peramban bot.
 
-6. **Praktik Terbaik 6: Pengelolaan Kode Status HTTP dan Metadata Dinamis:**
-   - **Deskripsi:** Menghindari masalah Soft-404 pada aplikasi Single Page Application (SPA) dan menjamin metadata terisi di server.
-   - **Praktik Terbaik Implementasi:** Pastikan server mengembalikan kode status HTTP 404/410 fisik jika rute tidak ditemukan, dan suntikkan tag `<title>`, `<meta name="description">`, serta Schema JSON-LD langsung di dalam tag `<head>` sisi server.
+8. **Praktik Terbaik 8: Pengelolaan Kode Status HTTP (Pencegahan Soft-404 Fisik):**
+   - **Deskripsi:** Menghindari masalah Soft-404 pada aplikasi Single Page Application (SPA) di mana rute yang tidak valid tetap mengembalikan kode 200 OK.
+   - **Praktik Terbaik Implementasi:** Pastikan server backend mengembalikan kode status HTTP 404/410 fisik saat halaman tidak ditemukan, sehingga Googlebot tidak mengindeks halaman kosong.
 
-7. **Praktik Terbaik 7: Pencegahan Sumber Daya Pemblokir Render (Eliminasi Render-Blocking Resources):**
-   - **Deskripsi:** Skrip sinkron di tag `<head>` membekukan parser HTML dan merusak metrik Core Web Vitals.
-   - **Praktik Terbaik Implementasi:** Pasang atribut `defer` atau `async` pada seluruh berkas JavaScript non-esensial, dan pisahkan skrip analitik/pelacak pihak ketiga agar tidak membebani Main Thread CPU.
+9. **Praktik Terbaik 9: Pencegahan Sumber Daya Pemblokir Render (Eliminasi Render-Blocking Resources):**
+   - **Deskripsi:** Skrip sinkron di tag `<head>` membekukan parser HTML peramban dan merusak metrik Core Web Vitals (LCP dan INP).
+   - **Praktik Terbaik Implementasi:** Pasang atribut `defer` atau `async` pada seluruh berkas JavaScript non-esensial, dan pisahkan skrip pelacak pihak ketiga agar tidak membebani Main Thread CPU.
 
-8. **Checklist Praktik Terbaik Penggunaan JavaScript (The JavaScript SEO Best Practices Checklist):**
+10. **Checklist Praktik Terbaik Penggunaan JavaScript (The JavaScript SEO Best Practices Checklist):**
 
 | No | Elemen Praktik Terbaik | Target Standar Emas Ayo SEO | Kesalahan Fatal yang Harus Dihindari | Alat Verifikasi & Audit |
 | :-: | :--- | :--- | :--- | :--- |
@@ -1152,9 +1164,11 @@ Berikut adalah tujuh praktik terbaik penggunaan JavaScript berdasarkan silabus m
 | **2** | **Dynamic Rendering** | Deteksi User-Agent akurat & paritas konten 100% | Manipulasi isi teks bot vs user (*sneaky cloaking*) | Prerender.io, Rendertron, Curl UA |
 | **3** | **Penerapan Lazy Loading** | Atribut native `loading="lazy"` pada img/iframe | Script scroll jadul (No-Scroll Trap), lazy load elemen hero | GSC URL Inspection, Chrome DevTools |
 | **4** | **Optimasi Internal Linking** | Elemen semantik `<a href="/target/">` sah | Tautan event `<div onclick>` atau `javascript:void(0)` | Screaming Frog, GSC Inlinks Report |
-| **5** | **Anggaran Waktu Skrip** | Eksekusi WRS tuntas dalam <3-5 detik | Bundle JS megabyte, API blocking, uncaught error | Chrome DevTools Performance, Lighthouse |
-| **6** | **Status & Metadata** | Status HTTP 200/404/410 fisik & tag head server | Soft-404 status 200 pada halaman kosong, judul "React App" | GSC Coverage Report, HTTP Status Checker |
-| **7** | **Pencegahan Blocking** | Pasang atribut `defer` / `async`, pisahkan analitik | Skrip sinkron di tag `<head>` yang membekukan parsing | PageSpeed Insights (LCP & INP metrics) |
+| **5** | **Progressive Enhancement** | Konten dasar 100% terbaca tanpa JS | Halaman putih kosong (*White Screen*) saat script mati | Chrome DevTools Disable JS, Lynx |
+| **6** | **Canonical & Metadata** | Canonical & metadata siap di server-side | Canonical dinamis terlambat, judul default "React App" | Rich Results Test, Schema Validator |
+| **7** | **Anggaran Waktu Skrip** | Eksekusi WRS tuntas dalam <3-5 detik | Bundle JS megabyte, API blocking, uncaught error | Chrome DevTools Performance, Lighthouse |
+| **8** | **Status HTTP Fisik** | Status HTTP 200/404/410 fisik dari server | Soft-404 status 200 pada halaman rute hilang/rusak | GSC Coverage Report, HTTP Status Checker |
+| **9** | **Pencegahan Blocking** | Pasang atribut `defer` / `async`, pisahkan analitik | Skrip sinkron di tag `<head>` yang membekukan parsing | PageSpeed Insights (LCP & INP metrics) |
 
 ###### D. Pendalaman Enam Pilar Utama JavaScript dalam SEO: Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, dan Handling Metadata
 
