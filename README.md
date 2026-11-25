@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.77.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.78.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -1783,13 +1783,70 @@ Berikut adalah dekonstruksi **10 Indikator Struktur Website yang Baik** yang waj
 
 7. **Struktur Header yang Logis (Logical Heading Hierarchy H1-H6 & Outline Semantik NLP/AEO):**
    - **Prinsip Utama:** Penggunaan tag header semantik (`<h1>` s/d `<h6>`) bukan sekadar dekorasi visual ukuran huruf tebal, melainkan cetak biru hierarki pemikiran logis yang dibaca oleh sistem pemrosesan bahasa alami (NLP) mesin pencari dan peramban modern.
-   - **Aturan Baku Tata Kelola Heading:**
-     - *Tepat Satu Tag `<h1>` per Halaman:* Tag `<h1>` mewakili judul utama topik bahasan. Harus selaras dengan intensi pencarian dan kata kunci target. Memiliki lebih dari satu `<h1>` membingungkan algoritma dalam menentukan topik utama.
-     - *Tag `<h2>` sebagai Bab Inti:* Membagi konten panjang menjadi 3 hingga 7 bab pembahasan utama. Menjadi fondasi pembentukan otomatis Daftar Isi (*Table of Contents*) ber-anchor link.
-     - *Tag `<h3>` sebagai Rincian Sub-Topik:* Menjabarkan detail teknis, langkah praktis, atau studi kasus di bawah masing-masing bab `<h2>`.
-     - *Tag `<h4>` s/d `<h6>` untuk Mikro-Elemen:* Digunakan untuk komponen pendukung seperti item FAQ, daftar tabel, atau widget pelengkap.
-     - *Larangan Keras Melompati Tingkat Hierarki (No Heading Skipping):* Dilarang melompat dari `<h1>` langsung ke `<h3>` atau dari `<h2>` langsung ke `<h4>`. Lompatan urutan ini merusak pohon struktur semantik dan membingungkan perangkat pembaca layar (*screen reader*) bagi penyandang disabilitas.
-     - *Disiplin Anti-Mojibake:* Dilarang meletakkan emoji atau simbol aneh pada heading karena merusak slug otomatis, ID anchor link, dan memicu error rendering karakter di database.
+   - **Dekonstruksi Empat Tingkatan Heading Tags (Berdasarkan Praktik Terbaik Industri):**
+     1. *Heading Utama (H1):* Digunakan khusus untuk judul utama halaman. Setiap halaman web sebaiknya **hanya memiliki satu tag H1 unik**, yang memberikan konteks tema global tentang isi keseluruhan dokumen. H1 harus selaras dengan meta title dan intensi pencarian utama.
+     2. *Sub-Judul Utama (H2):* Digunakan untuk sub-judul yang membagi konten utama menjadi bagian-bagian besar dan penting. H2 membantu mendefinisikan pilar-pilar topik dalam halaman, sekaligus menjadi jangkar otomatis pembentukan Daftar Isi (*Table of Contents*).
+     3. *Sub-Sub-Judul (H3):* Digunakan untuk sub-bagian di bawah H2. H3 memberikan rincian lebih lanjut, studi kasus, atau langkah-langkah praktis dan membagi konten secara lebih mendalam tanpa membebani pembaca.
+     4. *Detail Lebih Lanjut (H4, H5, H6):* Digunakan untuk memberikan detail yang jauh lebih spesifik di bawah H3. Meskipun jarang digunakan pada artikel umum, tag ini sangat berguna untuk struktur konten teknis, dokumentasi API, rincian sejarah, atau item FAQ bersarang (*nested FAQs*).
+   - **Larangan Keras Melompati Tingkat Hierarki (No Heading Skipping):** Dilarang keras melompat dari `<h1>` langsung ke `<h3>` atau dari `<h2>` langsung ke `<h4>`. Lompatan urutan ini merusak pohon semantik algoritma pencari dan membingungkan perangkat pembaca layar (*screen reader*) bagi pengguna disabilitas.
+   - **Disiplin Anti-Mojibake:** Dilarang meletakkan emoji atau karakter multi-byte aneh di dalam tag heading karena merusak slug otomatis, anchor link, dan memicu error rendering karakter di database.
+   - **Contoh Penerapan Nyata: Template Kode Sumber HTML Semantik Standar Google:**
+
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan SEO untuk Pemula</title>
+</head>
+<body>
+    <!-- 1. Heading Utama (H1) - Tepat Satu per Halaman -->
+    <h1>Panduan SEO untuk Pemula</h1>
+    <p>SEO atau Search Engine Optimization adalah proses ...</p>
+
+    <!-- 2. Sub-Judul Utama (H2) - Topik Besar Pertama -->
+    <h2>Apa Itu SEO?</h2>
+    <p>SEO adalah ...</p>
+
+    <!-- 3. Sub-Sub-Judul (H3) - Rincian di Bawah H2 -->
+    <h3>Definisi SEO</h3>
+    <p>SEO adalah singkatan dari ...</p>
+
+    <h3>Sejarah SEO</h3>
+    <p>SEO mulai berkembang pada ...</p>
+
+    <!-- 4. Detail Lebih Lanjut (H4 & H5) - Kronologi Sangat Rinci -->
+    <h4>SEO di Era 2000-an</h4>
+    <p>Pada tahun 2000-an, SEO mulai ...</p>
+
+    <h5>Perubahan Algoritma Google</h5>
+    <p>Google melakukan perubahan besar pada ...</p>
+
+    <!-- Sub-Judul Utama (H2) - Topik Besar Kedua -->
+    <h2>Mengapa SEO Penting?</h2>
+    <p>SEO membantu ...</p>
+
+    <h3>Manfaat SEO</h3>
+    <p>Dengan menggunakan SEO, situs web ...</p>
+
+    <h3>Penerapan SEO di Berbagai Industri</h3>
+    <p>Banyak industri yang mendapat manfaat dari ...</p>
+
+    <!-- Sub-Judul Utama (H2) - Topik Besar Ketiga -->
+    <h2>Bagaimana Cara Kerja SEO?</h2>
+    <p>SEO bekerja dengan cara ...</p>
+
+    <h3>Optimasi On-Page</h3>
+    <p>On-Page SEO mencakup ...</p>
+
+    <h3>Optimasi Off-Page</h3>
+    <p>Off-Page SEO melibatkan ...</p>
+</body>
+</html>
+```
+
+   - **Keunggulan Mesin Pencari & AI Search (AEO/GEO):** Struktur HTML di atas memungkinkan Googlebot dan model AI (seperti Google AI Overviews dan Perplexity) mengekstrak kerangka logis artikel dalam hitungan milidetik. Paragraf jawaban ringkas (40-60 kata) yang diletakkan tepat di bawah tag `<h3>` memiliki probabilitas 3 kali lebih tinggi untuk terpilih menjadi *Featured Snippet (Posisi Nol SERP)*.
 
 8. **Mobile-Friendliness dan Desain Responsif (Responsive Mobile-First Indexing):**
    - **Prinsip Utama:** Sejak Google memberlakukan **Mobile-First Indexing** secara 100%, Googlebot Smartphone adalah satu-satunya entitas penilai resmi yang mengevaluasi kelayakan seluruh website Anda. Versi desktop kini hanya diposisikan sebagai turunan sekunder.
@@ -2789,6 +2846,11 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 ---
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
+
+- **v1.78.0 (2026-11-25):** Pengayaan kurikulum praktikum **Contoh Penggunaan Heading Tags yang Baik (Semantik H1 s/d H6)**:
+  1. *Empat Tingkat Hirarki Heading:* Dekonstruksi peran H1 (judul utama unik), H2 (sub-judul bab pokok), H3 (sub-sub-judul rincian), serta H4-H6 (detail mikro sangat spesifik).
+  2. *Template Kode Sumber HTML Semantik:* Studi kasus nyata implementasi struktur dokumen HTML5 artikel "Panduan SEO untuk Pemula" lengkap dengan penataan bertingkat H1 hingga H5 tanpa loncat urutan (*zero heading skipping*).
+  3. *Optimasi untuk AI Search (AEO/GEO) & Featured Snippets:* Mekanika ekstraksi entitas outline oleh mesin pencari generatif dan teknik penempatan paragraf ringkas solutif di bawah H3 untuk merebut Posisi Nol (#0 SERP).
 
 - **v1.77.0 (2026-11-25):** Pengayaan kurikulum **Anatomi Struktur Berantakan: Bagaimana Arsitektur Spageti Menciptakan Orphan Page dan Menghancurkan Diagnostik Indeks**:
   1. *Akar Penyebab Entropi Struktur Web:* Empat pemicu kekacauan taksonomi (ad-hoc publishing, ledakan tag acak, rantai tautan putus tanpa redirect 301, dan halaman promosi kampanye terbengkalai).
