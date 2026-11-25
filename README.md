@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.50.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.51.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -406,9 +406,10 @@ Pada materi lanjutan modul **"Penyajian Hasil Pencarian (Serving Search Results)
              │                          │                          │
              ├──────────────────────────┼──────────────────────────┤
              ▼                          ▼                          ▼
-  [FAKTOR 7: INTERAKSI SERP]  [NAVBOOST SYSTEM SIGNALS]    [DYNAMIC RE-RANKING ENGINE]
-  - Click-Through Rate (CTR)  - Evaluasi Umpan Balik Sesi  - Penyesuaian Posisi Halaman
-  - Dwell Time & Anti-Pogo    - Riwayat Klik 13 Bulan      - Promosi atau Degradasi
+  [FAKTOR 5: KEAMANAN SITUS]  [FAKTOR 7: INTERAKSI SERP]   [NAVBOOST & RE-RANKING]
+  - Enkripsi Protokol HTTPS   - Click-Through Rate (CTR)   - Riwayat Klik 13 Bulan
+  - Eliminasi Konten Spam     - Dwell Time & Anti-Pogo     - Evaluasi Umpan Balik Sesi
+  - Proteksi Anti-Hacking/WAF - Navboost Real-World Voting - Promosi atau Degradasi
              │                          │                          │
              └──────────────────────────┴──────────────────────────┘
 ```
@@ -509,7 +510,42 @@ Berdasarkan slide materi **"4. Backlinks (Tautan Balik)"**:
 
 ---
 
-##### 4. Faktor 7: Interaksi Pengguna (User Engagement, CTR, & Dwell Time)
+##### 4. Faktor 5: Keamanan Situs (HTTPS, Pencegahan Spam, & Proteksi Malware)
+
+Berdasarkan slide materi **"5. Keamanan Situs"**:
+> *"Google memberi prioritas lebih tinggi pada situs yang aman.*  
+> *Faktor yang Dipertimbangkan:*  
+> *- HTTPS: Situs yang menggunakan HTTPS lebih disukai karena lebih aman dibandingkan HTTP.*  
+> *- Website Spam: Google juga tidak menyukai website yang membuat konten spam.*  
+> *- Tingkat Keamanan Website: Google juga tidak suka dengan website yang rentan terkena hacking, jadi harap perhatikan dengan baik keamanannya jangan sampai kena hack."*
+
+* **A. Protokol HTTPS (Sinyal Peringkat Resmi & Enkripsi Data):**
+  * *Sinyal Peringkat Resmi Sejak 2014:* Google secara resmi mengumumkan HTTPS sebagai faktor penentu peringkat (*Ranking Factor*), dan kini menjadi bagian fundamental dari *Page Experience Signals*.
+  * *Pencegahan Layar Peringatan "Not Secure":* Browser Google Chrome secara agresif menampilkan label peringatan mencolok *"Not Secure"* pada situs yang masih menggunakan protokol HTTP biasa. Peringatan ini memicu kepanikan pengguna, merusak kredibilitas profesional (*Trustworthiness*), dan melipatgandakan *bounce rate*.
+  * *Disiplin Teknis:* Wajib menerapkan sertifikat SSL/TLS valid, mengonfigurasi pengalihan otomatis (*301 Permanent Redirect*) dari `http://` ke `https://`, serta membersihkan galat *Mixed Content* (aset gambar atau skrip HTTP yang terpanggil di dalam halaman HTTPS).
+
+* **B. Website Bebas Konten Spam (Algoritma SpamBrain & Helpful Content):**
+  * *Perang Melawan Manipulasi:* Google mengembangkan sistem kecerdasan buatan khusus bernama **SpamBrain** yang secara berkelanjutan memindai dan menghukum situs web yang memproduksi konten spam.
+  * *Bentuk-Bentuk Spam yang Dihukum Keras:*
+    * **Scaled Content Abuse:** Memproduksi ribuan artikel instan menggunakan AI generik tanpa kurasi manusia, tanpa nilai tambah (*zero Information Gain*), semata-mata untuk memanipulasi peringkat.
+    * **Keyword Stuffing & Cloaking:** Mengulang kata kunci secara tidak wajar atau menampilkan konten berbeda kepada bot perayap dibanding yang dilihat pengguna manusia.
+    * **Doorway Pages & Scraped Content:** Mencuri atau meramu ulang (*spinning*) artikel dari situs lain tanpa menyajikan sudut pandang baru.
+  * *Guardrail Ayo SEO:* Membatasi ritme publikasi yang aman (maksimal 1 artikel pilar/cluster per hari), mengedepankan kurasi 80/20 *Human-in-the-loop*, serta menyajikan analisis mendalam berstandar *Helpful Content*.
+
+* **C. Tingkat Keamanan Website & Proteksi Anti-Hacking (Malware Prevention):**
+  * *Bencana Fatal Website Terkena Hack:*
+    1. **Layar Merah De-Indexing Google:** Jika situs terinfeksi malware atau skrip jahat, Google Chrome akan memblokir akses pengguna dengan layar merah menakutkan (*"Deceptive site ahead"* atau *"The site ahead contains malware"*).
+    2. **Serangan Japanese Keyword Hack / SEO Spam Injections:** Peretas menyusupkan ribuan file PHP pintu belakang (*backdoor*) yang menginjeksi URL spam judi, obat-obatan terlarang, atau karakter asing ke sitemap situs. Dalam hitungan hari, Google Search Console akan dipenuhi ribuan URL spam, *crawl budget* habis terkuras, dan reputasi domain hancur total (*Domain Trust Collapse*).
+    3. **Penalti Tindakan Manual (Manual Action - Security Issues):** Google akan mendepak (*de-indexed*) seluruh halaman websitemu dari SERP sampai pemilik web berhasil membersihkan seluruh malware dan mengajukan peninjauan ulang (*Request a Review*).
+  * *Standar Pengamanan Teknis (Hardening SOP):*
+    * Selalu memperbarui core CMS (khususnya WordPress), plugin, dan tema ke versi resmi terbaru.
+    * Menghindari plugin bajakan (*nulled/cracked*) yang hampir selalu disusupi script backdoor berbahaya.
+    * Memasang Web Application Firewall (WAF) seperti Cloudflare edge security untuk menangkis serangan *brute force* dan *DDoS*.
+    * Mengubah slug login admin default, menerapkan autentikasi dua faktor (2FA), serta membatasi izin file permission (`chmod 644` untuk file dan `chmod 755` untuk folder).
+
+---
+
+##### 5. Faktor 7: Interaksi Pengguna (User Engagement, CTR, & Dwell Time)
 
 Berdasarkan slide materi **"7. Interaksi Pengguna"**:
 > *"Google mempertimbangkan bagaimana pengguna berinteraksi dengan hasil pencarian.*  
@@ -536,7 +572,7 @@ Berdasarkan slide materi **"7. Interaksi Pengguna"**:
 
 ---
 
-##### 5. Matriks Komprehensif Empat Faktor Peringkat Tahap 3 (Serving Search Results)
+##### 6. Matriks Komprehensif Lima Faktor Peringkat Tahap 3 (Serving Search Results)
 
 | Faktor Peringkat | Parameter Utama | Tolok Ukur Keberhasilan | Solusi Implementasi di Ayo SEO |
 | :--- | :--- | :--- | :--- |
@@ -548,6 +584,9 @@ Berdasarkan slide materi **"7. Interaksi Pengguna"**:
 | | Tingkat Bounce (UX) | Evaluasi kontekstual: Konversi leads vs Kedalaman sesi blog. | Form konversi terarah untuk leads, internal linking laba-laba untuk blog. |
 | **Faktor 4: Backlinks & Anchor** | Kualitas Tautan Masuk | Tautan dofollow editorial alami dari industri sejenis (PageRank). | Metodologi Skyscraper 10x Content & aset infografis orisinal. |
 | | Teks Jangkar (Anchor) | Anchor deskriptif kontekstual dengan distribusi variasi sehat. | Internal linking semantik bebas kata generik "klik di sini". |
+| **Faktor 5: Keamanan Situs** | Enkripsi Protokol HTTPS | Sertifikat SSL/TLS valid, zero mixed content, redirect 301 rapi. | Protokol HTTPS default, perlindungan SSL, & ranking signal aktif. |
+| | Eliminasi Konten Spam | Lolos dari filter SpamBrain & Google Scaled Content Abuse. | Ritme publikasi aman 1 artikel/hari & kurasi 80/20 Human-in-the-loop. |
+| | Proteksi Anti-Hacking | Bebas malware/backdoor, WAF Cloudflare aktif, izin file aman. | Sanitasi input ketat, hindari plugin bajakan/nulled, & audit GSC berkala. |
 | **Faktor 7: Interaksi SERP** | Click-Through Rate (CTR) | Rasio klik di atas rata-rata posisi peringkat (> 3%-5% di GSC). | Meta Title Title Case berbasis *Curiosity Gap* etis & meta description CTA. |
 | | Dwell Time | Waktu tinggal > 2-3 menit, nihil sinyal *pogo-sticking*. | Key Takeaways BLUF, embed video YouTube, & infografis vertikal 9:16. |
 
@@ -1310,6 +1349,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.51.0 (2026-11-25):** Penambahan pendalaman kurikulum **Tahap 3: Penyajian Hasil Pencarian & Faktor Keamanan Situs (HTTPS Encryption, Anti-Spam Safeguards, & Proteksi Malware)** mencakup kepatuhan enkripsi SSL/TLS, mitigasi penalti Google SpamBrain & Scaled Content Abuse, penanganan ancaman peretasan (Japanese Keyword Hack), serta penguatan matriks komparasi 5 faktor peringkat tahap 3.
 - **v1.50.0 (2026-11-25):** Penambahan pendalaman kurikulum **Tahap 3: Penyajian Hasil Pencarian & Faktor Backlinks (Link Equity, Domain Authority, & Anchor Text Semantics)** mencakup konsep suara kepercayaan (*vote of confidence*), prinsip kualitas editorial alami vs SpamBrain AI, distribusi variasi teks jangkar sehat (Exact, Partial, Branded, Topical), serta metodologi Skyscraper 10x Content Backlinko.
 - **v1.49.0 (2026-11-25):** Penambahan pendalaman kurikulum **Tahap 3: Penyajian Hasil Pencarian & Faktor Pengalaman Pengguna (Page Speed, Mobile-First Indexing, & The Bounce Rate Paradox)** mencakup standar metrik Core Web Vitals (LCP/INP/CLS), optimasi aksesibilitas seluler, dekonstruksi analitik paradoks bounce rate (single-page leads vs blog engagement depth), serta matriks komparasi 3 faktor peringkat tahap 3.
 - **v1.48.0 (2026-11-25):** Penambahan pendalaman kurikulum **Tahap 3: Penyajian Hasil Pencarian & Faktor Kualitas Konten (Content Depth, E-E-A-T, & Freshness)** mencakup penyelarasan panjang konten dengan Search Intent (Pilar vs Cluster vs Glossary), dekonstruksi 4 pilar E-E-A-T Quality Rater, serta penerapan algoritma QDF via SOP Content Refresh 80/20, melengkapi matriks faktor interaksi pengguna (CTR & Dwell Time).
