@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.85.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.86.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -2013,6 +2013,11 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 ---
 
 ## Ringkasan Versi Terbaru (Changelog Highlights)
+
+- **v1.86.0 (2026-11-25):** Pengayaan mendalam kurikulum **Pilar 1 JavaScript SEO: Rendering dan Indeksasi (Analisis Pengaruh Negatif vs Pengaruh Positif)**:
+  1. *Dekonstruksi Pengaruh Negatif Rendering:* Bahaya fatal halaman tidak terindeks (*Zero Indexing / Blank Page*) dan jebakan pengindeksan sebagian (*The Partial Indexing Trap*) akibat script timeout (>5s) atau kegagalan API klien yang memangkas entitas semantik konten.
+  2. *Pengaruh Positif & Pengayaan Konten Dinamis:* Mekanisme pengayaan konten (*Enriched Content Indexing*), ekspansi kata kunci ekor panjang (*long-tail keywords*), dan kesiapan optimalisasi untuk Google AI Overviews & Rich Results.
+  3. *Tabel Diagnostik 3 Kondisi Render:* Matriks komparasi hasil render (Gagal Total, Sebagian/Partial, Tepat & Sempurna) lengkap dengan status GSC, akar masalah teknis, dan solusi perbaikan arsitektur SSR/SSG.
 
 - **v1.85.0 (2026-11-25):** Integrasi bab kurikulum **Pengaruh JavaScript pada SEO: Paradoks Dua Sisi (Dampak Positif vs Dampak Negatif dan Cara Implementasi)**:
   1. *Paradoks Dua Sisi JavaScript SEO:* Dekonstruksi keunggulan interaktivitas, dwell time, personalisasi dinamis, dan navigasi mulus SPA vs risiko jeda antrean render WRS, pemborosan anggaran perayapan (crawl budget drain), tautan gaib (invisible links), dan pembekuan Main Thread (INP/LCP degradation).
