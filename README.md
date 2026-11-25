@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.69.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.70.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -281,7 +281,7 @@ Pada materi silabus praktikum bertajuk **"Istilah SEO"** (Bagian 1 & Bagian 2), 
    - *Perspektif SEO Modern:* Merupakan tahap kedua di mana bot mengurai (*parse*), merender kode HTML/JavaScript, mengevaluasi standar kualitas (*Helpful Content & E-E-A-T*), lalu menyimpannya di Google Search Index. Jika halaman berstatus *"Crawled - currently not indexed"*, ini menandakan adanya evaluasi kualitas konten atau otoritas domain yang belum memadai.
 7. **CTR (Click-Through Rate):**
    - *Definisi Praktikum:* CTR adalah rasio jumlah klik yang diterima tautan (links) dibandingkan dengan jumlah tampilan (impressions). CTR yang tinggi menunjukkan bahwa meta deskripsi dan tag judul Anda menarik dan relevan dengan pengguna.
-   - *Perspektif SEO Modern:* CTR dihitung dengan rumus: `(Total Klik / Total Impresi) x 100%`. Merupakan indikator utama daya pikat di SERP. Penulisan judul dengan teknik *Curiosity Gap* etis berformat *Title Case* dan meta description solutif terbukti mampu mendongkrak CTR 2x–3x lipat pada posisi ranking yang sama tanpa perlu menunggu kenaikan peringkat.
+   - *Perspektif SEO Modern:* CTR dihitung dengan rumus: `(Total Klik / Total Impresi) x 100%`. Merupakan indikator utama daya pikat di SERP. Penulisan judul dengan teknik *Curiosity Gap* etis berformat *Title Case* dan meta description solutif terbukti mampu mendongkrak CTR 2x-3x lipat pada posisi ranking yang sama tanpa perlu menunggu kenaikan peringkat.
 8. **Anchor Text (Teks Jangkar Tautan):**
    - *Definisi Praktikum:* Anchor text adalah teks yang dapat diklik dalam hyperlink. Penggunaan anchor text yang relevan dan deskriptif dapat membantu mesin pencari memahami konteks dan konten halaman yang dituju.
    - *Perspektif SEO Modern:* Google secara tegas melarang penggunaan anchor text generik seperti "klik di sini", "link ini", atau "baca selengkapnya". Anchor text wajib deskriptif, kontekstual, dan bervariasi (*semantic contextual anchor*). Di Ayo SEO, anchor text internal berfungsi merajut siloing pilar-cluster menjadi sarang laba-laba yang kokoh.
@@ -2399,6 +2399,8 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 ---
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
+
+- **v1.70.0 (2026-11-25):** Pengayaan kurikulum praktikum **Alur Belajar Mandiri Empat Kanal Kunci (SEJ, Yoast, W3Schools, & YouTube Channels)** mencakup dekonstruksi peran strategis Search Engine Journal (radar pemantau fluktuasi SERP & breaking news algoritma), Yoast SEO Blog (jembatan taksonomi, XML sitemap, dan breadcrumbs pada ekosistem CMS WordPress), W3Schools (kurikulum 4 bahasa web: HTML5 semantik, CSS responsif, JavaScript DOM & asynchronous loading, serta backend PHP rendering), saluran YouTube spesialis (Ahrefs, Google Search Central, Moz Whiteboard Friday, Neil Patel), serta rencana belajar mandiri 4 pekan (*The 4-Week Technical SEO Action Plan*).
 
 - **v1.69.0 (2026-11-25):** Integrasi komprehensif dua modul kurikulum Technical SEO:
   1. **Peta 10 Sumber Belajar Technical SEO Resmi & Terpercaya ("Saya Harus Belajar Dari Mana?")**: Menguraikan ekosistem piramida 4 lapisan belajar (Google Search Central, Moz, Ahrefs, SEMrush, Search Engine Journal, Yoast SEO, W3Schools, YouTube Channels pakar SEO, Books on SEO "The Art of SEO", dan Forum Komunitas seperti Reddit r/SEO & Moz Community) lengkap dengan matriks peruntukan kebutuhan praktisi.
