@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.91.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.92.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -1290,7 +1290,7 @@ Berdasarkan modul silabus dan materi slide **"Definisi Technical SEO"**, Technic
 10. **Arsitektur Flat & Anti-Orphan Pages:** Penataan hierarki website dangkal (maksimal 3 klik dari beranda) guna menjamin 100% keterayapan.
 
 > 📘 **Baca Panduan Lengkap & Studi Kasus:**  
-> Untuk penjelasan mendalam 10 pilar, matriks pemetaan anti-orphan page, anatomi arsitektur spageti, arsitektur resmi 3 fase perayapan Google (Crawling, Rendering, Indeksasi), tiga cara utama pengaruh JavaScript (Rendering, Kecepatan Halaman, Navigasi), praktik terbaik arsitektur SSR (Next.js/Nuxt.js) & Dynamic Rendering (Content Parity), serta rekayasa 6 pilar JavaScript SEO (Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, dan Metadata), silakan baca dokumentasi terpisah kami di **[docs/technical-seo.md](docs/technical-seo.md)**.
+> Untuk penjelasan mendalam 10 pilar, matriks pemetaan anti-orphan page, anatomi arsitektur spageti, arsitektur resmi 3 fase perayapan Google (Crawling, Rendering, Indeksasi), tiga cara utama pengaruh JavaScript, kurikulum 7 praktik terbaik penggunaan JavaScript (SSR, Dynamic Rendering, Lazy Loading Native, Internal Linking Semantik), serta rekayasa 6 pilar JavaScript SEO (Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, dan Metadata), silakan baca dokumentasi terpisah kami di **[docs/technical-seo.md](docs/technical-seo.md)**.
 
 ---
 
@@ -2013,6 +2013,11 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 ---
 
 ## Ringkasan Versi Terbaru (Changelog Highlights)
+
+- **v1.92.0 (2026-11-25):** Pengayaan kurikulum bab **Praktik Terbaik Penggunaan JavaScript: Penerapan Lazy Loading yang Benar dan Optimasi Internal Linking**:
+  1. *Praktik Terbaik Lazy Loading:* Penerapan atribut native `loading="lazy"` pada gambar dan iframe, penanganan jebakan bot (*The No-Scroll Trap*), serta larangan keras lazy load pada elemen hero *above-the-fold* (LCP).
+  2. *Praktik Terbaik Optimasi Internal Linking:* Standar elemen semantik `<a href>` dengan URL absolut/relatif yang valid, larangan tautan berbasis event `onclick` / tombol / pseudourl yang memicu *Orphan Pages*, dan jaminan keterayapan Gelombang 1.
+  3. *Konsolidasi 7 Praktik Terbaik Penggunaan JavaScript:* Matriks komparasi 7 pilar best practices lengkap dengan target standar emas, kesalahan fatal yang wajib dihindari, dan alat verifikasi audit resmi.
 
 - **v1.91.0 (2026-11-25):** Pengayaan kurikulum bab **Praktik Terbaik Penggunaan JavaScript: Server-Side Rendering (SSR) dan Dynamic Rendering**:
   1. *Standar Emas SSR (Next.js & Nuxt.js):* Mekanisme perenderan kode di server sebelum pengiriman payload ke klien, jaminan konten 100% terbaca di Wave 1 perayapan bot, dan protokol verifikasi keterlihatan via View-Source & GSC URL Inspection.
