@@ -1117,13 +1117,24 @@ Berdasarkan silabus materi, terdapat lima elemen teknis mutlak yang wajib diawas
      - `<a href="#/produk/1">Produk 1</a>` (Buruk: Fragment identifier `#` tidak dianggap sebagai halaman mandiri).
    - **Standar Emas:** Selalu gunakan tag jangkar HTML murni dengan URL absolut atau relatif yang valid (`<a href="/produk/sepatu-lari/">`). JavaScript dapat memperkaya fungsi interaksinya, tetapi markup dasarnya harus tetap berupa tag `<a>` yang sah (*Progressive Enhancement*).
 
-2. **Arsitektur Rendering yang Tepat (Rendering Strategy):**
-   - **Tantangan Utama:** Pemilihan arsitektur rendering menentukan apakah Googlebot menerima konten lengkap di Gelombang 1 atau harus menunggu di antrean Gelombang 2.
-   - **Empat Model Rendering Utama:**
+2. **Arsitektur Rendering yang Tepat: Rekayasa Server-Side Rendering (SSR) dan Dynamic Rendering:**
+   - **Tantangan Utama:** Pemilihan arsitektur rendering menentukan apakah Googlebot menerima konten lengkap secara instan di Gelombang 1 (*Instant HTML Parse*) atau harus tertahan di antrean Web Rendering Service (*Wave 2*) yang memakan waktu berhari-hari.
+   - **Dua Praktik Terbaik Arsitektur Utama (Berdasarkan Kurikulum Resmi):**
+     1. **Server-Side Rendering (SSR):**
+        - *Deskripsi:* SSR memungkinkan konten JavaScript dirender di server web sebelum dikirimkan ke klien atau peramban. Ini memastikan bahwa dokumen HTML yang diterima Googlebot sudah memuat 100% teks artikel, heading, dan tautan internal, sehingga konten dapat dilihat dan diindeks oleh mesin pencari dengan mudah tanpa jeda antrean perayapan.
+        - *Praktik Terbaik:*
+          - Gunakan framework modern kelas industri seperti **Next.js** (untuk ekosistem React) atau **Nuxt.js** (untuk ekosistem Vue) yang memiliki dukungan native first-class untuk SSR.
+          - Verifikasi secara berkala bahwa konten yang dirender di server-side benar-benar terlihat oleh mesin pencari (melalui uji pintasan `Ctrl + U` View-Source, *Google Search Console URL Inspection Live Test*, serta *Rich Results Test*).
+     2. **Dynamic Rendering (Solusi Jembatan untuk Web SPA Besar):**
+        - *Deskripsi:* Dynamic rendering adalah teknik arsitektur di mana web server mendeteksi agen pengguna (*User-Agent*) yang melakukan request: jika request datang dari perayap mesin pencari (seperti Googlebot, Bingbot), server mengirimkan versi snapshot HTML statis yang telah dipra-render (*prerendered HTML*), sedangkan jika yang datang adalah pengunjung manusia, server mengirimkan aplikasi JavaScript penuh yang kaya interaktivitas.
+        - *Praktik Terbaik:*
+          - Konfigurasikan server (melalui Nginx reverse proxy, Cloudflare Workers, atau middleware seperti Prerender.io / Rendertron) untuk mendeteksi User-Agent bot perayap secara presisi dan menyajikan konten yang dirender secara dinamis.
+          - *Jaminan Paritas Konten (Content Parity):* Pastikan versi HTML statis yang disajikan kepada bot berisi **semua konten penting** yang identik dengan apa yang dilihat oleh pengunjung manusia (teks lengkap, heading, tautan navigasi semantik, dan Schema JSON-LD). Dilarang keras menyajikan konten berbeda secara manipulatif karena Google dapat menganggapnya sebagai pelanggaran panduan webmaster (*sneaky cloaking*).
+   - **Empat Spektrum Model Rendering Modern:**
      - *Client-Side Rendering (CSR):* Browser klien mengeksekusi JS dan membangun HTML. Sangat berisiko untuk SEO karena bot hanya melihat template HTML kosong (`<div id="root"></div>`) pada Wave 1.
      - *Server-Side Rendering (SSR):* Server mengeksekusi JS dan menghasilkan dokumen HTML lengkap sebelum dikirimkan ke peramban. Sangat ramah mesin pencari karena bot langsung menerima teks lengkap pada Wave 1.
      - *Static Site Generation (SSG):* Seluruh halaman HTML di-generate saat proses kompilasi (*build time*). Ini adalah arsitektur paling cepat, paling hemat server, dan paling disukai bot Google.
-     - *Dynamic Rendering / Incremental Static Regeneration (ISR):* Server menyajikan versi HTML statis khusus untuk perayap bot mesin pencari, sementara pengunjung manusia tetap menikmati aplikasi web interaktif.
+     - *Dynamic Rendering / Incremental Static Regeneration (ISR):* Server menyajikan versi HTML statis khusus untuk perayap bot mesin pencari atau me-regenerasi halaman statis secara berkala di latar belakang.
 
 3. **Anggaran Waktu Eksekusi Skrip (Execution Timeout & Script Budget):**
    - **Tantangan Utama:** Web Rendering Service (WRS) milik Google memiliki batas waktu tunggu (*execution timeout*) yang sangat ketat (umumnya sekitar 5 detik).
