@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.83.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.84.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -2013,6 +2013,10 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 ---
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
+
+- **v1.84.0 (2026-11-25):** Integrasi studi kasus praktikum **Verifikasi Server-Rendered SEO Metadata Sebelum JavaScript Berjalan (Google Rich Results Test)**:
+  1. *Studi Kasus Live Audit Bloggerpi.com:* Pembuktian keterbacaan 4 hasil kaya valid (*Breadcrumbs, Organization, LocalBusiness, SitelinksSearchbox*) langsung di tab HTML mentah perayap Googlebot seluler sebelum JavaScript dieksekusi.
+  2. *Checklist 12 Metadata Server-Side Wajib & SOP 4 Langkah:* Penguncian tag `<link rel="canonical">`, Open Graph (`og:locale`, `og:title`, `og:image`, `article:modified_time`), Twitter Cards, dan Schema JSON-LD di sisi server, serta protokol audit komparasi Rich Results Test vs View-Source tanpa script klien.
 
 - **v1.83.0 (2026-11-25):** Pengayaan kurikulum praktikum **Enam Pilar Lengkap JavaScript SEO: Canonical Tags Server-Side dan Penanganan Metadata**:
   1. *Pilar Canonical Tags dalam JavaScript:* Strategi penempatan tag rel="canonical" pada HTML statis/sisi server sebelum eksekusi JavaScript guna mencegah salah kanonisasi akibat antrean WRS, pencegahan risiko fragmentasi URL pada aplikasi SPA, dan verifikasi konsistensi canonical sebelum dan sesudah rendering bot.

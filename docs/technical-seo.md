@@ -1054,7 +1054,87 @@ Di materi presentasi modul Technical SEO, ditegaskan enam pilar paling esensial 
      - *Pastikan Metadata Di-render di Server-Side atau Ditambahkan di HTML Statis:* Manfaatkan framework SSR/SSG modern (seperti Next.js Metadata API, Nuxt `useHead()`, atau Astro `<head>`) yang menyuntikkan judul unik, meta deskripsi, dan tag Open Graph secara statis ke dalam tag `<head>` sebelum halaman dikirimkan ke peramban.
      - *Verifikasi Metadata dengan Alat Uji Resmi Google:* Uji keterbacaan metadata menggunakan **Google Search Console (URL Inspection Live)**, **Google Rich Results Test**, serta **Google Structured Data Testing Tool (Schema Validator)** untuk memastikan seluruh tag `<title>`, deskripsi meta, dan skema JSON-LD berhasil diekstraksi sempurna oleh parser Googlebot.
 
-###### C. Matriks Evaluasi Empat Model Rendering JavaScript untuk SEO
+###### C. Studi Kasus Praktikum: Verifikasi Server-Rendered SEO Metadata Sebelum JavaScript Berjalan (Google Rich Results Test)
+
+Berdasarkan studi kasus praktikum materi slide **"Pastikan SEO Meta Data Rendered Di Server"**:
+
+> *"Pastikan metadata SEO ini telah di-render, bahkan sebelum javascript berjalan."*
+
+```text
++---------------------------------------------------------------------------------------------------+
+|     VERIFIKASI SERVER-RENDERED METADATA SEBELUM JAVASCRIPT BERJALAN (RICH RESULTS TEST)          |
++---------------------------------------------------------------------------------------------------+
+|                                                                                                   |
+|  [PERMINTAAN PERAYAPAN BOT (CRAWL REQUEST)]                                                       |
+|                         │                                                                         |
+|                         ▼                                                                         |
+|  [SERVER RESPONSE: DOKUMEN HTML MENTAH (RAW PAYLOAD)]                                             |
+|  * <link rel="canonical" href="...">                --> Langsung terbaca di Gelombang 1 (Wave 1)  |
+|  * <meta property="og:title/description/image">     --> Menjamin cuplikan media sosial sempurna   |
+|  * <script type="application/ld+json">              --> Terdeteksi 4 Rich Results Valid instan    |
+|                         │                                                                         |
+|                         ▼                                                                         |
+|  [APAKAH METADATA MENUNGGU JAVASCRIPT BERJALAN?]                                                  |
+|            │                                 │                                                    |
+|       [TIDAK (AMAN)]                    [YA (BAHAYA FATAL)]                                       |
+|            │                                 │                                                    |
+|            ▼                                 ▼                                                    |
+|  * Rich Results Terdeteksi Instan       * Terjebak Antrean Render WRS (Bisa tertunda berhari-hari)|
+|  * Bebas dari Galat Judul Generik       * Berisiko Diindeks Judul Default ("React App / Website")  |
+|  * Sinyal Entitas Utuh di Wave 1        * Metadata Kosong & Rich Snippets Gagal Ditampilkan       |
+|                                                                                                   |
++---------------------------------------------------------------------------------------------------+
+```
+
+1. **Analisis Bukti Hasil Uji Google Rich Results Test (Studi Kasus: Bloggerpi.com):**
+   - Pada pengujian live menggunakan alat inspeksi resmi **Google Rich Results Test** (`https://search.google.com/test/rich-results`), halaman berhasil diuji dan diverifikasi langsung oleh bot crawler seluler Googlebot (*Smartphone crawler*):
+     - **Status Validasi:** Terdeteksi **4 item hasil kaya valid (*4 valid items detected*)**, mencakup `Breadcrumbs`, `Local businesses`, `Organization`, dan `Sitelinks searchbox`. Seluruh item memenuhi syarat kelayakan tampil sebagai Rich Results di SERP Google.
+     - **Bukti di Tab HTML (Tested Page):** Pada tab kode sumber HTML yang diunduh langsung oleh bot sebelum eksekusi script, seluruh metadata kunci telah terpasang rapi di dalam elemen `<head>`:
+       ```html
+       <!-- Bukti Metadata SEO Telah Ter-render Fisik di Sisi Server -->
+       <link rel="canonical" href="https://bloggerpi.com/" />
+       <meta property="og:locale" content="en_US" />
+       <meta property="og:locale:alternate" content="id_ID" />
+       <meta property="og:type" content="website" />
+       <meta property="og:title" content="Digital Marketing..." />
+       <meta property="og:description" content="Boost your online presence with Bloggerpi Digital, an expert SEO and content marketing agency. Drive traffic, increase rankings, and grow your business today" />
+       <meta property="og:url" content="https://bloggerpi.com/" />
+       <meta property="og:site_name" content="Bloggerpi Digital" />
+       <meta property="article:modified_time" content="2024-05-09T07:57:34+00:00" />
+       <meta property="og:image" content="https://bloggerpi.com/wp-content/uploads/2024/05/Bloggerpi-Logo-Large.webp" />
+       <meta property="og:image:width" content="1024" />
+       <meta property="og:image:height" content="1024" />
+       <meta property="og:image:type" content="image/webp" />
+       <meta name="twitter:card" content="summary_large_image" />
+       <script type="application/ld+json">
+       {
+         "@context": "https://schema.org",
+         "@graph": [...]
+       }
+       </script>
+       ```
+
+2. **Daftar Checklist 12 Elemen Metadata SEO Wajib Render di Sisi Server:**
+   - 1. `<link rel="canonical" href="...">` - Menentukan URL induk resmi untuk mencegah kanibalisasi dan duplikasi konten.
+   - 2. `<meta property="og:locale" content="...">` - Mengindikasikan bahasa utama dan target regional dokumen.
+   - 3. `<meta property="og:locale:alternate" content="...">` - Mengindikasikan ketersediaan variasi bahasa alternatif (contoh: `en_US` dan `id_ID`).
+   - 4. `<meta property="og:type" content="website/article">` - Mendefinisikan tipe entitas dokumen web untuk Open Graph.
+   - 5. `<meta property="og:title" content="...">` - Judul halaman yang menarik saat tautan dibagikan ke jejaring sosial.
+   - 6. `<meta property="og:description" content="...">` - Ringkasan persuasif penjelas nilai manfaat konten.
+   - 7. `<meta property="og:url" content="...">` - URL kanonikal permanen dari halaman yang dibagikan.
+   - 8. `<meta property="og:site_name" content="...">` - Nama merek resmi entitas penerbit website.
+   - 9. `<meta property="article:modified_time" content="...">` - Timestamp pembaruan konten dalam format ISO 8601 (sinyal kesegaran konten bagi Google Freshness Algorithm).
+   - 10. `<meta property="og:image" content="...">` - URL gambar unggulan (disarankan format WebP beresolusi tinggi minimal 1024x1024 px lengkap dengan tag `og:image:width` dan `og:image:height` eksplisit).
+   - 11. `<meta name="twitter:card" content="summary_large_image">` - Format tampilan kartu besar saat dibagikan ke platform X / Twitter.
+   - 12. Skrip Data Terstruktur Schema.org JSON-LD (`<script type="application/ld+json">`) - Format data semantik untuk memicu panel Rich Snippets (Breadcrumbs, Organization, LocalBusiness, SitelinksSearchbox).
+
+3. **SOP 4 Langkah Audit Keterbacaan Server-Rendered Metadata:**
+   - **Langkah 1 (Uji URL Langsung di Rich Results Test):** Masukkan URL halaman ke `https://search.google.com/test/rich-results` dan pilih agen perayap *Smartphone*.
+   - **Langkah 2 (Inspeksi Tab HTML Mentah):** Jangan hanya melihat tab *Screenshot* visual. Buka panel *Tested Page* dan klik tab **HTML**.
+   - **Langkah 3 (Verifikasi Blok Head):** Cari tag `<link rel="canonical">` dan `<meta property="og:title">`. Pastikan seluruh baris kode tersebut telah terisi dengan teks spesifik halaman, bukan placeholder kosong atau variabel template yang belum terurai.
+   - **Langkah 4 (Uji Silang View-Source Browser):** Buka halaman web di peramban, tekan pintasan `Ctrl + U` (View Source). Pastikan metadata yang sama tertera persis di dokumen sumber tanpa memerlukan eksekusi skrip klien.
+
+###### D. Matriks Evaluasi Empat Model Rendering JavaScript untuk SEO
 
 | Model Rendering | Lokasi Eksekusi Kode | Kecepatan untuk Bot (Wave 1) | Beban Server | Risiko SEO | Rekomendasi Framework Modern |
 | :--- | :--- | :---: | :---: | :---: | :--- |
@@ -1063,7 +1143,7 @@ Di materi presentasi modul Technical SEO, ditegaskan enam pilar paling esensial 
 | **Static Site Generation (SSG)** | Saat Build / Deployment | Instan (Berkas HTML Statis) | Sangat Rendah (Penyimpanan CDN) | **Nol:** Standar emas performa & keterindeksan. | Astro, Hugo, Gatsby, Next.js (SSG mode). |
 | **Incremental Static (ISR)** | Hybrid (Build + Revalidasi Latar) | Instan (Dari Cache CDN) | Rendah hingga Sedang | **Sangat Rendah:** Ideal untuk portal jutaan artikel. | Next.js App Router, Nuxt Content. |
 
-###### D. SOP Tiga Langkah Audit Cepat JavaScript SEO (The 3-Step JS Audit)
+###### E. SOP Tiga Langkah Audit Cepat JavaScript SEO (The 3-Step JS Audit)
 
 1. **Tes Non-JavaScript (Disable JavaScript in DevTools):**
    - Buka halaman web Anda di Google Chrome. Tekan `F12` (DevTools) > tekan `Ctrl + Shift + P` > ketik *"Disable JavaScript"* > refresh halaman.
