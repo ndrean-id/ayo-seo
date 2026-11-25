@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.94.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.95.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -1290,7 +1290,7 @@ Berdasarkan modul silabus dan materi slide **"Definisi Technical SEO"**, Technic
 10. **Arsitektur Flat & Anti-Orphan Pages:** Penataan hierarki website dangkal (maksimal 3 klik dari beranda) guna menjamin 100% keterayapan.
 
 > 📘 **Baca Panduan Lengkap & Studi Kasus:**  
-> Untuk penjelasan mendalam 10 pilar, matriks pemetaan anti-orphan page, anatomi arsitektur spageti, arsitektur resmi 3 fase perayapan Google (Crawling, Rendering, Indeksasi), tiga cara utama pengaruh JavaScript, kurikulum lengkap 7 praktik terbaik penggunaan JavaScript (SSR, Dynamic Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, Testing & Verifikasi), kaidah emas keseimbangan interaktivitas vs SEO, serta rekayasa 6 pilar JavaScript SEO, silakan baca dokumentasi terpisah kami di **[docs/technical-seo.md](docs/technical-seo.md)**.
+> Untuk penjelasan mendalam 10 pilar, matriks pemetaan anti-orphan page, anatomi arsitektur spageti, arsitektur resmi 3 fase perayapan Google (Crawling, Rendering, Indeksasi), tiga cara utama pengaruh JavaScript, kurikulum lengkap 7 praktik terbaik penggunaan JavaScript (SSR, Dynamic Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, Testing & Verifikasi), kaidah emas keseimbangan interaktivitas vs SEO, rekayasa 6 pilar JavaScript SEO, serta kurikulum komprehensif Elemen Utama Technical SEO: XML Sitemaps (efisiensi perayapan & indeksasi, direct feed discovery, sinergi robots.txt & canonical tags), silakan baca dokumentasi terpisah kami di **[docs/technical-seo.md](docs/technical-seo.md)**.
 
 ---
 
@@ -2013,6 +2013,12 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 ---
 
 ## Ringkasan Versi Terbaru (Changelog Highlights)
+
+- **v1.95.0 (2026-11-25):** Pengayaan kurikulum bab **Elemen Utama Technical SEO: XML Sitemaps (Peta Jalan Digital untuk Efisiensi Perayapan dan Indeksasi Maksimal)**:
+  1. *Definisi & Esensi Fundamental XML Sitemaps:* Peta direktori inventarisasi resmi berstandar Sitemaps.org yang bertindak sebagai direct discovery feed bagi web crawler mesin pencari.
+  2. *Dua Pilar Manfaat Inti:* Optimalisasi anggaran perayapan (Crawl Budget Optimization) dan percepatan proses pengindeksan konten baru serta pembaruan (Faster Time-to-Index).
+  3. *Anatomi Hubungan Simbiotik:* Integrasi harmonis antara deklarasi sitemap di `robots.txt`, verifikasi URL kanonikal resmi (`rel="canonical"`), dan jaminan integritas status HTTP 200 OK.
+  4. *Matriks Komparasi:* Perbandingan mendalam perayapan heuristik buta (tanpa sitemap) versus perayapan terstruktur berbasis direct index feeder.
 
 - **v1.94.0 (2026-11-25):** Pengayaan kurikulum bab **Praktik Terbaik Penggunaan JavaScript: Testing dan Verifikasi & Kaidah Emas Keseimbangan SEO**:
   1. *Praktik Terbaik Testing & Verifikasi:* Protokol inspeksi terpadu via Google Search Console (Live URL Test), Mobile-Friendly Test, dan Rich Results Test untuk garansi keterbacaan konten pasca-render WRS, serta audit teknis berkala menggunakan crawler mode JavaScript.
