@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.58.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.59.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -1346,23 +1346,61 @@ SEO pada hakikatnya adalah sebuah sistem simbiotik yang diibaratkan seperti **Ku
 Berdasarkan modul **Langkah-Langkah Praktis Komponen Utama SEO**, berikut adalah panduan tindakan konkret (*actionable SOP*) yang wajib dijalankan agar ketiga pilar bekerja secara harmonis:
 
 #### A. Langkah-Langkah Technical SEO (Fondasi Mesin & Keterindeksan)
-Fokus pada aspek teknis situs web untuk memastikan Googlebot dan bot mesin pencari AI dapat mengakses, merender, dan mengindeks halaman tanpa rintangan:
-- **Kecepatan Halaman (Page Speed & Core Web Vitals):**
-  - Pastikan metrik *Largest Contentful Paint (LCP)* berada di bawah 2.5 detik dengan mengompres aset gambar ke format WebP CDN dan meminifikasi skrip CSS/JS.
-  - Jaga *Interaction to Next Paint (INP)* di bawah 200 milidetik dan *Cumulative Layout Shift (CLS)* di bawah 0.1 agar tata letak halaman stabil saat dimuat.
-- **Mobile-Friendliness & Mobile-First Indexing:**
-  - Pastikan tata letak 100% responsif di smartphone dengan konfigurasi meta viewport yang tepat (`width=device-width, initial-scale=1.0`).
-  - Uji halaman menggunakan Google Rich Results Test / Lighthouse Mobile untuk memastikan nol pergeseran tata letak (*zero layout overflow*) dan ukuran elemen sentuh (*tap target*) minimal 48x48 piksel.
-- **Struktur URL Bersih & Semantik (Clean URL Hierarchy):**
-  - Gunakan URL slug yang ringkas, deskriptif, dan memuat kata kunci utama (contoh: `/panduan-seo-dasar/` alih-alih `/?p=1023&cat=9`).
-  - Terapkan huruf kecil semua (*lowercase*), pisahkan kata dengan tanda strip biasa (`-`), dan hindari *stop words* yang berlebihan.
-  - Bangun arsitektur direktori logis sesuai klaster topik (*siloing*).
-- **Penggunaan HTTPS & Protokol Keamanan:**
-  - Pasang sertifikat SSL/TLS valid di seluruh domain (Google mengunci HTTPS sebagai sinyal peringkat resmi sejak 2014).
-  - Pastikan bebas dari galat *mixed content* (aset HTTP yang terpanggil di halaman HTTPS) dan lakukan redirect 301 otomatis dari `http://` ke `https://`.
-- **Infrastruktur Keterindeksan (Crawlability):**
-  - Daftarkan Peta Situs XML (*XML Sitemap*) yang dinamis ke Google Search Console.
-  - Verifikasi file `robots.txt` agar tidak memblokir akses bot ke file CSS dan JavaScript penting.
+
+Berdasarkan modul silabus dan materi slide **"Fokus Technical SEO"**, Technical SEO berpusat pada pembenahan menyeluruh infrastruktur situs web:
+
+> *"Technical SEO fokus pada optimasi infrastruktur situs web untuk memastikan bahwa mesin pencari dapat merayapi dan mengindeks konten dengan efektif. Hal ini meliputi:*  
+> *- Memastikan website cepat diakses dan responsif.*  
+> *- Mengoptimalkan struktur URL agar lebih rapi dan konsisten.*  
+> *- Menggunakan HTTPS untuk meningkatkan keamanan situs.*  
+> *- Mengeliminasi duplikat konten dan memperbaiki broken links.*  
+> *- Mengoptimalkan file robots.txt dan sitemap.xml untuk memandu mesin pencari dalam crawling halaman yang relevan.*  
+> *- Memastikan website mudah dinavigasi baik oleh pengguna maupun mesin pencari."*
+
+```text
+        ALUR ENAM FOKUS INFRASTRUKTUR TECHNICAL SEO
+        
+  [01. CEPAT & RESPONSIF] ──> CWV (LCP < 2.5s, INP < 200ms) & Mobile-First
+             │
+             ▼
+  [02. STRUKTUR URL RAPI] ──> Lowercase, strip (-), konsisten & bebas parameter
+             │
+             ▼
+  [03. PROTOKOL HTTPS]   ──> Enkripsi SSL/TLS, 301 force redirect, zero mixed content
+             │
+             ▼
+  [04. ANTI-DUPLIKAT & 404] ─> rel="canonical" & reparasi broken links (301 redirect)
+             │
+             ▼
+  [05. ROBOTS & SITEMAP] ──> Alokasi crawl budget & peta jalan indeks XML otomatis
+             │
+             ▼
+  [06. NAVIGASI GANDA]   ──> Breadcrumbs, aturan 3-klik (User) & Silo semantik (Bot)
+```
+
+Berikut adalah panduan tindakan konkret (*actionable SOP*) untuk mengeksekusi 6 fokus teknis tersebut:
+
+1. **Memastikan Website Cepat Diakses dan Responsif (Speed & Responsiveness):**
+   - *Kecepatan Akses (Core Web Vitals):* Pastikan metrik *Largest Contentful Paint (LCP)* berada di bawah **2.5 detik** dengan mengompres gambar ke format WebP CDN, menerapkan *lazy loading* cerdas di bawah *fold*, serta meminifikasi skrip CSS dan JavaScript.
+   - *Responsivitas Interaksi:* Jaga skor *Interaction to Next Paint (INP)* di bawah **200 milidetik** dan *Cumulative Layout Shift (CLS)* di bawah **0.1** agar antarmuka tidak bergeser liar saat memuat.
+   - *Mobile-First Indexing:* Pastikan tata letak 100% responsif di smartphone dengan konfigurasi tag meta viewport standar (`width=device-width, initial-scale=1.0`), ukuran target sentuh tombol minimal 48x48 piksel, dan bebas dari pergeseran horizontal.
+2. **Mengoptimalkan Struktur URL agar Lebih Rapi dan Konsisten (Clean URL Architecture):**
+   - Gunakan slug URL yang ringkas, deskriptif, dan memuat kata kunci utama (contoh: `/panduan-seo-dasar/` alih-alih `/?p=1023&cat=9`).
+   - Terapkan huruf kecil semua (*all-lowercase*), pisahkan kata dengan tanda strip biasa (`-`), dan buang *stop words* yang tidak bernilai semantik.
+   - Jaga konsistensi struktur direktori hirarkis dan konsistensi penggunaan *trailing slash* di seluruh situs web.
+3. **Menggunakan HTTPS untuk Meningkatkan Keamanan Situs (Security & Encryption):**
+   - Pasang sertifikat SSL/TLS valid di seluruh domain (Google mengunci HTTPS sebagai sinyal peringkat resmi sejak 2014).
+   - Terapkan pengalihan permanen (301 Redirect) otomatis dari seluruh versi non-aman (`http://`) menuju versi aman (`https://`).
+   - Audit berkala untuk memastikan situs 100% bebas dari galat konten campuran (*mixed content*), di mana aset gambar atau script HTTP lama terpanggil di dalam halaman HTTPS.
+4. **Mengeliminasi Duplikat Konten dan Memperbaiki Broken Links (Duplicate & Error Resolution):**
+   - *Eliminasi Duplikat Konten:* Pasang tag kanonikal `<link rel="canonical" href="...">` pada setiap halaman untuk menentukan versi rujukan utama ke mesin pencari, mencegah fragmentasi nilai peringkat akibat variasi URL parameter atau duplikasi kategori.
+   - *Perbaikan Tautan Rusak (Broken Links):* Lakukan audit rutin menggunakan Google Search Console atau Screaming Frog untuk mendeteksi error 404 (*Page Not Found*). Pasang 301 Redirect ke halaman relevan terdekat untuk menyelamatkan ekuitas tautan (*link equity*) dan mencegah pemborosan jatah perayapan bot.
+5. **Mengoptimalkan File Robots.txt dan Sitemap.xml (Crawl Guidance & Indexation Roadmap):**
+   - *File Robots.txt:* Konfigurasikan direktif `User-agent: *` dan `Disallow:` untuk membatasi bot crawler agar tidak memboroskan *Crawl Budget* pada direktori administratif (`/wp-admin/`, script internal, atau hasil pencarian internal `/?s=`). Pastikan file CSS dan JavaScript penting tidak terblokir.
+   - *Sitemap.xml:* Daftarkan berkas Peta Situs XML yang dinamis di Google Search Console. Pastikan hanya halaman dengan status kode 200 OK yang masuk ke dalam sitemap, lengkap dengan tanggal pembaruan terakhir (*lastmod*).
+6. **Memastikan Website Mudah Dinavigasi oleh Pengguna dan Mesin Pencari (Dual-Audience Navigability):**
+   - *Kemudahan bagi Pengguna Manusia:* Rancang arsitektur navigasi dangkal dengan aturan 3-klik (*3-Click Rule*), di mana pengguna dapat mencapai informasi penting apa pun dalam maksimal 3 klik dari beranda. Sediakan jalur remah roti (*Breadcrumbs*) yang jelas untuk mempermudah orientasi pembaca.
+   - *Kemudahan bagi Mesin Pencari:* Bangun jaringan tautan internal berbasis siloing semantik (Pilar ⇄ Cluster ⇄ Glossary). Pastikan seluruh tautan internal menggunakan tag jangkar HTML murni (`<a href="...">`) yang dapat dirayapi langsung oleh bot tanpa bergantung pada interaksi JavaScript tersembunyi.
 
 #### B. Langkah-Langkah On-Page SEO (Relevansi & Nilai Konten)
 Fokus pada penguasaan optimasi di dalam halaman agar konten memuaskan *Search Intent* manusia sekaligus mudah dipahami oleh mesin pencari semantik:
@@ -1955,6 +1993,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.59.0 (2026-11-25):** Penambahan bab panduan operasional **Enam Fokus Infrastruktur Technical SEO (Actionable SOP)** mencakup optimasi kecepatan & responsivitas (Core Web Vitals), perapian struktur URL konsisten, penegakan protokol HTTPS & eliminasi mixed content, pembasmian konten duplikat via `rel="canonical"` & reparasi broken links (404 ke 301), panduan perayapan via Robots.txt & XML Sitemap, serta arsitektur navigasi ganda ramah pengguna & mesin pencari (*3-Click Rule & Semantic Silo*).
 - **v1.58.0 (2026-11-25):** Penyempurnaan bab kurikulum **Komponen 1: Technical SEO (Fondasi Mesin, Perayapan, & Keterindeksan)** mencakup dekonstruksi formal Definisi Technical SEO, metafora Gunung Es SEO (*The Iceberg of SEO: Elemen Kasat Mata vs Tak Kasat Mata*), tiga mandat pokok mesin pencari modern (*Memahami, Merayapi, & Mengindeks*), serta perluasan 6 pilar arsitektur Technical SEO modern (Core Web Vitals, Mobile-First Indexing, XML Sitemap, Robots.txt, Canonicalization & HTTP Status Codes, serta Schema JSON-LD).
 - **v1.57.0 (2026-11-25):** Penambahan bab kurikulum **Tahap 3: Fitur Tampilan SERP Modern (Orang Lain Juga Bertanya / Google People Also Ask PAA)** mencakup dekonstruksi algoritma pemetaan perjalanan pencarian (*Search Journey & Intent Branching*), fenomena pohon pertanyaan dinamis (*infinite dynamic PAA tree*), pemanfaatan PAA sebagai tambang emas outline konten (*Content Outline Goldmine*), anatomi format jawaban (paragraf definisi vs daftar poin vs tabel), SOP 5 langkah merebut kotak PAA, Schema markup `FAQPage`, serta matriks komparasi 5 fitur SERP modern utama.
 - **v1.56.0 (2026-11-25):** Penambahan bab kurikulum **Tahap 3: Fitur Tampilan SERP Modern (Kartu Berita / Google Top Stories & News Cards)** mencakup dekonstruksi mekanisme algoritma Query Deserves Freshness (QDF), evolusi kelayakan otomatis Google News tanpa pendaftaran manual, 4 faktor penentu peringkat berita (kecepatan publikasi, original reporting, E-E-A-T jurnalistik, Core Web Vitals), SOP 5 langkah News SEO (Google News Sitemap & `max-image-preview:large`), Schema markup `NewsArticle`, serta penyempurnaan matriks komparasi 4 fitur SERP modern utama.
