@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.82.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.83.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -1290,7 +1290,7 @@ Berdasarkan modul silabus dan materi slide **"Definisi Technical SEO"**, Technic
 10. **Arsitektur Flat & Anti-Orphan Pages:** Penataan hierarki website dangkal (maksimal 3 klik dari beranda) guna menjamin 100% keterayapan.
 
 > 📘 **Baca Panduan Lengkap & Studi Kasus:**  
-> Untuk penjelasan mendalam 10 pilar, matriks pemetaan anti-orphan page, anatomi arsitektur spageti, dan rekayasa JavaScript SEO, silakan baca dokumentasi terpisah kami di **[docs/technical-seo.md](docs/technical-seo.md)**.
+> Untuk penjelasan mendalam 10 pilar, matriks pemetaan anti-orphan page, anatomi arsitektur spageti, dan rekayasa 6 pilar JavaScript SEO (Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, dan Metadata), silakan baca dokumentasi terpisah kami di **[docs/technical-seo.md](docs/technical-seo.md)**.
 
 ---
 
@@ -2013,6 +2013,10 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 ---
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
+
+- **v1.83.0 (2026-11-25):** Pengayaan kurikulum praktikum **Enam Pilar Lengkap JavaScript SEO: Canonical Tags Server-Side dan Penanganan Metadata**:
+  1. *Pilar Canonical Tags dalam JavaScript:* Strategi penempatan tag rel="canonical" pada HTML statis/sisi server sebelum eksekusi JavaScript guna mencegah salah kanonisasi akibat antrean WRS, pencegahan risiko fragmentasi URL pada aplikasi SPA, dan verifikasi konsistensi canonical sebelum dan sesudah rendering bot.
+  2. *Pilar Handling SEO Metadata:* Penanganan title tags, meta descriptions, dan Schema JSON-LD dinamis di sisi server (SSR/SSG), pencegahan indeksasi judul generik aplikasi klien ("React App"), serta protokol validasi metadata menggunakan Google Search Console Live Test, Rich Results Test, dan Google Structured Data Testing Tool.
 
 - **v1.82.0 (2026-11-25):** Restrukturisasi arsitektur dokumentasi repositori berbasis **Internal Linking Tiga Komponen SEO**:
   1. *Modularisasi Tiga Panduan Komprehensif:* Pemecahan bab kurikulum masif menjadi 3 dokumen terpisah dalam folder `docs/`: [Technical SEO (10 Pilar, Arsitektur Flat, & JavaScript SEO)](docs/technical-seo.md), [On-Page SEO (7 Pilar, E-E-A-T, & Disiplin Semantik)](docs/on-page-seo.md), dan [Off-Page SEO (5 Pilar, Otoritas, & Digital PR)](docs/off-page-seo.md).

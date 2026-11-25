@@ -937,13 +937,13 @@ Berdasarkan silabus materi, terdapat lima elemen teknis mutlak yang wajib diawas
    - **Tantangan Utama:** Berkas skrip JavaScript yang dimuat secara sinkron di bagian atas dokumen (`<head>`) akan membekukan peramban hingga skrip selesai diunduh dan dieksekusi.
    - **Standar Optimasi:** Pasang atribut `defer` (untuk skrip yang bergantung pada struktur DOM) atau `async` (untuk skrip independen seperti analitik) pada seluruh berkas JavaScript non-esensial agar tidak merusak skor Core Web Vitals (terutama metrik LCP dan INP).
 
-###### B. Pendalaman Empat Pilar Utama JavaScript dalam SEO: Rendering, Lazy Loading, Internal Linking, dan Progressive Enhancement
+###### B. Pendalaman Enam Pilar Utama JavaScript dalam SEO: Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, dan Handling Metadata
 
-Di materi presentasi modul Technical SEO, ditegaskan empat pilar paling esensial dalam penerapan JavaScript:
+Di materi presentasi modul Technical SEO, ditegaskan enam pilar paling esensial dalam penerapan JavaScript:
 
 ```text
 +---------------------------------------------------------------------------------------------------+
-|               EMPAT PILAR UTAMA JAVASCRIPT DALAM SEO (THE 4 JAVASCRIPT SEO PILLARS)               |
+|               ENAM PILAR UTAMA JAVASCRIPT DALAM SEO (THE 6 JAVASCRIPT SEO PILLARS)                |
 +---------------------------------------------------------------------------------------------------+
 |                                                                                                   |
 |  [PILAR 1: RENDERING]                          [PILAR 2: LAZY LOADING]                            |
@@ -961,6 +961,15 @@ Di materi presentasi modul Technical SEO, ditegaskan empat pilar paling esensial
 |    atribut href yang valid.                      HTML Dasar -> CSS Desain -> JS Interaktivitas.   |
 |  * Hindari link berbasis event (onclick,       * Wajib audit rutin via Disable JavaScript         |
 |    javascript:void(0), atau hash-routing).       di Chrome DevTools (Cegah White Screen of Death).|
+|                                                                                                   |
+|  -----------------------------------------------------------------------------------------------  |
+|                                                                                                   |
+|  [PILAR 5: CANONICAL TAGS]                     [PILAR 6: HANDLING SEO METADATA]                   |
+|  * Hindari konten duplikat pada rute JS.       * Title tags & meta descriptions wajib terlihat bot|
+|  * Implementasikan canonical di server-side    * Render metadata di server-side / HTML statis     |
+|    atau HTML statis sebelum JS dieksekusi.       (hindari injeksi DOM klien yang terlambat).      |
+|  * Verifikasi konsistensi rel="canonical"      * Verifikasi via GSC Live URL Test, Rich Results   |
+|    sebelum dan sesudah JS render.                Test, atau Google Structured Data Testing Tool.  |
 |                                                                                                   |
 +---------------------------------------------------------------------------------------------------+
 ```
@@ -1029,6 +1038,21 @@ Di materi presentasi modul Technical SEO, ditegaskan empat pilar paling esensial
    - **Progressive Enhancement vs Graceful Degradation:**
      - *Progressive Enhancement (Membangun dari Bawah ke Atas / Bottom-Up):* Memulai proyek dari dokumen HTML semantik murni yang dijamin 100% ramah mesin pencari, kemudian menambahkan interaktivitas JS sebagai bonus. Ini adalah pendekatan terbaik untuk SEO jangka panjang.
      - *Graceful Degradation (Memperbaiki dari Atas ke Bawah / Top-Down):* Membangun aplikasi web JavaScript kompleks terlebih dahulu, lalu berusaha menambal error ketika script gagal di peramban lama. Pendekatan ini sangat rentan meninggalkan celah kebocoran indeksasi dan kerentanan perayapan (*crawl failures*).
+
+5. **Pilar 5: Canonical Tags dalam JavaScript (Pencegahan Konten Duplikat pada Konten Dinamis):**
+   - **Deskripsi:** Ketika menggunakan JavaScript untuk memuat konten dinamis (seperti pada aplikasi Single Page Application / SPA, filter katalog dinamis, atau navigasi pagination), pastikan tag kanonikal (`<link rel="canonical" href="...">`) diterapkan dengan benar dan konsisten untuk menghindari masalah konten duplikat (*duplicate content penalty*).
+   - **Bahaya Injeksi Canonical via Client-Side JS:** Banyak pengembang mencoba memanipulasi atau menambahkan tag kanonikal menggunakan script klien (misalnya `document.createElement('link')` atau pustaka react-helmet di CSR murni). Jika JavaScript mengalami jeda rendering (*WRS queue delay*), Googlebot pada Gelombang 1 (*Instant HTML Parse*) akan melihat dokumen tanpa tag kanonikal, atau lebih buruk lagi, membaca tag kanonikal default yang salah dari template kerangka (`index.html`). Hal ini dapat menyebabkan Googlebot mengkanonisasikan seluruh halaman dinamis ke halaman beranda atau URL yang keliru.
+   - **Praktik Terbaik Arsitektur:**
+     - *Implementasikan Canonical Tags di Sisi Server (Server-Side) atau HTML Statis:* Tag kanonikal wajib tertera secara fisik di dalam tag `<head>` pada dokumen HTML mentah yang dikirimkan oleh server sebelum JavaScript peramban dijalankan. Ini menjamin Googlebot langsung menangkap URL kanonikal resmi pada Gelombang 1 tanpa harus menunggu eksekusi skrip.
+     - *Verifikasi Konsistensi Sebelum dan Sesudah Render JavaScript:* Pastikan eksekusi JavaScript tidak menimpa, menduplikasi, atau mengubah URL kanonikal yang sudah ada di HTML server. Keberadaan dua tag kanonikal yang berbeda pada satu halaman akan membuat Googlebot mengabaikan keduanya secara total.
+     - *Protokol Verifikasi:* Periksa melalui Google Search Console (URL Inspection > Test Live URL) dan bandingkan nilai tag kanonikal pada tab *HTML* hasil render dengan *View Source* (HTML mentah). Keduanya wajib merujuk ke URL kanonikal resmi yang identik.
+
+6. **Pilar 6: Handling SEO Metadata (Title Tags, Meta Descriptions, & Structured Data):**
+   - **Deskripsi:** Metadata halaman seperti title tags (`<title>`), meta descriptions (`<meta name="description">`), dan data terstruktur (*Schema JSON-LD*) harus diatur dengan benar dan terlihat secara transparan oleh mesin pencari.
+   - **Risiko Pengelolaan Metadata di Sisi Klien:** Pada aplikasi SPA murni, metadata sering kali diinjeksi secara dinamis setelah data API selesai ditarik (*asynchronous fetch*). Jika API mengalami perlambatan atau script timeout, Googlebot akan mengindeks halaman dengan metadata kosong atau judul generik bawaan aplikasi (contoh: *"React App"* atau *"My Website"*), yang langsung menghancurkan rasio klik (*CTR*) di SERP.
+   - **Praktik Terbaik Arsitektur:**
+     - *Pastikan Metadata Di-render di Server-Side atau Ditambahkan di HTML Statis:* Manfaatkan framework SSR/SSG modern (seperti Next.js Metadata API, Nuxt `useHead()`, atau Astro `<head>`) yang menyuntikkan judul unik, meta deskripsi, dan tag Open Graph secara statis ke dalam tag `<head>` sebelum halaman dikirimkan ke peramban.
+     - *Verifikasi Metadata dengan Alat Uji Resmi Google:* Uji keterbacaan metadata menggunakan **Google Search Console (URL Inspection Live)**, **Google Rich Results Test**, serta **Google Structured Data Testing Tool (Schema Validator)** untuk memastikan seluruh tag `<title>`, deskripsi meta, dan skema JSON-LD berhasil diekstraksi sempurna oleh parser Googlebot.
 
 ###### C. Matriks Evaluasi Empat Model Rendering JavaScript untuk SEO
 
