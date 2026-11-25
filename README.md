@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.87.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.88.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -1290,7 +1290,7 @@ Berdasarkan modul silabus dan materi slide **"Definisi Technical SEO"**, Technic
 10. **Arsitektur Flat & Anti-Orphan Pages:** Penataan hierarki website dangkal (maksimal 3 klik dari beranda) guna menjamin 100% keterayapan.
 
 > 📘 **Baca Panduan Lengkap & Studi Kasus:**  
-> Untuk penjelasan mendalam 10 pilar, matriks pemetaan anti-orphan page, anatomi arsitektur spageti, arsitektur resmi 3 fase perayapan Google (Crawling, Rendering, Indeksasi), kerangka paradoks dua sisi pengaruh JavaScript pada SEO, serta rekayasa 6 pilar JavaScript SEO (Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, dan Metadata), silakan baca dokumentasi terpisah kami di **[docs/technical-seo.md](docs/technical-seo.md)**.
+> Untuk penjelasan mendalam 10 pilar, matriks pemetaan anti-orphan page, anatomi arsitektur spageti, arsitektur resmi 3 fase perayapan Google (Crawling, Rendering, Indeksasi), dua cara utama pengaruh JavaScript (Rendering & Kecepatan Halaman), serta rekayasa 6 pilar JavaScript SEO (Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, dan Metadata), silakan baca dokumentasi terpisah kami di **[docs/technical-seo.md](docs/technical-seo.md)**.
 
 ---
 
@@ -2013,6 +2013,11 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 ---
 
 ## Ringkasan Versi Terbaru (Changelog Highlights)
+
+- **v1.88.0 (2026-11-25):** Pengayaan kurikulum bab **Dua Cara Utama Pengaruh JavaScript pada SEO: Rendering dan Kecepatan Halaman (Page Speed)**:
+  1. *Dekonstruksi Pengaruh Kecepatan Halaman:* Analisis mendalam bahaya skrip berat (*heavy bundle size*) dan skrip tidak perlu (*unused JavaScript*) yang membebani Main Thread CPU, merusak skor Core Web Vitals (LCP & INP), serta melonjakkan angka pentalan (*bounce rate / pogo-sticking*).
+  2. *Interaktivitas Efisien Tanpa Mengorbankan Kecepatan:* Strategi arsitektur modern (tree-shaking, route-based code splitting, non-blocking defer/async) guna mempertahankan interaktivitas aplikasi 60 FPS sekaligus mengunci metrik Google Page Experience berstatus Good (Hijau).
+  3. *Sintesis Dua Cara Utama:* Pemetaan komparatif Cara Utama 1 (Rendering & Indeksasi) vs Cara Utama 2 (Kecepatan Halaman) dalam kerangka paradoks dua sisi Technical SEO.
 
 - **v1.87.0 (2026-11-25):** Integrasi bab kurikulum **Cara Google Memproses JavaScript: Tiga Fase Utama (Crawling, Rendering, dan Pengindeksan)**:
   1. *Arsitektur Resmi Google Search Central:* Pemetaan mendalam alur data Googlebot (Antrean Crawl -> Crawler -> Pemrosesan -> Antrean Render -> Perender Chromium WRS -> Indeks) lengkap dengan siklus umpan balik ekstraksi tautan baru (*link discovery feedback loop*).
