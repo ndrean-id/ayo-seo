@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.60.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.61.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -1248,6 +1248,22 @@ Berdasarkan materi silabus dan slide **"Beda Technical, On-Page, dan Off-Page SE
    - *On-Page SEO:* Kemenangan relevansi semantik, rasio klik tinggi (*high CTR*), dan kepuasan pembaca (*long dwell time*).
    - *Off-Page SEO:* Pertumbuhan otoritas domain (*Domain Authority*), pembuktian suara kepercayaan (*vote of confidence*), dan arus lalu lintas rujukan (*referral traffic*).
 
+##### Matriks Detail Fokus Utama Tiga Pilar SEO (Actionable Checklist)
+
+Berdasarkan materi lanjutan silabus praktikum slide **"Beda Technical, On-Page, dan Off-Page SEO - Fokus Utama"**, berikut adalah peta kerja komparatif 20 elemen inti yang harus dijalankan praktisi:
+
+| Fokus Utama Technical SEO | Fokus Utama On-Page SEO | Fokus Utama Off-Page SEO |
+| :--- | :--- | :--- |
+| • **Crawling:** Memastikan mesin pencari dapat merayapi seluruh halaman situs web. | • **Kata Kunci:** Penelitian dan penempatan kata kunci secara natural dalam konten. | • **Backlink Building & Digital PR:** Mendapatkan tautan balik dari situs web otoritatif dan relevan. |
+| • **Indexing:** Memastikan halaman web dapat disimpan dalam basis data indeks mesin pencari. | • **Konten:** Pembuatan konten berkualitas tinggi, mendalam, dan relevan (*Helpful Content*). | • **Social Media Marketing:** Meningkatkan eksposur konten dan sinyal sosial melalui media sosial. |
+| • **Rendering:** Memastikan semua elemen halaman (termasuk konten dinamis JavaScript) dapat dirender sempurna oleh bot. | • **Meta Tags:** Optimasi meta title (50-60 karakter) dan meta description (130-155 karakter). | • **Brand Mentions:** Mendapatkan penyebutan merek (*unlinked brand citations*) di berbagai media daring. |
+| • **Site Speed:** Kecepatan muat halaman dan stabilitas visual Core Web Vitals (LCP, INP, CLS). | • **Header Tags:** Penggunaan tag header semantik (H1, H2, H3) untuk penataan struktur hierarki konten. | • **Guest Blogging:** Menulis artikel berkualitas untuk media/situs web lain dengan tautan kembali kontekstual. |
+| • **Mobile-Friendliness:** Optimasi menyeluruh untuk tampilan dan fungsi responsif di perangkat mobile. | • **Internal Linking:** Penempatan tautan internal untuk membantu navigasi pembaca dan distribusi *link juice*. | • **Influencer Outreach:** Bekerja sama dengan figur/kreator industri untuk mempromosikan konten dan memperluas backlink. |
+| • **URL Structure:** Struktur URL yang bersih, deskriptif, dan ramah mesin pencari. | • **Gambar:** Optimasi gambar dengan alt text deskriptif dan kompresi WebP untuk efisiensi kecepatan halaman. | |
+| • **Sitemaps & Robots.txt:** Memastikan XML sitemap dan file robots.txt diatur dengan benar untuk memandu bot. | • **User Experience (UX):** Aspek yang meningkatkan kenyamanan pembaca di halaman (navigasi mudah, desain responsif, tipografi bersih). | |
+| • **Structured Data:** Implementasi Schema markup JSON-LD untuk memicu *rich snippets* di SERP. | | |
+
+
 
 #### A. Komponen 1: Technical SEO (Fondasi Mesin, Perayapan, & Keterindeksan)
 
@@ -1315,7 +1331,7 @@ Pada modul silabus praktikum **CH01-04**, **On-Page SEO** didefinisikan sebagai 
 
 > *"On-Page SEO mencakup semua tindakan optimasi yang dilakukan pada halaman situs web itu sendiri untuk meningkatkan peringkat dan mendapatkan lebih banyak lalu lintas yang relevan di mesin pencari."*
 
-Lima pilar utama On-Page SEO yang wajib dikuasai mencakup:
+Tujuh pilar utama On-Page SEO yang wajib dikuasai mencakup:
 
 1. **Konten Berkualitas (Quality Content & E-E-A-T):**
    - *Fungsi:* Konten harus informatif, relevan, mendalam, dan ditulis dengan baik dengan penempatan kata kunci secara natural (*natural keyword integration* tanpa *keyword stuffing*).
@@ -1332,6 +1348,12 @@ Lima pilar utama On-Page SEO yang wajib dikuasai mencakup:
 5. **Internal Linking (Jaringan Tautan Internal Siloing):**
    - *Fungsi:* Tautan ke halaman lain di dalam situs web untuk membantu mesin pencari memahami struktur arsitektur situs dan meningkatkan navigasi pengguna.
    - *Standar Industri:* Menggunakan *anchor text* deskriptif dan kontekstual untuk menghubungkan hierarki Artikel Pilar, Cluster Pendukung, dan Glosarium menjadi "sarang laba-laba" yang kokoh. Internal linking menyalurkan *Link Equity* (PageRank internal), mencegah *orphan content*, serta memperpanjang waktu tinggal pengguna (*dwell time*).
+6. **Optimasi Gambar (Alt Text Deskriptif & Kompresi WebP):**
+   - *Fungsi:* Gambar memperkaya *Information Gain* dan membantu artikel tampil di Google Image Search.
+   - *Standar Industri:* Setiap gambar wajib memiliki atribut `alt` deskriptif yang menjelaskan isi gambar bagi pembaca tunanetra dan bot perayap, dikompresi ke format generasi baru (WebP/AVIF), serta dilengkapi dimensi lebar dan tinggi eksplisit guna mencegah pergeseran tata letak (*zero CLS*).
+7. **Pengalaman Pengguna di Halaman (On-Page User Experience / UX):**
+   - *Fungsi:* Menjamin audiens merasa nyaman, betah membaca, dan mudah menemukan jawaban yang mereka butuhkan tanpa gangguan.
+   - *Standar Industri:* Penggunaan tipografi berkontras tinggi (rasio >= 4.5:1), spasi antarparagraf yang lega, hierarki heading bebas loncat, serta navigasi remah roti (*Breadcrumbs*) yang memandu orientasi pembaca.
 
 #### C. Komponen 3: Off-Page SEO (Otoritas Eksternal, Reputasi, & Pemasaran Konten)
 
@@ -1339,7 +1361,7 @@ Pada modul silabus praktikum **CH01-04**, **Off-Page SEO** didefinisikan sebagai
 
 > *"Off-Page SEO merujuk pada semua tindakan yang dilakukan di luar situs web Anda sendiri untuk meningkatkan peringkat situs Anda di hasil pencarian. Ini terutama melibatkan upaya membangun backlink berkualitas tinggi dan meningkatkan otoritas situs."*
 
-Tiga pilar utama Off-Page SEO yang wajib dikuasai mencakup:
+Lima pilar utama Off-Page SEO yang wajib dikuasai mencakup:
 
 1. **Backlinks (Tautan Masuk & Suara Kepercayaan / "Vote of Confidence"):**
    - *Fungsi:* Tautan dari situs web lain yang mengarah ke situs web Anda.
@@ -1350,6 +1372,12 @@ Tiga pilar utama Off-Page SEO yang wajib dikuasai mencakup:
 3. **Guest Blogging (Artikel Tamu Otoritatif & Digital PR):**
    - *Fungsi:* Menulis artikel berkualitas tinggi untuk situs web atau media lain dengan menyertakan tautan kontekstual kembali ke situs web Anda.
    - *Standar Industri:* Strategi kemitraan yang sangat ampuh untuk membangun otoritas keahlian (*Authoritativeness*), memperluas jangkauan ke audiens yang sudah mapan (*established audience*), dan mendatangkan aliran trafik rujukan bertarget tinggi (*referral traffic*) yang siap konversi.
+4. **Sebutan Merek (Brand Mentions & Unlinked Citations):**
+   - *Fungsi:* Penyebutan nama brand atau nama pakar di media daring meskipun tanpa hyperlink aktif.
+   - *Standar Industri:* Algoritma Google modern mampu mengenali *unlinked brand mentions* sebagai sinyal kepercayaan tersirat (*implied links*). Semakin sering brand dibahas secara positif di forum industri, portal berita, dan ulasan, semakin kuat otoritas entitas brand di Google Knowledge Graph.
+5. **Kolaborasi Influencer & Pakar Industri (Influencer Outreach):**
+   - *Fungsi:* Bekerja sama dengan tokoh atau kreator berpengaruh untuk mempromosikan aset konten berbobot tinggi (*content amplification*).
+   - *Standar Industri:* Mengirimkan riset orisinal, infografis pilar, atau alat bantu gratis kepada tokoh industri agar diulas atau dibagikan ke jaringan pengikut mereka, memicu gelombang backlink organik tier-1 yang kredibel.
 
 ---
 
@@ -2035,6 +2063,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.61.0 (2026-11-25):** Integrasi matriks komparatif mendalam **Fokus Utama Tiga Pilar SEO (Actionable Checklist Breakdown)** mencakup 8 elemen Technical SEO (penegasan JavaScript Rendering Pipeline), 7 pilar On-Page SEO (penambahan optimasi gambar WebP & On-Page UX), serta 5 pilar Off-Page SEO (penambahan Brand Mentions & Influencer Outreach) sesuai silabus praktikum.
 - **v1.60.0 (2026-11-25):** Integrasi komparasi tri-partit **Beda Technical, On-Page, dan Off-Page SEO** mencakup tabel perbandingan berdampingan 3 kolom, visualisasi Triangulasi Tiga Pilar SEO, dekonstruksi 3 dimensi pembeda fundamental (lokasi eksekusi, target evaluator, dan tujuan akhir), serta penyelarasan definisi resmi On-Page dan Off-Page SEO sesuai silabus praktikum.
 - **v1.59.0 (2026-11-25):** Penambahan bab panduan operasional **Enam Fokus Infrastruktur Technical SEO (Actionable SOP)** mencakup optimasi kecepatan & responsivitas (Core Web Vitals), perapian struktur URL konsisten, penegakan protokol HTTPS & eliminasi mixed content, pembasmian konten duplikat via `rel="canonical"` & reparasi broken links (404 ke 301), panduan perayapan via Robots.txt & XML Sitemap, serta arsitektur navigasi ganda ramah pengguna & mesin pencari (*3-Click Rule & Semantic Silo*).
 - **v1.58.0 (2026-11-25):** Penyempurnaan bab kurikulum **Komponen 1: Technical SEO (Fondasi Mesin, Perayapan, & Keterindeksan)** mencakup dekonstruksi formal Definisi Technical SEO, metafora Gunung Es SEO (*The Iceberg of SEO: Elemen Kasat Mata vs Tak Kasat Mata*), tiga mandat pokok mesin pencari modern (*Memahami, Merayapi, & Mengindeks*), serta perluasan 6 pilar arsitektur Technical SEO modern (Core Web Vitals, Mobile-First Indexing, XML Sitemap, Robots.txt, Canonicalization & HTTP Status Codes, serta Schema JSON-LD).
