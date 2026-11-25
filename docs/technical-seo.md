@@ -1097,7 +1097,15 @@ Kedua paradigma ekstrem tersebut keliru. Realitas algoritma perayapan modern men
 +---------------------------------------------------------------------------------------------------+
 ```
 
-###### C. Lima Elemen Kritis Technical SEO dalam Penerapan JavaScript
+###### C. Praktik Terbaik Penggunaan JavaScript: Lima Elemen Kritis Technical SEO (Memastikan JavaScript Tidak Menghambat Optimasi SEO)
+
+Berdasarkan silabus kurikulum resmi Technical SEO:
+
+> *"Penggunaan JavaScript dalam pengembangan web bisa sangat bermanfaat, namun memerlukan perhatian khusus dalam hal optimasi SEO. Berikut adalah beberapa praktik terbaik yang perlu diikuti untuk memastikan bahwa JavaScript tidak menghambat optimasi SEO"*
+
+Penggunaan JavaScript dalam pengembangan web modern menghadirkan manfaat fungsionalitas yang luar biasa: mulai dari interaktivitas real-time, transisi halaman instan, hingga komponen UI yang kaya. Namun, tanpa perhatian khusus pada aspek Technical SEO, kemudahan koding tersebut dapat berubah menjadi bumerang yang menghancurkan visibilitas organik di mesin pencari.
+
+Untuk memastikan bahwa JavaScript tidak menghambat optimasi SEO, praktisi SEO dan tim web engineer wajib mematuhi **lima praktik terbaik elemen kritis** berikut:
 
 Berdasarkan silabus materi, terdapat lima elemen teknis mutlak yang wajib diawasi secara ketat oleh setiap praktisi SEO dan tim web engineer:
 
@@ -1129,6 +1137,17 @@ Berdasarkan silabus materi, terdapat lima elemen teknis mutlak yang wajib diawas
 5. **Pencegahan Sumber Daya Pemblokir Render (Render-Blocking Resources):**
    - **Tantangan Utama:** Berkas skrip JavaScript yang dimuat secara sinkron di bagian atas dokumen (`<head>`) akan membekukan peramban hingga skrip selesai diunduh dan dieksekusi.
    - **Standar Optimasi:** Pasang atribut `defer` (untuk skrip yang bergantung pada struktur DOM) atau `async` (untuk skrip independen seperti analitik) pada seluruh berkas JavaScript non-esensial agar tidak merusak skor Core Web Vitals (terutama metrik LCP dan INP).
+
+6. **Checklist 5 Praktik Terbaik Penggunaan JavaScript (The JavaScript SEO Best Practices Checklist):**
+
+| No | Elemen Praktik Terbaik | Target Standar Emas Ayo SEO | Kesalahan Fatal yang Harus Dihindari | Alat Verifikasi & Audit |
+| :-: | :--- | :--- | :--- | :--- |
+| **1** | **Keterlihatan Tautan** | Gunakan tag `<a href="/target/">` semantik murni | Navigasi via `<div onclick>` atau `href="javascript:;"` | Screaming Frog, GSC URL Inspection |
+| **2** | **Arsitektur Rendering** | Server-Side Rendering (SSR) atau SSG (HTML siap saji) | Bergantung 100% pada CSR murni tanpa fallback | View-Source (Ctrl+U), Rich Results Test |
+| **3** | **Anggaran Waktu Skrip** | Eksekusi WRS tuntas dalam <3-5 detik | Bundle JS megabyte, API blocking, uncaught error | Chrome DevTools Performance, Lighthouse |
+| **4** | **Status & Metadata** | Status HTTP 200/404/410 fisik & tag head server-side | Soft-404 status 200 pada halaman kosong, judul "React App" | GSC Coverage Report, HTTP Status Checker |
+| **5** | **Pencegahan Blocking** | Pasang atribut `defer` / `async`, pisahkan skrip analitik | Skrip sinkron di tag `<head>` yang membekukan parsing | PageSpeed Insights (LCP & INP metrics) |
+
 
 ###### D. Pendalaman Enam Pilar Utama JavaScript dalam SEO: Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, dan Handling Metadata
 
