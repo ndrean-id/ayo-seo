@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.51.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.52.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -406,10 +406,10 @@ Pada materi lanjutan modul **"Penyajian Hasil Pencarian (Serving Search Results)
              │                          │                          │
              ├──────────────────────────┼──────────────────────────┤
              ▼                          ▼                          ▼
-  [FAKTOR 5: KEAMANAN SITUS]  [FAKTOR 7: INTERAKSI SERP]   [NAVBOOST & RE-RANKING]
-  - Enkripsi Protokol HTTPS   - Click-Through Rate (CTR)   - Riwayat Klik 13 Bulan
-  - Eliminasi Konten Spam     - Dwell Time & Anti-Pogo     - Evaluasi Umpan Balik Sesi
-  - Proteksi Anti-Hacking/WAF - Navboost Real-World Voting - Promosi atau Degradasi
+  [FAKTOR 5: KEAMANAN SITUS]  [FAKTOR 6: STRUKTUR SITUS]   [FAKTOR 7: INTERAKSI SERP]
+  - Enkripsi Protokol HTTPS   - Hierarki Heading (H1-H3)   - Click-Through Rate (CTR)
+  - Eliminasi Konten Spam     - Internal Link Sarang Laba  - Dwell Time & Anti-Pogo
+  - Proteksi Anti-Hacking/WAF - Anti-Orphan & Topic Silo   - Navboost System Voting
              │                          │                          │
              └──────────────────────────┴──────────────────────────┘
 ```
@@ -545,7 +545,33 @@ Berdasarkan slide materi **"5. Keamanan Situs"**:
 
 ---
 
-##### 5. Faktor 7: Interaksi Pengguna (User Engagement, CTR, & Dwell Time)
+##### 5. Faktor 6: Struktur Situs dan Arsitektur Hierarkis (Tag Heading Semantik & Internal Linking Sarang Laba-Laba)
+
+Berdasarkan slide materi **"6. Struktur Situs"**:
+> *"Struktur yang jelas dan navigasi yang mudah membantu mesin pencari memahami konten dan hierarki halaman.*  
+> *Faktor yang Dipertimbangkan:*  
+> *- Penggunaan Heading: Penggunaan tag heading (H1, H2, H3, dll.) untuk menunjukkan struktur konten.*  
+> *- Internal Linking: Tautan internal yang menghubungkan berbagai bagian konten di dalam situs."*
+
+* **A. Penggunaan Heading Hierarkis (H1, H2, H3) & Disiplin Semantik Dokumen:**
+  * *Bukan Sekadar Ukuran Huruf Visual:* Tag heading dalam HTML (`<h1>` hingga `<h3>`) bukan sekadar dekorasi CSS untuk membesarkan font, melainkan cetak biru semantik (*Semantic Document Outline*) yang memandu Googlebot dan pembaca layar (*screen readers*) dalam membedah alur logika artikel.
+  * *Disiplin Hierarki Heading Berstandar Google Search Central:*
+    * **Tepat Satu Tag H1 per Halaman:** H1 adalah judul mahkota artikel yang merangkum topik utama dan wajib menempatkan kata kunci utama di depan (*front-loading target keyword*).
+    * **Tag H2 sebagai Bab Utama:** Membagi artikel menjadi 3 hingga 7 bab pembahasan inti. H2 menjadi fondasi otomatis untuk pembentukan Daftar Isi (*Table of Contents*) ber-anchor link.
+    * **Tag H3 untuk Rincian Sub-Bab:** Menjabarkan detail teknis, studi kasus, atau langkah SOP di bawah payung H2 terkait.
+    * **Dilarang Melompat Hierarki (No Heading Skipping):** Jangan melompat langsung dari H1 ke H3 tanpa melewati H2 karena akan merusak hierarki pemahaman mesin pencari.
+    * **Disiplin Anti-Mojibake Ayo SEO:** Dilarang keras menaruh emoji di dalam tag heading (H1-H3) agar tidak memicu karakter rusak (`â☒` atau tanda tanya) di database CMS serta menjaga URL anchor hash tetap bersih.
+
+* **B. Jaringan Internal Linking Sarang Laba-Laba (The Spider-Web Internal Linking):**
+  * *Pembuluh Darah Reputasi Web:* Internal linking adalah sistem sirkulasi yang mengalirkan otoritas (*Link Equity / PageRank*) ke seluruh penjuru website.
+  * *Tiga Fungsi Vital Internal Linking di Ayo SEO:*
+    1. **Penyelamatan Halaman Terisolasi (Anti-Orphan Content):** Googlebot menjelajah web lewat tautan. Setiap kali artikel baru diterbitkan, wajib membuka 2-3 artikel lama yang relevan untuk menautkan link kembali ke artikel baru tersebut.
+    2. **Membangun Otoritas Topik (Topical Authority Siloing):** Menghubungkan secara erat antara Artikel Induk (**Pilar**) dengan artikel spesifik pendukung (**Cluster**) dan kamus istilah (**Glossary**). Jaringan siloing dua arah ini membuktikan ke Google bahwa websitemu adalah pakar otoritatif yang menguasai seluruh spektrum industri.
+    3. **Meningkatkan Kedalaman Sesi (Session Depth) & Menekan Bounce Rate:** Internal link yang kontekstual dan menggoda rasa penasaran memandu pembaca untuk melanjutkan membaca ke halaman kedua dan ketiga, melipatgandakan waktu tinggal (*dwell time*), serta mempercepat konversi prospek bisnis (*leads*).
+
+---
+
+##### 6. Faktor 7: Interaksi Pengguna (User Engagement, CTR, & Dwell Time)
 
 Berdasarkan slide materi **"7. Interaksi Pengguna"**:
 > *"Google mempertimbangkan bagaimana pengguna berinteraksi dengan hasil pencarian.*  
@@ -572,7 +598,7 @@ Berdasarkan slide materi **"7. Interaksi Pengguna"**:
 
 ---
 
-##### 6. Matriks Komprehensif Lima Faktor Peringkat Tahap 3 (Serving Search Results)
+##### 7. Matriks Komprehensif Enam Faktor Peringkat Tahap 3 (Serving Search Results)
 
 | Faktor Peringkat | Parameter Utama | Tolok Ukur Keberhasilan | Solusi Implementasi di Ayo SEO |
 | :--- | :--- | :--- | :--- |
@@ -587,6 +613,8 @@ Berdasarkan slide materi **"7. Interaksi Pengguna"**:
 | **Faktor 5: Keamanan Situs** | Enkripsi Protokol HTTPS | Sertifikat SSL/TLS valid, zero mixed content, redirect 301 rapi. | Protokol HTTPS default, perlindungan SSL, & ranking signal aktif. |
 | | Eliminasi Konten Spam | Lolos dari filter SpamBrain & Google Scaled Content Abuse. | Ritme publikasi aman 1 artikel/hari & kurasi 80/20 Human-in-the-loop. |
 | | Proteksi Anti-Hacking | Bebas malware/backdoor, WAF Cloudflare aktif, izin file aman. | Sanitasi input ketat, hindari plugin bajakan/nulled, & audit GSC berkala. |
+| **Faktor 6: Struktur Situs** | Hierarki Heading Semantik| Tepat 1 H1 ber-keyword, bab H2 terstruktur, sub-bab H3 tertib. | Table of Contents anchor links & disiplin anti-mojibake bebas emoji heading. |
+| | Internal Linking Siloing | Jaringan siloing dua arah (Pilar ⇄ Cluster ⇄ Glossary). | Sarang laba-laba internal link, anti-orphan content, & session depth booster. |
 | **Faktor 7: Interaksi SERP** | Click-Through Rate (CTR) | Rasio klik di atas rata-rata posisi peringkat (> 3%-5% di GSC). | Meta Title Title Case berbasis *Curiosity Gap* etis & meta description CTA. |
 | | Dwell Time | Waktu tinggal > 2-3 menit, nihil sinyal *pogo-sticking*. | Key Takeaways BLUF, embed video YouTube, & infografis vertikal 9:16. |
 
@@ -1349,6 +1377,7 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
 
+- **v1.52.0 (2026-11-25):** Penambahan pendalaman kurikulum **Tahap 3: Penyajian Hasil Pencarian & Faktor Struktur Situs (Semantic Heading Hierarchy & The Spider-Web Internal Linking)** mencakup disiplin penataan H1-H3 bebas loncat, kepatuhan anti-mojibake pada heading, pembasmian orphan content, siloing Topical Authority (Pilar ⇄ Cluster ⇄ Glossary), serta penyempurnaan matriks komprehensif 6 faktor peringkat tahap 3.
 - **v1.51.0 (2026-11-25):** Penambahan pendalaman kurikulum **Tahap 3: Penyajian Hasil Pencarian & Faktor Keamanan Situs (HTTPS Encryption, Anti-Spam Safeguards, & Proteksi Malware)** mencakup kepatuhan enkripsi SSL/TLS, mitigasi penalti Google SpamBrain & Scaled Content Abuse, penanganan ancaman peretasan (Japanese Keyword Hack), serta penguatan matriks komparasi 5 faktor peringkat tahap 3.
 - **v1.50.0 (2026-11-25):** Penambahan pendalaman kurikulum **Tahap 3: Penyajian Hasil Pencarian & Faktor Backlinks (Link Equity, Domain Authority, & Anchor Text Semantics)** mencakup konsep suara kepercayaan (*vote of confidence*), prinsip kualitas editorial alami vs SpamBrain AI, distribusi variasi teks jangkar sehat (Exact, Partial, Branded, Topical), serta metodologi Skyscraper 10x Content Backlinko.
 - **v1.49.0 (2026-11-25):** Penambahan pendalaman kurikulum **Tahap 3: Penyajian Hasil Pencarian & Faktor Pengalaman Pengguna (Page Speed, Mobile-First Indexing, & The Bounce Rate Paradox)** mencakup standar metrik Core Web Vitals (LCP/INP/CLS), optimasi aksesibilitas seluler, dekonstruksi analitik paradoks bounce rate (single-page leads vs blog engagement depth), serta matriks komparasi 3 faktor peringkat tahap 3.
