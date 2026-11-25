@@ -904,7 +904,75 @@ Berikut adalah diagram alur mekanisme pemrosesan JavaScript dua gelombang oleh G
 +-------------------------------------------------------------------------+
 ```
 
-###### A. Pengaruh JavaScript pada SEO: Paradoks Dua Sisi (Dampak Positif vs Dampak Negatif dan Cara Implementasi)
+###### A. Cara Google Memproses JavaScript: Tiga Fase Utama (Crawling, Rendering, dan Pengindeksan)
+
+Berdasarkan dokumentasi resmi **[Google Search Central: JavaScript SEO Basics](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics)** dan silabus materi praktikum:
+
+> *"Google memproses aplikasi web JavaScript melalui tiga fase utama: 1. Crawling, 2. Rendering, 3. Pengindeksan"*
+
+Peramban web pengguna mengeksekusi JavaScript secara instan menggunakan kartu grafis dan memori lokal perangkat. Sebaliknya, mesin pencari Google harus mengelola miliaran permintaan perayapan setiap detik di seluruh dunia dengan alokasi daya komputasi yang terukur. Untuk mengatasi tantangan skala tersebut, Google membagi pemrosesan aplikasi web berbasis JavaScript ke dalam sebuah siklus arsitektur yang terdiri dari **tiga fase utama**:
+
+```text
++---------------------------------------------------------------------------------------------------+
+|               ARSITEKTUR RESMI CARA GOOGLE MEMPROSES JAVASCRIPT (GOOGLE SEARCH CENTRAL)           |
++---------------------------------------------------------------------------------------------------+
+|                                                                                                   |
+|     +----------------+       URL        +---------------+      HTML       +-------------------+   |
+|     | ANTREAN CRAWL  | ---------------> |    CRAWLER    | --------------> |    PEMROSESAN     |   |
+|     |  (Crawl Queue) |                  |  (Googlebot)  |                 |   (Processing)    |   |
+|     +-------^--------+                  +---------------+                 +---+-----------+---+   |
+|             |                                                                 |           |       |
+|             | URLs Baru Diekstrak dari HTML Mentah & Rendered DOM             |           |       |
+|             +-----------------------------------------------------------------+           |       |
+|             |                                                                             | Dokumen
+|             |                                                             HTML            | Siap
+|             |                                                                             | Indeks
+|             |                                                                 v           v       |
+|             |                                                         +---------------+ +-------+ |
+|             |                                                         |ANTREAN RENDER | |INDEKS | |
+|             |                                                         | (Render Queue)| |(Index)| |
+|             |                                                         +-------+-------+ +-------+ |
+|             |                                                                 |                   |
+|             |                                                                 | Menunggu          |
+|             |                                                                 | Komputasi WRS     |
+|             |                                                                 v                   |
+|             |                           HTML yang Dirender            +---------------+           |
+|             +-------------------------------------------------------- |   PERENDER    |           |
+|                                         (Rendered HTML)               |  (Renderer /  |           |
+|                                                                       | Chromium WRS) |           |
+|                                                                       +---------------+           |
++---------------------------------------------------------------------------------------------------+
+```
+
+1. **Fase 1: Crawling (Perayapan Dokumen Awal oleh Googlebot):**
+   - **Mekanika:** Googlebot mengambil URL dari **Antrean Crawl (*Crawl Queue*)** berdasarkan alokasi anggaran perayapan (*Crawl Budget*) dan prioritas situs. Googlebot mengirimkan permintaan HTTP GET ke server hosting situs web Anda.
+   - **Karakteristik Kritis:** Pada fase perayapan awal ini, Googlebot hanya mengunduh respon server mentah (*raw HTML response payload*) beserta kode status HTTP (200, 301, 404). Googlebot **sama sekali belum mengeksekusi kode JavaScript** pada fase ini.
+   - **Tantangan Arsitektur CSR:** Jika situs Anda dibangun menggunakan Client-Side Rendering (CSR) murni, respon HTML mentah yang diterima Googlebot hanyalah cangkang kosong (misalnya `<div id="root"></div>` atau pesan *"You need to enable JavaScript to run this app"*). Crawler kemudian meneruskan dokumen mentah ini ke tahap **Pemrosesan (*Processing*)**.
+
+2. **Fase 2: Rendering (Eksekusi JavaScript oleh Web Rendering Service / Chromium):**
+   - **Evaluasi di Tahap Pemrosesan:** Tahap Pemrosesan mengevaluasi apakah dokumen HTML membutuhkan eksekusi skrip. Jika halaman telah memuat konten lengkap di server (via SSR atau SSG), halaman dapat langsung dialirkan ke tahap pengindeksan. Namun, jika halaman terdeteksi bergantung pada skrip dinamis klien, dokumen dimasukkan ke dalam **Antrean Render (*Render Queue*)**.
+   - **Eksekusi oleh Perender (Web Rendering Service - Chromium WRS):** Ketika sumber daya komputasi server Google tersedia, mesin **Perender (*Renderer*)** berbasis peramban Chromium headless mutakhir (*evergreen Chromium*) akan:
+     - Mengunduh dan mengeksekusi berkas bundle JavaScript dan berkas CSS pendukung.
+     - Mengeksekusi permintaan API asinkron (fetch / AJAX) untuk menarik data dinamis.
+     - Menghasilkan struktur dokumen akhir yang lengkap (*Rendered DOM*).
+   - **Looping Umpan Balik Tautan (The Discovery Feedback Loop):** Perender mengembalikan **HTML yang Dirender (*Rendered HTML*)** kembali ke tahap Pemrosesan. Tahap Pemrosesan kemudian mengekstrak seluruh tautan baru (`<a href>`) yang baru muncul setelah eksekusi JavaScript, dan mengirimkan URL-URL tersebut kembali ke **Antrean Crawl (*Crawl Queue*)** agar dapat dijadwalkan untuk dirayapi di siklus berikutnya.
+
+3. **Fase 3: Pengindeksan (Indexing & Ingestion ke Basis Data Google):**
+   - **Mekanika:** Tahap Pemrosesan menerima Rendered HTML lengkap dan mulai menguraikan seluruh komponen penting halaman:
+     - Mengekstrak teks utama artikel, heading semantik (H1 hingga H6), dan atribut alt pada gambar.
+     - Mengurai metadata halaman (`<title>`, `<meta name="description">`), tag kanonisasi (`<link rel="canonical">`), dan direktif robot (*robots meta tag*).
+     - Memvalidasi data terstruktur (*Schema.org JSON-LD*) untuk kelayakan fitur hasil kaya (*Rich Results*).
+   - **Penyimpanan Permanen:** Halaman yang lolos evaluasi kualitas akan disimpan ke dalam **Indeks Google (*Google Index*)**. Dokumen ini kini resmi terdaftar dan siap ditampilkan ketika pengguna mengetikkan kueri pencarian yang relevan di Google Search, Google AI Overviews, atau peramban cerdas lainnya.
+
+4. **Matriks Evaluasi: Tiga Fase Pemrosesan Google vs Solusi Rekayasa Ayo SEO:**
+
+| Fase Pemrosesan | Peran Komponen Google | Risiko pada CSR Murni | Standar Rekayasa Ayo SEO (SSR/SSG) |
+| :--- | :--- | :--- | :--- |
+| **1. Crawling** | Googlebot mengunduh respon HTML mentah dari server hosting | Bot hanya menerima cangkang HTML kosong; teks utama tidak ada | Dokumen HTML awal langsung memuat 100% teks artikel dan tag `<a href>` |
+| **2. Rendering** | Perender Chromium mengeksekusi JS dan membangun Rendered DOM | Menunggu di Antrean Render; risiko script timeout (>5s) & partial indexing | Eliminasi ketergantungan antrean WRS; bot langsung membaca DOM jadi |
+| **3. Pengindeksan** | Parser mengekstrak entitas semantik, metadata, dan Schema ke Indeks | Metadata kosong ("React App"), entitas terpotong, Soft-404 | Title, deskripsi, canonical, dan JSON-LD siap santap di server-side |
+
+###### B. Pengaruh JavaScript pada SEO: Paradoks Dua Sisi (Dampak Positif vs Dampak Negatif dan Cara Implementasi)
 
 > *"JavaScript memiliki pengaruh yang signifikan pada SEO, baik positif maupun negatif, tergantung pada bagaimana JavaScript digunakan dan diimplementasikan di situs web. Berikut adalah beberapa cara utama JavaScript mempengaruhi SEO:"*
 
@@ -986,7 +1054,7 @@ Kedua paradigma ekstrem tersebut keliru. Realitas algoritma perayapan modern men
 +---------------------------------------------------------------------------------------------------+
 ```
 
-###### B. Lima Elemen Kritis Technical SEO dalam Penerapan JavaScript
+###### C. Lima Elemen Kritis Technical SEO dalam Penerapan JavaScript
 
 Berdasarkan silabus materi, terdapat lima elemen teknis mutlak yang wajib diawasi secara ketat oleh setiap praktisi SEO dan tim web engineer:
 
@@ -1019,7 +1087,7 @@ Berdasarkan silabus materi, terdapat lima elemen teknis mutlak yang wajib diawas
    - **Tantangan Utama:** Berkas skrip JavaScript yang dimuat secara sinkron di bagian atas dokumen (`<head>`) akan membekukan peramban hingga skrip selesai diunduh dan dieksekusi.
    - **Standar Optimasi:** Pasang atribut `defer` (untuk skrip yang bergantung pada struktur DOM) atau `async` (untuk skrip independen seperti analitik) pada seluruh berkas JavaScript non-esensial agar tidak merusak skor Core Web Vitals (terutama metrik LCP dan INP).
 
-###### C. Pendalaman Enam Pilar Utama JavaScript dalam SEO: Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, dan Handling Metadata
+###### D. Pendalaman Enam Pilar Utama JavaScript dalam SEO: Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, dan Handling Metadata
 
 Di materi presentasi modul Technical SEO, ditegaskan enam pilar paling esensial dalam penerapan JavaScript:
 
@@ -1154,7 +1222,7 @@ Di materi presentasi modul Technical SEO, ditegaskan enam pilar paling esensial 
      - *Pastikan Metadata Di-render di Server-Side atau Ditambahkan di HTML Statis:* Manfaatkan framework SSR/SSG modern (seperti Next.js Metadata API, Nuxt `useHead()`, atau Astro `<head>`) yang menyuntikkan judul unik, meta deskripsi, dan tag Open Graph secara statis ke dalam tag `<head>` sebelum halaman dikirimkan ke peramban.
      - *Verifikasi Metadata dengan Alat Uji Resmi Google:* Uji keterbacaan metadata menggunakan **Google Search Console (URL Inspection Live)**, **Google Rich Results Test**, serta **Google Structured Data Testing Tool (Schema Validator)** untuk memastikan seluruh tag `<title>`, deskripsi meta, dan skema JSON-LD berhasil diekstraksi sempurna oleh parser Googlebot.
 
-###### D. Studi Kasus Praktikum: Verifikasi Server-Rendered SEO Metadata Sebelum JavaScript Berjalan (Google Rich Results Test)
+###### E. Studi Kasus Praktikum: Verifikasi Server-Rendered SEO Metadata Sebelum JavaScript Berjalan (Google Rich Results Test)
 
 Berdasarkan studi kasus praktikum materi slide **"Pastikan SEO Meta Data Rendered Di Server"**:
 
@@ -1234,7 +1302,7 @@ Berdasarkan studi kasus praktikum materi slide **"Pastikan SEO Meta Data Rendere
    - **Langkah 3 (Verifikasi Blok Head):** Cari tag `<link rel="canonical">` dan `<meta property="og:title">`. Pastikan seluruh baris kode tersebut telah terisi dengan teks spesifik halaman, bukan placeholder kosong atau variabel template yang belum terurai.
    - **Langkah 4 (Uji Silang View-Source Browser):** Buka halaman web di peramban, tekan pintasan `Ctrl + U` (View Source). Pastikan metadata yang sama tertera persis di dokumen sumber tanpa memerlukan eksekusi skrip klien.
 
-###### E. Matriks Evaluasi Empat Model Rendering JavaScript untuk SEO
+###### F. Matriks Evaluasi Empat Model Rendering JavaScript untuk SEO
 
 | Model Rendering | Lokasi Eksekusi Kode | Kecepatan untuk Bot (Wave 1) | Beban Server | Risiko SEO | Rekomendasi Framework Modern |
 | :--- | :--- | :---: | :---: | :---: | :--- |
@@ -1243,7 +1311,7 @@ Berdasarkan studi kasus praktikum materi slide **"Pastikan SEO Meta Data Rendere
 | **Static Site Generation (SSG)** | Saat Build / Deployment | Instan (Berkas HTML Statis) | Sangat Rendah (Penyimpanan CDN) | **Nol:** Standar emas performa & keterindeksan. | Astro, Hugo, Gatsby, Next.js (SSG mode). |
 | **Incremental Static (ISR)** | Hybrid (Build + Revalidasi Latar) | Instan (Dari Cache CDN) | Rendah hingga Sedang | **Sangat Rendah:** Ideal untuk portal jutaan artikel. | Next.js App Router, Nuxt Content. |
 
-###### F. SOP Tiga Langkah Audit Cepat JavaScript SEO (The 3-Step JS Audit)
+###### G. SOP Tiga Langkah Audit Cepat JavaScript SEO (The 3-Step JS Audit)
 
 1. **Tes Non-JavaScript (Disable JavaScript in DevTools):**
    - Buka halaman web Anda di Google Chrome. Tekan `F12` (DevTools) > tekan `Ctrl + Shift + P` > ketik *"Disable JavaScript"* > refresh halaman.

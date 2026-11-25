@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.86.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.87.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -1290,7 +1290,7 @@ Berdasarkan modul silabus dan materi slide **"Definisi Technical SEO"**, Technic
 10. **Arsitektur Flat & Anti-Orphan Pages:** Penataan hierarki website dangkal (maksimal 3 klik dari beranda) guna menjamin 100% keterayapan.
 
 > 📘 **Baca Panduan Lengkap & Studi Kasus:**  
-> Untuk penjelasan mendalam 10 pilar, matriks pemetaan anti-orphan page, anatomi arsitektur spageti, kerangka paradoks dua sisi pengaruh JavaScript pada SEO, serta rekayasa 6 pilar JavaScript SEO (Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, dan Metadata), silakan baca dokumentasi terpisah kami di **[docs/technical-seo.md](docs/technical-seo.md)**.
+> Untuk penjelasan mendalam 10 pilar, matriks pemetaan anti-orphan page, anatomi arsitektur spageti, arsitektur resmi 3 fase perayapan Google (Crawling, Rendering, Indeksasi), kerangka paradoks dua sisi pengaruh JavaScript pada SEO, serta rekayasa 6 pilar JavaScript SEO (Rendering, Lazy Loading, Internal Linking, Progressive Enhancement, Canonical Tags, dan Metadata), silakan baca dokumentasi terpisah kami di **[docs/technical-seo.md](docs/technical-seo.md)**.
 
 ---
 
@@ -2013,6 +2013,11 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 ---
 
 ## Ringkasan Versi Terbaru (Changelog Highlights)
+
+- **v1.87.0 (2026-11-25):** Integrasi bab kurikulum **Cara Google Memproses JavaScript: Tiga Fase Utama (Crawling, Rendering, dan Pengindeksan)**:
+  1. *Arsitektur Resmi Google Search Central:* Pemetaan mendalam alur data Googlebot (Antrean Crawl -> Crawler -> Pemrosesan -> Antrean Render -> Perender Chromium WRS -> Indeks) lengkap dengan siklus umpan balik ekstraksi tautan baru (*link discovery feedback loop*).
+  2. *Dekonstruksi Tiga Fase Kritis:* Analisis batasan respon HTML mentah di fase Crawling, eksekusi Rendered DOM di fase Rendering, serta ekstraksi entitas semantik, metadata, dan Schema JSON-LD di fase Pengindeksan.
+  3. *Matriks Evaluasi Komparatif:* Tabel komparasi 3 fase pemrosesan Google vs risiko CSR murni vs standar rekayasa server-side Ayo SEO.
 
 - **v1.86.0 (2026-11-25):** Pengayaan mendalam kurikulum **Pilar 1 JavaScript SEO: Rendering dan Indeksasi (Analisis Pengaruh Negatif vs Pengaruh Positif)**:
   1. *Dekonstruksi Pengaruh Negatif Rendering:* Bahaya fatal halaman tidak terindeks (*Zero Indexing / Blank Page*) dan jebakan pengindeksan sebagian (*The Partial Indexing Trap*) akibat script timeout (>5s) atau kegagalan API klien yang memangkas entitas semantik konten.
