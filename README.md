@@ -34,7 +34,6 @@ Repositori dan AI Agent ini dirancang serta dikurasi oleh:
 | **LinkedIn** | **[linkedin.com/in/ndrean-id](https://www.linkedin.com/in/ndrean-id/)** |
 | **GitHub Portfolio** | **[@ndrean-id](https://github.com/ndrean-id)** |
 | **YouTube Channel** | **[@ndrean_id](https://www.youtube.com/@ndrean_id)** |
-| **Instagram** | **[@andrean.lp](https://www.instagram.com/andrean.lp/)** |
 | **Positioning Statement** | Membantu pemilik bisnis dan kreator membangun aset web berkinerja tinggi yang siap mendominasi pencarian Google dan dikutip oleh AI Search Engine (*ChatGPT, Gemini, Perplexity, Claude*). |
 | **Nilai Unik (UVP)** | Sinergi langka antara pemahaman strategi bisnis/konversi (*ex-digital marketing*) dan kemampuan eksekusi teknis langsung (*coding Astro JS, arsitektur headless WordPress, Cloudflare edge, dan Schema JSON-LD*). |
 
@@ -886,7 +885,6 @@ Berikut adalah contoh skrip Schema.org JSON-LD standar industri untuk entitas `P
     "https://www.linkedin.com/in/ndrean-id/",
     "https://github.com/ndrean-id",
     "https://www.youtube.com/@ndrean_id",
-    "https://www.instagram.com/andrean.lp/",
     "https://www.wikidata.org/wiki/Q..."
   ]
 }
@@ -2155,7 +2153,6 @@ Tertarik berdiskusi seputar arsitektur SEO modern, konsultasi optimasi web berke
 - 💼 **LinkedIn:** [Andre Wahyu Hermawan](https://www.linkedin.com/in/ndrean-id/)
 - 🐙 **GitHub:** [@ndrean-id](https://github.com/ndrean-id)
 - 📺 **YouTube:** [@ndrean_id](https://www.youtube.com/@ndrean_id)
-- 📸 **Instagram:** [@andrean.lp](https://www.instagram.com/andrean.lp/)
 - 💡 **Diskusi Teknis:** Jangan ragu membuka [GitHub Issues](https://github.com/ndrean-id/ayo-seo/issues) untuk saran, diskusi, atau kontribusi fitur!
 
 ---

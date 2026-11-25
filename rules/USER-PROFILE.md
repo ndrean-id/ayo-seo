@@ -17,9 +17,6 @@
 - **Website**: *(Dalam proses pembaruan domain/website baru)*
 - **LinkedIn**: https://www.linkedin.com/in/ndrean-id/ (Standar resmi)
   - *Headline Aktif*: `WordPress Technical SEO Specialist — Helping Businesses Rank on Google & Get Recommended by AI Search Engines`
-- **Instagram**: https://www.instagram.com/andrean.lp/ (Standar resmi: dengan garis miring)
-  - *Nama Akun*: `Andre Wahyu Hermawan | AI Search Strategist`
-  - *Bio Aktif*: `Bantu websitemu direkomendasikan ChatGPT, Gemini & Claude`
 - **Pinterest**: https://www.pinterest.com/andrean_lp/ (Standar resmi: www dan dengan garis miring)
 - **YouTube**: https://www.youtube.com/@ndrean_id (Standar resmi: tanpa garis miring)
 - **GitHub**: https://github.com/ndrean-id (Standar resmi: tanpa garis miring)
