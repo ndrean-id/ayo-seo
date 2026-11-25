@@ -1,7 +1,7 @@
 # Ayo SEO - AI Agent Senior SEO & Content Strategist
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.73.0-blue.svg)]()
+[![Version](https://img.shields.io/badge/Version-1.74.0-blue.svg)]()
 [![Author: Andre Wahyu](https://img.shields.io/badge/Author-Andre%20Wahyu-blue.svg)](https://github.com/ndrean-id)
 [![GitHub: ndrean-id](https://img.shields.io/badge/GitHub-ndrean--id-black.svg?logo=github)](https://github.com/ndrean-id)
 [![LinkedIn: ndrean-id](https://img.shields.io/badge/LinkedIn-ndrean--id-0A66C2.svg?logo=linkedin)](https://www.linkedin.com/in/ndrean-id/)
@@ -1690,7 +1690,7 @@ Pengetahuan tanpa penerapan di lapangan adalah kesia-siaan. Ayo SEO merumuskan *
 
 ---
 
-##### 7. Delapan Indikator Struktur Website yang Baik (Arsitektur Fondasi Pengalaman Pengguna dan Perayapan Mesin)
+##### 7. Sepuluh Indikator Struktur Website yang Baik (Arsitektur Fondasi Pengalaman Pengguna dan Perayapan Mesin)
 
 Struktur website (information architecture) adalah fondasi fisik tempat seluruh konten, halaman, dan otoritas domain Anda bertumpu. Tanpa struktur yang kokoh dan logis, konten terbaik sekalipun akan terkubur di kedalaman situs tanpa pernah ditemukan oleh mesin pencari maupun pengunjung manusia.
 
@@ -1723,7 +1723,7 @@ Berikut adalah diagram pohon hierarki website ideal yang memadukan keramahan nav
 +-------------------------------------------------------------------------+
 ```
 
-Berikut adalah dekonstruksi **8 Indikator Struktur Website yang Baik** yang wajib diterapkan pada setiap proyek audit dan pembangunan situs:
+Berikut adalah dekonstruksi **10 Indikator Struktur Website yang Baik** yang wajib diterapkan pada setiap proyek audit dan pembangunan situs:
 
 1. **Hierarki Halaman yang Jelas (Clear Page Hierarchy):**
    - **Prinsip Utama:** Struktur hierarki yang baik berarti setiap halaman memiliki hubungan yang jelas, terdefinisi, dan teratur dengan halaman lainnya.
@@ -1799,6 +1799,21 @@ Berikut adalah dekonstruksi **8 Indikator Struktur Website yang Baik** yang waji
      - *Tipografi Terbaca Tanpa Zoom:* Ukuran font teks tubuh (*body copy*) minimal 16 piksel dengan tinggi baris (*line-height*) 1.5 hingga 1.6. Pengunjung tidak boleh dipaksa mencubit layar (*pinch-to-zoom*) hanya untuk membaca teks.
      - *Bebas Pergeseran Horizontal (Zero Horizontal Layout Shift):* Seluruh tabel, gambar, dan kontainer wajib memiliki lebar fleksibel (`max-width: 100%`). Tampilan mobile tidak boleh memunculkan scroll horizontal samping yang merusak skor Core Web Vitals dan kenyamanan membaca.
 
+9. **Kecepatan Halaman (Page Speed Optimization & Core Web Vitals):**
+   - **Prinsip Utama:** Kecepatan muat halaman yang cepat meningkatkan kepuasan pengalaman pengguna (*User Experience*) dan menjadi faktor penentu peringkat resmi (*confirmed ranking factor*) dalam algoritma Google. Halaman yang lambat memicu lonjakan angka *bounce rate* secara drastis dalam 3 detik pertama.
+   - **Tiga Metode Optimasi Kecepatan Kunci:**
+     - *Optimasi Gambar:* Mengompresi aset visual ke format generasi terbaru (WebP / AVIF), menerapkan *lazy loading* pada gambar di bawah layar (*below-the-fold*), dan menetapkan atribut dimensi eksplisit (`width` dan `height`) untuk meniadakan pergeseran tata letak.
+     - *Penggunaan Caching yang Efisien:* Mengaktifkan *Page Caching*, *Browser Caching* melalui header HTTP (`Cache-Control`), dan *Object Caching* (Redis/Memcached) guna memangkas beban query database dan mempercepat respons awal server (TTFB).
+     - *Minifikasi Kode Web:* Menghapus spasi, baris baru, dan komentar yang tidak diperlukan pada berkas HTML, CSS, dan JavaScript, serta menerapkan pemuatan asinkron (`async` / `defer`) untuk script pelacak pihak ketiga.
+   - **Standar Ambang Batas Google Core Web Vitals:** Memastikan metrik LCP (*Largest Contentful Paint* <= 2.5 detik), INP (*Interaction to Next Paint* <= 200 milidetik), dan CLS (*Cumulative Layout Shift* <= 0.1) selalu berada di zona hijau.
+
+10. **Konten Berkualitas (High-Quality, Relevant, and People-First Content):**
+   - **Prinsip Utama:** Struktur website yang paling canggih sekalipun akan kehilangan maknanya tanpa konten yang relevan dan berkualitas tinggi sebagai fokus utama setiap halaman.
+   - **Dua Pilar Manfaat Ganda:**
+     - *Bagi Pengguna Manusia:* Membantu pengguna menemukan solusi tuntas atas permasalahan atau pertanyaan yang mereka cari (*Search Intent Fulfilled*), memperpanjang waktu interaksi (*dwell time*), dan membangun loyalitas audiens terhadap brand Anda.
+     - *Bagi Mesin Pencari:* Meningkatkan sinyal kepuasan pengguna (*User Engagement Signals*), memperbesar peluang halaman diindeks secara cepat dan mendalam, serta memicu sitasi dan backlink sukarela (*natural editorial backlinks*) dari situs otoritas lain.
+   - **Standar Kurasi Konten Berkualitas Ayo SEO:** Menerapkan pedoman resmi Google *Creating Helpful, Reliable, People-First Content*, membuktikan kredibilitas melalui prinsip E-E-A-T (*Experience, Expertise, Authoritativeness, Trustworthiness*), serta menyematkan format optimasi mesin pencari generatif (Key Takeaways dan FAQ Accordion).
+
 | Indikator Struktur | Manfaat bagi Pengunjung Manusia | Manfaat bagi Bot Mesin Pencari (Crawler) | Standar Audit Ayo SEO |
 | :--- | :--- | :--- | :--- |
 | **1. Hierarki Halaman** | Orientasi jelas; tahu posisi halaman dalam topik besar. | Mengurangi pemborosan crawl budget; pemetaan relasi entitas. | Click depth <= 3 klik dari beranda. |
@@ -1809,8 +1824,14 @@ Berikut adalah dekonstruksi **8 Indikator Struktur Website yang Baik** yang waji
 | **6. Sitemaps Ganda** | Panduan visual seluruh arsip konten situs (HTML sitemap). | Panduan perayapan cepat URL baru & status lastmod (XML). | Sitemap XML otomatis terhubung ke GSC & robots.txt. |
 | **7. Header Logis** | Memudahkan pemindaian visual (skimming) konten panjang. | Memahami hierarki gagasan dan konteks semantik topik. | 1 H1 unik, H2 berurutan, H3 mendukung, tanpa loncat. |
 | **8. Mobile-Friendly** | Pengalaman membaca lancar tanpa cubit layar (zoom-in). | Lolos uji Google Mobile-First Indexing secara absolut. | Desain fluida 100% responsif, lulus audit Lighthouse. |
+| **9. Kecepatan Halaman** | Akses instan tanpa jeda; hemat kuota data internet. | Mengurangi konsumsi crawl budget; memenuhi faktor ranking Core Web Vitals. | LCP < 2.5s, INP < 200ms, CLS < 0.1, kompresi WebP & caching aktif. |
+| **10. Konten Berkualitas** | Memperoleh jawaban tuntas, kredibel, dan solutif. | Sinyal relevansi semantik tinggi, retensi pembaca, dan sitasi backlink alami. | Standar E-E-A-T Google, People-First, zero AI slop, dan FAQ Schema. |
 
-Dengan memadukan 10 sumber daya belajar terpercaya dan 8 indikator arsitektur struktur website di atas, praktisi SEO memiliki fondasi kokoh untuk mentransformasi situs web menjadi aset digital yang cepat diakses, mudah dipahami mesin pencari, dan dicintai pengguna.
+> *"Struktur situs web yang baik menggabungkan hierarki yang jelas, navigasi yang intuitif, internal linking yang efisien, URL deskriptif, breadcrumb navigation, sitemaps, struktur header yang logis, mobile-friendliness, kecepatan halaman yang optimal, dan konten berkualitas. Mengikuti praktik-praktik ini tidak hanya akan meningkatkan pengalaman pengguna tetapi juga membantu mesin pencari merayapi, mengindeks, dan menampilkan situs Anda dengan lebih baik."*
+
+Sintesis di atas menegaskan bahwa Technical SEO dan Kualitas Konten bukanlah dua kutub yang terpisah, melainkan dua sisi dari mata uang yang sama. Struktur teknis adalah jalan tol berkecepatan tinggi yang mulus, sedangkan konten berkualitas adalah kendaraan berharga yang melintas di atasnya. Ketika keduanya berpadu sempurna, situs web Anda tidak hanya memenangkan persaingan di puncak SERP, melainkan juga mengonversi setiap pengunjung menjadi pelanggan setia.
+
+Dengan memadukan 10 sumber daya belajar terpercaya dan 10 indikator arsitektur struktur website paripurna di atas, praktisi SEO memiliki fondasi kokoh untuk mentransformasi situs web menjadi aset digital yang cepat diakses, mudah dipahami mesin pencari, dan dicintai pengguna.
 
 ---
 
@@ -2551,6 +2572,11 @@ Ya! Google Search Console kini secara resmi mendukung pemantauan akun sosial med
 ---
 
 ## 📝 Ringkasan Versi Terbaru (Changelog Highlights)
+
+- **v1.74.0 (2026-11-25):** Penyempurnaan bab kurikulum **Sepuluh Indikator Struktur Website yang Baik (Arsitektur Fondasi Pengalaman Pengguna dan Perayapan Mesin)**:
+  1. *Kecepatan Halaman (Page Speed & Core Web Vitals):* Tiga metode optimasi (kompresi Next-Gen WebP/AVIF, caching berlapis Page/Browser/Object Caching, serta minifikasi kode HTML/CSS/JS) dan standar ambang batas LCP (<2.5s), INP (<200ms), dan CLS (<0.1).
+  2. *Konten Berkualitas (High-Quality & People-First Content):* Relevansi solutif pemecah masalah pencari, retensi pembaca, standar Google E-E-A-T, dan sinyal keterindeksan positif.
+  3. *Sintesis Arsitektur Website Paripurna:* Penegasan integrasi harmonis antara 10 indikator teknis dan substansi konten sebagai jalan tol berkecepatan tinggi dengan kendaraan bernilai tinggi yang melintas di atasnya.
 
 - **v1.73.0 (2026-11-25):** Pengayaan komprehensif empat pilar kedua **Indikator Struktur Website yang Baik**:
   1. *Breadcrumbs Navigation:* Dekonstruksi 3 varian breadcrumbs (Hierarchy, Attribute, History), injeksi schema markup JSON-LD BreadcrumbList untuk SERP rich snippet, serta mitigasi perilaku pogo-sticking.
